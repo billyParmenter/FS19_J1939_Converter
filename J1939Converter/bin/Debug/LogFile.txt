@@ -1,0 +1,672 @@
+INFO  [2020-02-01 5:29:36 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:29:36 PM] - Log at offset 445 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exeException caught trying to read config file. File should be in same directory as .exe
+	Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\config.txt'.		File name: 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\config.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.ReadFileValues(Dictionary`2 keyValuePairs, String file) in C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:line 128
+
+FATAL [2020-02-01 5:29:36 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: luaIP not found in config file
+
+FATAL [2020-02-01 5:29:36 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: lua not found in config file
+
+FATAL [2020-02-01 5:29:36 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: modOutputFile not found in config file
+
+INFO  [2020-02-01 5:29:36 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:29:36 PM] - Log at offset 445 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exeException caught trying to read config file. File should be in same directory as .exe
+	Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\SPNs.txt'.		File name: 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\SPNs.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.ReadFileValues(Dictionary`2 keyValuePairs, String file) in C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:line 128
+
+ERROR [2020-02-01 5:29:36 PM] - FindSPN at offset 305 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\SPNs.cs:62:17
+ 
+	SPN: speed not found
+
+INFO  [2020-02-01 5:30:04 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:30:04 PM] - Log at offset 445 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exeException caught trying to read config file. File should be in same directory as .exe
+	Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\config.txt'.		File name: 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\config.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.ReadFileValues(Dictionary`2 keyValuePairs, String file) in C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:line 128
+
+FATAL [2020-02-01 5:30:04 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: luaIP not found in config file
+
+FATAL [2020-02-01 5:30:04 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: lua not found in config file
+
+FATAL [2020-02-01 5:30:04 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: modOutputFile not found in config file
+
+INFO  [2020-02-01 5:30:04 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:30:04 PM] - Log at offset 445 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exeException caught trying to read config file. File should be in same directory as .exe
+	Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\SPNs.txt'.		File name: 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\SPNs.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.ReadFileValues(Dictionary`2 keyValuePairs, String file) in C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:line 128
+
+ERROR [2020-02-01 5:30:04 PM] - FindSPN at offset 305 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\SPNs.cs:62:17
+ 
+	SPN: speed not found
+
+INFO  [2020-02-01 5:31:17 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:31:17 PM] - Log at offset 445 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exeException caught trying to read config file. File should be in same directory as .exe
+	 Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\config.txt'.		File name: 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\config.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.ReadFileValues(Dictionary`2 keyValuePairs, String file) in C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:line 128
+
+FATAL [2020-02-01 5:31:17 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: luaIP not found in config file
+
+FATAL [2020-02-01 5:31:17 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: lua not found in config file
+
+FATAL [2020-02-01 5:31:17 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: modOutputFile not found in config file
+
+INFO  [2020-02-01 5:31:17 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:31:17 PM] - Log at offset 445 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exeException caught trying to read config file. File should be in same directory as .exe
+	 Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\SPNs.txt'.		File name: 'C:\Users\billy\source\repos\J1939Converter\J1939Converter\bin\Debug\SPNs.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.ReadFileValues(Dictionary`2 keyValuePairs, String file) in C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:line 128
+
+ERROR [2020-02-01 5:31:17 PM] - FindSPN at offset 305 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\SPNs.cs:62:17
+ 
+	SPN: speed not found
+
+INFO  [2020-02-01 5:33:08 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+FATAL [2020-02-01 5:33:08 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: luaIP not found in config file
+
+FATAL [2020-02-01 5:33:08 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: lua not found in config file
+
+FATAL [2020-02-01 5:33:08 PM] - CheckRequiredValues at offset 218 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:96:21
+ 
+	Required value: modOutputFile not found in config file
+
+INFO  [2020-02-01 5:33:08 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:33:08 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+ERROR [2020-02-01 5:33:08 PM] - FindSPN at offset 305 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\SPNs.cs:62:17
+ 
+	SPN: speed not found
+
+INFO  [2020-02-01 5:34:48 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:34:48 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:34:48 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:34:48 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+ERROR [2020-02-01 5:34:48 PM] - FindSPN at offset 305 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\SPNs.cs:62:17
+ 
+	SPN: speed not found
+
+INFO  [2020-02-01 5:35:11 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:35:11 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:35:11 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:35:11 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 5:35:19 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:35:19 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:35:19 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:35:19 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 5:35:55 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:35:55 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:35:55 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:35:55 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 5:36:21 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:36:21 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:36:21 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:36:21 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+ERROR [2020-02-01 5:36:21 PM] - FindSPN at offset 305 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\SPNs.cs:62:17
+ 
+	SPN: speed not found
+
+INFO  [2020-02-01 5:52:05 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:52:05 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:52:05 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:52:05 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 5:59:37 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:59:37 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 5:59:37 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 5:59:37 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 6:06:59 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:06:59 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 6:06:59 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:06:59 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 6:51:52 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:51:52 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 6:51:52 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:51:52 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 6:52:31 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:52:32 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 6:52:32 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:52:32 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-01 6:54:24 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:54:24 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-01 6:54:24 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-01 6:54:24 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:08:47 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:08:47 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:08:47 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:08:47 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:10:03 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:10:03 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:10:03 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:10:03 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:19:06 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:19:06 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:19:06 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:19:06 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:21:18 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:21:18 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:21:18 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:21:18 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:22:07 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:22:07 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:22:07 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:22:07 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:22:37 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:22:37 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:22:37 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:22:37 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:29:52 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:29:52 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:29:52 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:29:52 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:51:30 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:51:30 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:51:30 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:51:30 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:52:53 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:52:53 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:52:53 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:52:53 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:53:30 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:53:30 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:53:30 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:53:30 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:53:52 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:53:52 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:53:52 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:53:52 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:54:48 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:54:48 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:54:48 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:54:48 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:56:03 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:56:03 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:56:03 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:56:03 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:56:24 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:56:24 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:56:24 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:56:24 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:57:10 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:57:10 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:57:10 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:57:10 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:58:32 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:58:32 AM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:58:32 AM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:58:32 AM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:18:49 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:18:49 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:18:49 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:18:49 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:19:32 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:19:32 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:19:32 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:19:32 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:26:12 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:26:12 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:26:12 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:26:12 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:28:14 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:28:14 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:28:14 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:28:14 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:29:57 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:29:57 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:29:57 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:29:57 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-02 1:30:24 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:30:24 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:103:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-02 1:30:24 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:124:13
+ 
+	Reading config file...
+
+INFO  [2020-02-02 1:30:24 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\billy\source\repos\J1939Converter\J1939Converter\Support\Config.cs:63:17
+ 
+	SPN file read successfuly
+
