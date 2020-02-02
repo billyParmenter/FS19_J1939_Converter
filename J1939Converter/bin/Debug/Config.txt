@@ -1,2 +1,2 @@
-modOutputFile=C:\Program Files (x86)\Steam\steamapps\common\Farming Simulator 19\data.txt
+modOutputFile=C:\Program Files (x86)\Steam\steamapps\common\Farming Simulator 19\dataLog.txt
 readerLogLocation=dataLog.txt

@@ -1,6 +1,6 @@
 ﻿/*
 * FILE          : Logging.cs
-* PROJECT       : Osiris
+* PROJECT       : J1939Converter
 * PROGRAMMER    : Billy Parmenter
 * FIRST VERSION : November 1, 2018
 * UPDATED       : December 2, 2019

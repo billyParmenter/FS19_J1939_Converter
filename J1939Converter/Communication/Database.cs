@@ -5,8 +5,8 @@ namespace J1939Converter.Communication
     {
         public static CANid GetSPN(ref SPN spn)
         {
-            spn.length = 1;
-            spn.position = 4;
+            spn.length = 2;     //As is in the DB
+            spn.position = 2;   //2-3 in DB just need first number
 
             CANid canID = new CANid
             {
@@ -17,7 +17,8 @@ namespace J1939Converter.Communication
                 dataPage = 0,
                 reserved = 0,
                 priority = 3,
-                resolution = 0.4
+                resolution = (1.0 / 256.0) // 1/256 km/h per bit
+
             };
 
             return canID;

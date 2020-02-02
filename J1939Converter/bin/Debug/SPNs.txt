@@ -1,1 +1,1 @@
-speed=4123
+speed=84

@@ -1,6 +1,9 @@
-﻿
-
-
+﻿/*
+ * FILE          : Converter.cs
+ * PROJECT       : J1939Converter
+ * PROGRAMMER    : Billy Parmenter
+ * FIRST VERSION : Jan 27 2020
+ */
 using J1939Converter.Communication;
 using J1939Converter.Support;
 using System;
@@ -11,8 +14,8 @@ namespace J1939Converter
     {
         private static SPN _spn;
         private static CANid _canID;
-        private static int[] dataLengths = new int[7] { 3, 1, 1, 8, 8, 8, 8};
-        private enum dataNames
+        private static int[] dataLengths = new int[7] { 3, 1, 1, 8, 8, 8, 8}; // the lengths of each part of the canid
+        private enum dataNames // The canID parts
         {
             priority = 0,
             reserved = 1,
@@ -23,6 +26,14 @@ namespace J1939Converter
             total = 6
         };
 
+
+        /*
+         * FUNCTION    : ConvertToJ1939
+         * DESCRIPTION : Takes the spn number and value, gets the required info from the database,
+         *                  and converts them to a J1939 hex value string
+         * PARAMETERS  : SPN spn - the spn to convert
+         * RETURNS     : string - the converted string
+         */
         public static string ConvertToJ1939(SPN spn)
         {
             _spn = spn;
@@ -30,15 +41,25 @@ namespace J1939Converter
 
             string canIdString = GenerateCanID();
 
-            string data = GenerateMessage();
+            string data = GenerateDataMessage();
 
             return canIdString + " " + data;
         }
 
-        private static string GenerateMessage()
+
+
+
+
+        /*
+         * FUNCTION    : GenerateMessage
+         * DESCRIPTION : Converts the spn value into a hex string data string
+         * PARAMETERS  : NONE
+         * RETURNS     : string - the Hex value string
+         */
+        private static string GenerateDataMessage()
         {
             int val = Convert.ToInt32(_spn.value / _canID.resolution);
-            string hex = val.ToString("X");
+            string hex = val.ToString("X").PadLeft(_spn.length * 2, '0');
 
             hex = hex.PadLeft((_spn.position - 1 + _spn.length) * 2, 'F');
             hex = hex.PadRight(16, 'F');
@@ -46,6 +67,16 @@ namespace J1939Converter
             return hex;
         }
 
+
+
+
+
+        /*
+         * FUNCTION    : GenerateCanID
+         * DESCRIPTION : Converts the info from the database for the canID to A Hex value string
+         * PARAMETERS  : NONE
+         * RETURNS     : string - The converted Hex canID
+         */
         private static string GenerateCanID()
         {
             string convertedString = "";

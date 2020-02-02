@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CANid.cs" />
+    <Compile Include="Objects\CANid.cs" />
     <Compile Include="Communication\Database.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,8 +51,8 @@
     <Compile Include="Converter.cs" />
     <Compile Include="Support\FileReader.cs" />
     <Compile Include="Support\Logger.cs" />
-    <Compile Include="SPNs.cs" />
-    <Compile Include="SPN.cs" />
+    <Compile Include="Objects\SPNs.cs" />
+    <Compile Include="Objects\SPN.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

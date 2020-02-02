@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using J1939Converter.Support;
 
 namespace J1939Converter
@@ -23,7 +24,7 @@ namespace J1939Converter
 
             if (spnNumber > 0)
             {
-                spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = float.Parse(spnValue) };
+                spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = Double.Parse(spnValue) };
 
                 string J1939string = Converter.ConvertToJ1939(spn);
 

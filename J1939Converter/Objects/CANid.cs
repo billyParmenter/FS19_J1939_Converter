@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * FILE          : CANid.cs
+ * PROJECT       : J1939Converter
+ * PROGRAMMER    : Billy Parmenter
+ * FIRST VERSION : Jan 27 2020
+ */
 
 namespace J1939Converter
 {
+    /*
+     * Holds can id info for a specific SPN
+     */
     class CANid
     {
         public int priority;

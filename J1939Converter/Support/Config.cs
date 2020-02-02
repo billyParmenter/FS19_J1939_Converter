@@ -1,9 +1,9 @@
 ﻿/*
-* FILE          : ConfigFile.cs
-* PROJECT       : SOA A01
-* PROGRAMMER    : Billy Parmenter
-* FIRST VERSION : December 2, 2019
-*/
+ * FILE          : Config.cs
+ * PROJECT       : J1939Converter
+ * PROGRAMMER    : Billy Parmenter
+ * FIRST VERSION : Jan 27 2020
+ */
 
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,12 @@ namespace J1939Converter.Support
         public static bool isInitialized = false;
 
 
-        //
+        /*
+         * FUNCTION    : Init
+         * DESCRIPTION : Reads the config files andthrows an exception if there is an error
+         * PARAMETERS  : NONE
+         * RETURNS     : NONE
+         */
         public static void Init()
         {
             bool configRead = ReadConfigFile();
@@ -53,7 +58,12 @@ namespace J1939Converter.Support
 
 
 
-        //
+        /*
+         * FUNCTION    : ReadSpnFile
+         * DESCRIPTION : Reads the spn file
+         * PARAMETERS  : NONE
+         * RETURNS     : bool - if the read was successful
+         */
         private static bool ReadSpnFile()
         {
             bool spnsRead = ReadFileValues(spnValues, spnFile);
@@ -70,7 +80,12 @@ namespace J1939Converter.Support
 
 
 
-        //
+        /*
+         * FUNCTION    : ReadConfigFile
+         * DESCRIPTION : Reads the config file and will check that the required values are present
+         * PARAMETERS  : NONE
+         * RETURNS     : bool - if the read was successful
+         */
         private static bool ReadConfigFile()
         {
             bool configRead = ReadFileValues(configValues, configFile);
@@ -84,7 +99,13 @@ namespace J1939Converter.Support
 
 
 
-        //
+        /*
+         * FUNCTION    : CheckRequiredValues
+         * DESCRIPTION : Checks that the required values are in the list
+         * PARAMETERS  : Dictionary<string, string> keyValuePairs - The list to check
+         *               string[] requiredValues - The required values for the program to run
+         * RETURNS     : bool - True if all required values are present in the list
+         */
         private static bool CheckRequiredValues(Dictionary<string, string> keyValuePairs, string[] requiredValues)
         {
             bool requiredPresent = true;
