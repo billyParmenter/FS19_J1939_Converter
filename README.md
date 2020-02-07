@@ -13,7 +13,7 @@ Launch the J1939_Converter and begin driving a tractor around, the console will 
 
 ## Authors
 
-[Sam Lagunju](https://github.com/SamueLagunju)
-[Connor Lynch](https://github.com/GetLynched)
-[Mike Ramoutsakis](https://github.com/jrmoca)
+[Sam Lagunju](https://github.com/SamueLagunju) </br>
+[Connor Lynch](https://github.com/GetLynched) </br>
+[Mike Ramoutsakis](https://github.com/jrmoca) </br>
 [Billy Parmenter](https://github.com/billyParmenter)
