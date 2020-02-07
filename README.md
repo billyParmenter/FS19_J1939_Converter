@@ -2,7 +2,7 @@
 This system uses Farming Simulator 2019 as a means to generate values to be converted into J1939 codes.
 
 ## prerequisites
-Farming Simulator 2019
+Farming Simulator 2019 </br>
 SQL server
 
 ## Installation
@@ -13,5 +13,7 @@ Launch the J1939_Converter and begin driving a tractor around, the console will 
 
 ## Authors
 
+[Sam Lagunju](https://github.com/SamueLagunju)
+[Connor Lynch](https://github.com/GetLynched)
+[Mike Ramoutsakis](https://github.com/jrmoca)
 [Billy Parmenter](https://github.com/billyParmenter)
-
