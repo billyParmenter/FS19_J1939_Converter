@@ -1,11 +1,14 @@
 ﻿
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using J1939Converter.Support;
 
 namespace J1939Converter
 {
     class Program
     {
+        public static List<SPN> spnList = new List<SPN>();
         static void Main(string[] args)
         {
             Init();
@@ -18,13 +21,13 @@ namespace J1939Converter
 
             string spnValue = parts[1];
 
-            int spnNumber = SPNs.FindSPN(spnKey);
+            
 
-            SPN spn = new SPN();
-
-            if (spnNumber > 0)
+            if (spnList.Any(_ => _.spnKey == spnKey))
             {
-                spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = Double.Parse(spnValue) };
+                int spnNumber = spnList.Find(_ => _.spnKey == spnKey).spnNumber;
+
+                SPN spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = Double.Parse(spnValue) };
 
                 string J1939string = Converter.ConvertToJ1939(spn);
 
@@ -47,7 +50,7 @@ namespace J1939Converter
             {
                 Logger.InitializeLogger();
                 Config.Init();
-                SPNs.Init();
+                spnList = SPN.GetSPNs();
             }
             catch (Exception e)
             {
