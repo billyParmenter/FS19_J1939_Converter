@@ -1,4 +1,2 @@
-Converter/J1939Converter/bin/Debug/LogFile.txt
-Converter/J1939Converter/bin/Debug/SPNs.txt
-Converter/J1939Converter/bin/Debug/dataLog.txt
-Converter/J1939Converter/bin/Debug/Config.txt
+Converter/J1939Converter/bin
+Converter/.vs/J1939Converter/v16/.suo
