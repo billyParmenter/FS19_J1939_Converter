@@ -29,7 +29,7 @@ namespace J1939Converter.Support
                 }
                 File.AppendAllText(writePath, (DateTime.Now + ": " + data + "\n"));
                 Console.WriteLine("New data stored");
-
+                
                 try
                 {
                     //File.Delete(readPath);
