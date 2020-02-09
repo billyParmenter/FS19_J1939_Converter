@@ -105,6 +105,7 @@ namespace J1939Converter.Support
             {
                 if (configValues.ContainsKey(value) == false)
                 {
+                    Console.WriteLine("Required value: " + value + " not found in config file");
                     Logger.Log(Logger.ErrorLevel.FATAL, "Required value: " + value + " not found in config file");
                     requiredPresent = false;
                 }
