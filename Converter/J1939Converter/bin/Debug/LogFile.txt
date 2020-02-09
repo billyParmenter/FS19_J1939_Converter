@@ -1246,3 +1246,35 @@ INFO  [2020-02-02 3:30:58 PM] - ReadSpnFile at offset 113 in file:line:column C:
  
 	SPN file read successfuly
 
+INFO  [2020-02-09 4:26:19 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:145:13
+ 
+	Reading config file...
+
+INFO  [2020-02-09 4:26:19 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:124:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-09 4:26:19 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:145:13
+ 
+	Reading config file...
+
+INFO  [2020-02-09 4:26:19 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:73:17
+ 
+	SPN file read successfuly
+
+INFO  [2020-02-09 4:36:43 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:145:13
+ 
+	Reading config file...
+
+INFO  [2020-02-09 4:36:43 PM] - CheckRequiredValues at offset 269 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:124:17
+ 
+	Config file read successfuly
+
+INFO  [2020-02-09 4:36:43 PM] - ReadFileValues at offset 111 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:145:13
+ 
+	Reading config file...
+
+INFO  [2020-02-09 4:36:43 PM] - ReadSpnFile at offset 113 in file:line:column C:\Users\empir\Source\Repos\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:73:17
+ 
+	SPN file read successfuly
+

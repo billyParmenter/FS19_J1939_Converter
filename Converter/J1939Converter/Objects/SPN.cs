@@ -16,5 +16,6 @@ namespace J1939Converter
         public int position;
         public int length;
         public double value;
+        public SPNLength testSPNLength;
     }
 }
