@@ -50,8 +50,8 @@
     <Compile Include="Support\Config.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="Support\FileReader.cs" />
+    <Compile Include="Support\IConfig.cs" />
     <Compile Include="Support\Logger.cs" />
-    <Compile Include="Objects\SPNs.cs" />
     <Compile Include="Objects\SPN.cs" />
   </ItemGroup>
   <ItemGroup>
