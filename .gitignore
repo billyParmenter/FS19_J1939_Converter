@@ -1,4 +1,3 @@
-Converter/J1939Converter/bin/*
+Converter/J1939Converter/bin/
 Converter/.vs/J1939Converter/v16/.suo
-Converter/J1939Converter/obj/*
-Converter/J1939Converter/obj/Debug/J1939Converter.csproj.FileListAbsolute.txt
+Converter/J1939Converter/obj/
