@@ -21,7 +21,7 @@ namespace J1939Converter.Communication
              System.Data.Entity.Core.Objects.ObjectResult<GetSPNInfo_Result> result;
             CANid canID = null;
             using (Entities db = new Entities())
-
+            {
                 result = db.GetSPNInfo(spn.spnNumber);
 
                 //janky and will need revisions on both ends
@@ -30,14 +30,14 @@ namespace J1939Converter.Communication
                     if (test.SPN_Position.Contains("-") || test.SPN_Position.Contains("."))
                     {
                         //regex expression means dash OR period (backslash is escape character)
-                        string[] elements = System.Text.RegularExpressions.Regex.Split(test.SPN_Position,@"-|\.");
-                        spn.position = int.Parse(elements[0]); 
+                        string[] elements = System.Text.RegularExpressions.Regex.Split(test.SPN_Position, @"-|\.");
+                        spn.position = int.Parse(elements[0]);
                     }
-                    spn.length = 1;
                     spn.testSPNLength = new SPNLength(test.SPN_Length);
                     canID = new CANid(test);
 
                 }
+            }
 
             return canID;
 
