@@ -16,10 +16,12 @@ namespace J1939Converter.Communication
         public static CANid GetSPN(ref J1939Converter.SPN spn)
         {
 
+
+
              System.Data.Entity.Core.Objects.ObjectResult<GetSPNInfo_Result> result;
             CANid canID = null;
             using (Entities db = new Entities())
-            {
+
                 result = db.GetSPNInfo(spn.spnNumber);
 
                 //janky and will need revisions on both ends
@@ -37,10 +39,9 @@ namespace J1939Converter.Communication
 
                 }
 
-
-            }
-
             return canID;
+
         }
+
     }
 }

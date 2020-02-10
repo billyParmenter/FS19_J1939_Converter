@@ -8,6 +8,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+
 
 namespace J1939Converter.Support
 {
@@ -20,11 +22,8 @@ namespace J1939Converter.Support
     public class Config
     {
         private static readonly string configFile = @"Config.txt";
-        private static readonly string spnFile = @"SPNs.txt";
         public static Dictionary<string, string> configValues = new Dictionary<string, string>();
-        public static Dictionary<string, string> spnValues = new Dictionary<string, string>();
-        private static readonly string[] configRequired = new string[] { "modOutputFile", "readerLogLocation" };
-        public static bool isInitialized = false;
+        private static readonly string[] configRequired = new string[] { "modOutputFile", "readerLogLocation", "spnFile" };
 
 
         /*
@@ -35,64 +34,56 @@ namespace J1939Converter.Support
          */
         public static void Init()
         {
-            bool configRead = ReadConfigFile();
-            bool spnsRead = ReadSpnFile();
+            configValues = ReadFromFile(configFile).ToDictionary(_ => _.Key, _ => _.Value);
+            bool configRead = CheckRequiredValues();
 
-            if (configRead == false && spnsRead == false)
-            {
-                throw new Exception("Error reading Config file and SPN file");
-            }
-            else if (configRead == false)
+            if (configRead == false)
             {
                 throw new Exception("Error reading Config file");
             }
-            else if (spnsRead == false)
-            {
-                throw new Exception("Error reading SPN file");
-            }
-
-            isInitialized = true;
         }
 
 
 
 
 
-        /*
-         * FUNCTION    : ReadSpnFile
-         * DESCRIPTION : Reads the spn file
-         * PARAMETERS  : NONE
-         * RETURNS     : bool - if the read was successful
-         */
-        private static bool ReadSpnFile()
+        //
+        public static List<Object> GetObjectsFromConfig(IConfig objectModel)
         {
-            bool spnsRead = ReadFileValues(spnValues, spnFile);
-
-            if(spnsRead == true)
+            List<Object> objects = new List<Object>();
+            List<KeyValuePair<string, string>> pairs = ReadFromFile(objectModel.fileName).ToList();
+            
+            foreach(KeyValuePair<string, string> pair in pairs)
             {
-                Logger.Log(Logger.ErrorLevel.INFO, "SPN file read successfuly");
+                objects.Add(objectModel.Convert(pair));
             }
 
-            return spnsRead;
+            return objects;
         }
 
 
 
 
 
-        /*
-         * FUNCTION    : ReadConfigFile
-         * DESCRIPTION : Reads the config file and will check that the required values are present
-         * PARAMETERS  : NONE
-         * RETURNS     : bool - if the read was successful
-         */
-        private static bool ReadConfigFile()
+        //
+        private static IEnumerable<KeyValuePair<string, string>> ReadFromFile(string filePath)
         {
-            bool configRead = ReadFileValues(configValues, configFile);
+            Logger.Log(Logger.ErrorLevel.INFO, "Reading config file...");
+            List<string> lines = new List<string>();
+            try
+            {
+                lines = File.ReadAllLines(filePath).ToList();
+            }
+            catch (Exception e)
+            {
+                Logger.Log(Logger.ErrorLevel.FATAL, "Exception caught trying to read config file. File should be in same directory as .exe ", e);
+            }
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split('=');
 
-            bool requiredPresent = CheckRequiredValues(configValues, configRequired);
-
-            return configRead && requiredPresent;
+                yield return new KeyValuePair<string, string>(parts[0], parts[1]);
+            }
         }
 
 
@@ -106,14 +97,15 @@ namespace J1939Converter.Support
          *               string[] requiredValues - The required values for the program to run
          * RETURNS     : bool - True if all required values are present in the list
          */
-        private static bool CheckRequiredValues(Dictionary<string, string> keyValuePairs, string[] requiredValues)
+        private static bool CheckRequiredValues()
         {
             bool requiredPresent = true;
 
-            foreach (string value in requiredValues)
+            foreach (string value in configRequired)
             {
-                if (keyValuePairs.ContainsKey(value) == false)
+                if (configValues.ContainsKey(value) == false)
                 {
+                    Console.WriteLine("Required value: " + value + " not found in config file");
                     Logger.Log(Logger.ErrorLevel.FATAL, "Required value: " + value + " not found in config file");
                     requiredPresent = false;
                 }
@@ -125,44 +117,6 @@ namespace J1939Converter.Support
             }
 
             return requiredPresent;
-        }
-
-
-
-
-
-        /*
-         * FUNCTION    : ReadConfig
-         * DESCRIPTION : Reads the values from the config file
-         * PARAMETERS  : string file - The file to read the key value pairs from
-         *               Dictionary<string, object> dictionary - The dictionary to save the values to
-         * RETURNS     : NONE
-         */
-        private static bool ReadFileValues(Dictionary<string, string> keyValuePairs, string file)
-        {
-            bool fileRead = false;
-
-            Logger.Log(Logger.ErrorLevel.INFO, "Reading config file...");
-
-            try
-            {
-                string[] lines = File.ReadAllLines(file);
-
-                foreach (string line in lines)
-                {
-                    string[] parts = line.Split('=');
-
-                    keyValuePairs.Add(parts[0], parts[1]);
-                }
-
-                fileRead = true;
-            }
-            catch (Exception e)
-            {
-                Logger.Log(Logger.ErrorLevel.FATAL, "Exception caught trying to read config file. File should be in same directory as .exe ", e);
-            }
-
-            return fileRead;
         }
     }//Class
 }//Namespace

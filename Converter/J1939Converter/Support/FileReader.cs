@@ -29,7 +29,7 @@ namespace J1939Converter.Support
                 }
                 File.AppendAllText(writePath, (DateTime.Now + ": " + data + "\n"));
                 Console.WriteLine("New data stored");
-
+                
                 try
                 {
                     //File.Delete(readPath);
@@ -47,5 +47,15 @@ namespace J1939Converter.Support
             return ("speed, " + dataSeperated[1]);
             //Mike loop
         }
+
+        public static Dictionary<string, double> ReadLatest(string str)
+        {
+            return new Dictionary<string, double>()
+            {
+                {"speed", 100.5 },
+                {"gas", 39.6 }
+            };
+        }
+
     }
 }
