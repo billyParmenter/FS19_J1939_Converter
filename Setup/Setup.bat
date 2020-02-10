@@ -11,4 +11,11 @@
 /*
 
 */
+
+//File Relocation process
+echo Setting up Mod...
 call ModRelocationScript.bat zipDirItems -source ..\FS_DataReader\ -destination "C:\Users\%username%\Documents\My Games\FarmingSimulator2019\mods\"DataReader.zip -keep yes -force no
+
+echo Executing Farming Simulator 2019...
+//Running farming simulator
+start steam://rungameid/787860
