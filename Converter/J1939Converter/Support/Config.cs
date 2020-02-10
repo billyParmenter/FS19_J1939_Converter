@@ -55,7 +55,7 @@ namespace J1939Converter.Support
             
             foreach(KeyValuePair<string, string> pair in pairs)
             {
-                objects.Add( objectModel.Convert(pair));
+                objects.Add(objectModel.Convert(pair));
             }
 
             return objects;

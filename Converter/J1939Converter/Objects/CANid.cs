@@ -66,20 +66,33 @@ namespace J1939Converter
             top = top.PadRight(15, '─');
             for (int i = 0; i < numberOfValues - 1; i++)
             {
-                top += "┬";
+                top += "─";
                 top = top.PadRight(top.Length + 15, '─');
             }
             top += "┐\n";
 
+            string tableName = ("CAN ID Info");
+            tableName = tableName.PadLeft((top.Length / 2) + (tableName.Length / 2) - 2, ' ');
+            tableName = tableName.PadRight(top.Length - 3, ' ');
+            string title = "|" + tableName + "|\n";
 
-            string mid = ("├");
-            mid = mid.PadRight(15, '─');
+            string mid1 = ("├");
+            mid1 = mid1.PadRight(15, '─');
             for (int i = 0; i < numberOfValues - 1; i++)
             {
-                mid += "┼";
-                mid = mid.PadRight(mid.Length + 15, '─');
+                mid1 += "┬";
+                mid1 = mid1.PadRight(mid1.Length + 15, '─');
             }
-            mid += "┤\n";
+            mid1 += "┤\n";
+
+            string mid2 = ("├");
+            mid2 = mid2.PadRight(15, '─');
+            for (int i = 0; i < numberOfValues - 1; i++)
+            {
+                mid2 += "┼";
+                mid2 = mid2.PadRight(mid2.Length + 15, '─');
+            }
+            mid2 += "┤\n";
 
 
             string bottom = ("└");
@@ -89,9 +102,9 @@ namespace J1939Converter
                 bottom += "┴";
                 bottom = bottom.PadRight(bottom.Length + 15, '─');
             }
-            bottom += "┘\n";
+            bottom += "┘";
 
-            return top + labels + mid + values + bottom;
+            return top + title + mid1 + labels + mid2 + values + bottom;
         }
     }
 }
