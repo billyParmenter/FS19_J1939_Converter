@@ -60,10 +60,10 @@ namespace J1939Converter
          */
         private static string GenerateDataMessage()
         {
-            int val = Convert.ToInt32(_spn.value / _canID.resolution);
-            string hex = val.ToString("X").PadLeft(_spn.length * 2, '0');
+            int val = Convert.ToInt32(_spn.value / _canID.testResolution.value);
+            string hex = val.ToString("X").PadLeft(_spn.testSPNLength.value * 2, '0');
 
-            hex = hex.PadLeft((_spn.position - 1 + _spn.length) * 2, 'F');
+            hex = hex.PadLeft((_spn.position - 1 + _spn.testSPNLength.value) * 2, 'F');
             hex = hex.PadRight(16, 'F');
 
             return hex;

@@ -52,32 +52,39 @@ namespace J1939Converter
         {
             while (stop == false)
             {
-                Dictionary<string, double> latestValues = FileReader.ReadLatest("");
+                Dictionary<string, double> latestValues = FileReader.ReadLatest();
 
                 while (pause == true)
                 {
                     Thread.Sleep(1);
                 }
 
-                foreach (KeyValuePair<string, double> pair in latestValues)
+                if (latestValues.ContainsKey("FNF") == false)
                 {
-                    string spnKey = pair.Key;
-                    double value = pair.Value;
-
-                    if (spnList.Any(_ => _.spnKey == spnKey))
+                    foreach (KeyValuePair<string, double> pair in latestValues)
                     {
-                        int spnNumber = spnList.Find(_ => _.spnKey == spnKey).spnNumber;
+                        string spnKey = pair.Key;
+                        double value = pair.Value;
 
-                        SPN spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = value };
-                        CANid canID = new CANid();
-                        string J1939string = Converter.ConvertToJ1939(spn, ref canID);
-                        Display(spn, canID, J1939string);
+                        if (spnList.Any(_ => _.spnKey == spnKey))
+                        {
+                            int spnNumber = spnList.Find(_ => _.spnKey == spnKey).spnNumber;
 
+                            SPN spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = value };
+                            CANid canID = new CANid();
+                            string J1939string = Converter.ConvertToJ1939(spn, ref canID);
+                            Display(spn, canID, J1939string);
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("SPN not found: " + spnKey);
+                        }
                     }
-                    else
-                    {
-                        Console.WriteLine("SPN not found: " + spnKey);
-                    }
+                }
+                else
+                {
+                    Console.WriteLine("File not found");
                 }
                 Thread.Sleep(1000);
 

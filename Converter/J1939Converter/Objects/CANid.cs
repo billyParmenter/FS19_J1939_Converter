@@ -86,6 +86,11 @@ namespace J1939Converter
             testResolution = new ResolutionRatio(result.Resolution);
 
         }
+        public CANid()
+        {
+
+        }
+
 
 
         public override string ToString()

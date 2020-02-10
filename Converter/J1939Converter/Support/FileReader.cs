@@ -15,9 +15,11 @@ namespace J1939Converter.Support
         private static string data = string.Empty;
         private static string[] dataSeperated;
 
-        public static string ReadLatest()
+
+        public static Dictionary<string, double> ReadLatest()
         {
-           
+            Dictionary<string, double> keyValueData = new Dictionary<string, double>();
+
             if (File.Exists(readPath))
             {
                 data = File.ReadAllText(readPath);
@@ -27,9 +29,17 @@ namespace J1939Converter.Support
                 {
                     File.CreateText(writePath).Close();
                 }
-                File.AppendAllText(writePath, (DateTime.Now + ": " + data + "\n"));
+                //keyValueData.Add("model", Convert.ToDouble(dataSeperated[0]));
+                keyValueData.Add("speed", Convert.ToDouble(dataSeperated[1]));
+                keyValueData.Add("fuelUsed", Convert.ToDouble(dataSeperated[2]));
+                keyValueData.Add("fuelLevel", Convert.ToDouble(dataSeperated[3]));
+
+                File.AppendAllText(writePath, (DateTime.Now + ": model, " + dataSeperated[0] +
+                                                                ", speed, " + dataSeperated[1] +
+                                                                ", fuelUsed, " + dataSeperated[2] +
+                                                                ", fuelLevel, " + dataSeperated[3] + "\n"));
                 Console.WriteLine("New data stored");
-                
+
                 try
                 {
                     //File.Delete(readPath);
@@ -41,21 +51,11 @@ namespace J1939Converter.Support
             }
             else
             {
-                Console.WriteLine("File does not exist in destination");
+                //Console.WriteLine("File does not exist in destination");
+                keyValueData.Add("FNF", -1);
             }
 
-            return ("speed, " + dataSeperated[1]);
-            //Mike loop
+            return keyValueData;
         }
-
-        public static Dictionary<string, double> ReadLatest(string str)
-        {
-            return new Dictionary<string, double>()
-            {
-                {"speed", 100.5 },
-                {"gas", 39.6 }
-            };
-        }
-
     }
 }
