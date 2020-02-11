@@ -1,0 +1,22 @@
+INFO  [2020-02-11 2:30:28 AM] - MoveNext at offset 128 in file:line:column C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:71:13
+ 
+	Reading config file...
+
+FATAL [2020-02-11 2:30:28 AM] - Log at offset 429 in file:line:column C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Converter\J1939Converter\Support\Logger.cs:166:17
+ 
+	Exception caught trying to read config file. File should be in same directory as .exe Exception caught trying to read config file. File should be in same directory as .exe 
+	 Exception caught:
+		System.IO.FileNotFoundException: Could not find file 'C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Setup\Config.txt'.		File name: 'C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Setup\Config.txt'		   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)		   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)		   at System.IO.StreamReader..ctor(String path, Encoding encoding)		   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)		   at System.IO.File.ReadAllLines(String path)		   at J1939Converter.Support.Config.<ReadFromFile>d__5.MoveNext() in C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:line 75
+
+FATAL [2020-02-11 2:30:28 AM] - CheckRequiredValues at offset 209 in file:line:column C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:108:21
+ 
+	Required value: modOutputFile not found in config file
+
+FATAL [2020-02-11 2:30:28 AM] - CheckRequiredValues at offset 209 in file:line:column C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:108:21
+ 
+	Required value: readerLogLocation not found in config file
+
+FATAL [2020-02-11 2:30:28 AM] - CheckRequiredValues at offset 209 in file:line:column C:\Users\slagu\OneDrive - Conestoga College\School\Third Year Semester 2\Capstone\FS19_J1939_Converter\Converter\J1939Converter\Support\Config.cs:108:21
+ 
+	Required value: spnFile not found in config file
+
