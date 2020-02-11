@@ -34,7 +34,7 @@ namespace J1939Converter
          * PARAMETERS  : SPN spn - the spn to convert
          * RETURNS     : string - the converted string
          */
-        public static string ConvertToJ1939(SPN spn)
+        public static string ConvertToJ1939(SPN spn, ref CANid canID)
         {
             _spn = spn;
             _canID = Database.GetSPN(ref spn);
@@ -42,6 +42,8 @@ namespace J1939Converter
             string canIdString = GenerateCanID();
 
             string data = GenerateDataMessage();
+
+            canID = _canID;
 
             return canIdString + " " + data;
         }
