@@ -30,9 +30,9 @@ namespace J1939Converter.Support
                     File.CreateText(writePath).Close();
                 }
                 //keyValueData.Add("model", Convert.ToDouble(dataSeperated[0]));
-                keyValueData.Add("speed", Convert.ToDouble(dataSeperated[1]));
-                keyValueData.Add("fuelUsed", Convert.ToDouble(dataSeperated[2]));
-                keyValueData.Add("fuelLevel", Convert.ToDouble(dataSeperated[3]));
+                keyValueData.Add("speed", Math.Round(Convert.ToDouble(dataSeperated[1]), 2));
+                keyValueData.Add("fuelUsed", Math.Round(Convert.ToDouble(dataSeperated[2]), 2));
+                keyValueData.Add("fuelLevel", Math.Round(Convert.ToDouble(dataSeperated[3]), 2));
 
                 File.AppendAllText(writePath, (DateTime.Now + ": model, " + dataSeperated[0] +
                                                                 ", speed, " + dataSeperated[1] +
