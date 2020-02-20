@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using J1939Converter.Communication;
 using J1939Converter.Support;
 
 namespace J1939Converter
@@ -12,6 +13,7 @@ namespace J1939Converter
         public static List<SPN> spnList = new List<SPN>();
         public static bool stop = false;
         public static bool pause = false;
+        public static SocketClient socketClient = new SocketClient();
 
         static void Main()
         {
@@ -73,6 +75,7 @@ namespace J1939Converter
                             SPN spn = new SPN() { spnKey = spnKey, spnNumber = spnNumber, value = value };
                             CANid canID = new CANid();
                             string J1939string = Converter.ConvertToJ1939(spn, ref canID);
+                            socketClient.Send(J1939string);
                             Display(spn, canID, J1939string);
 
                         }
