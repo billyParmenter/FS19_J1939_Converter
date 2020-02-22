@@ -32,6 +32,7 @@ namespace J1939Converter
             {
                 case "ASCII":
                     //determine how to handle later
+                   
                     break;
 
                 case null:
@@ -57,7 +58,7 @@ namespace J1939Converter
                         if (deliminated[0].Contains('/'))
                         {
                             string[] erators = deliminated[0].Split('/');
-                            value = int.Parse(erators[0]) % int.Parse(erators[1]); //use proper divide operation
+                            value = double.Parse(erators[0]) / double.Parse(erators[1]); //use proper divide operation
 
                         }
                         else
@@ -70,11 +71,11 @@ namespace J1939Converter
                         {
                             if (deliminated[1].Contains('/'))
                             {
-                                unit = deliminated[1] + "bit";
+                                unit = "bit * " + deliminated[1] ;
                             }
                             else
                             {
-                                unit = deliminated[1] + "/bit";
+                                unit = deliminated[1] + " * bit";
                             }
 
                         }

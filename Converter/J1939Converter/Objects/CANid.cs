@@ -4,7 +4,10 @@
  * PROGRAMMER    : Billy Parmenter
  * FIRST VERSION : Jan 27 2020
  */
+
+
 using DBEntity;
+using System;
 
 namespace J1939Converter
 {
@@ -28,13 +31,15 @@ namespace J1939Converter
         {
             if (result.PGN != null)
             {
+
                 PGN = (int)result.PGN;
+   
             }
             else
             {
                 PGN = 0;
             }
-            sourceAddress = 240; //figure this out later
+            sourceAddress = 240; //hardcoded tractor ECU source address ID 
 
             if (result.PDU_Specifics != null)
             {
@@ -44,7 +49,8 @@ namespace J1939Converter
                 }
                 else
                 {
-                    pduSpecific = int.Parse(result.PDU_Specifics);//type needs to change to string
+                        pduSpecific = int.Parse(result.PDU_Specifics);
+
                 }
 
             }
@@ -68,6 +74,7 @@ namespace J1939Converter
             }
             else
             {
+                //0 and Null are dfferent in the DB find elegant solution
                 dataPage = 0;
             }
             //values are 0 to 7 and NULL
@@ -83,7 +90,7 @@ namespace J1939Converter
             }
 
 
-            testResolution = new ResolutionRatio(result.Resolution);
+                testResolution = new ResolutionRatio(result.Resolution);
 
         }
         public CANid()
