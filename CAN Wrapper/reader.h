@@ -22,7 +22,7 @@
 #include <linux/can/raw.h>
 #include <linux/can/bcm.h>
 
-//Class includes..
-#include "programDisplay.h"
+
+
 
 #define ARG_ERROR -1
