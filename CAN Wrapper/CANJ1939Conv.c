@@ -23,7 +23,7 @@
 
 #include <net/if.h>
 
-#include <linux/can/j1939.h>
+#include "CANJ1939Conv.h"
 
 /* static data */
 static struct if_nameindex *saved;

@@ -24,8 +24,7 @@
 #include <sys/time.h>
 #include <sys/socket.h>
 #include <net/if.h>
-
-#include "libj1939.h"
+#include <linux/can/j1939.h>
 
 static const char help_msg[] =
 	"testj1939: demonstrate j1939 use\n"

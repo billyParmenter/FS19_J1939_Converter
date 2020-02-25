@@ -1,24 +1,11 @@
-all: 		Reader
-Reader:		startup.o
-			g++ -o Reader startup.o
+all: 		Wrapper
+Wrapper:	startup.o CANJ1939Conv.o
+			gcc -o Reader startup.o CANJ1939Conv.o
 
-startup.o	:	startup.c	 ProgramDisplay.c reader.h
-			gcc startup.c ProgramDisplay.c -o startup
+startup.o	:	startup.c	 includes.h
+			gcc -c startup.c 
 
-
+CANJ1939Conv.o	:	CANJ1939Conv.c	 CANJ1939Conv.h
+			gcc -c CANJ1939Conv.c 
 clean	:
 			rm startup.o Reader 
-
-
-
-# program: main.o Planet.o Body.o
-#     g++ main.o Planet.o Body.o -o program
-
-# main: main.cpp
-#     g++ -c main.cpp
-
-# Body.o: Body.cpp
-#     g++ -c Body.cpp 
-
-# Planet.o: Planet.cpp
-#     g++ -c Planet.cpp 
