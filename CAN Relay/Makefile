@@ -1,5 +1,5 @@
-all: 		Wrapper
-Wrapper:	startup.o CANJ1939Conv.o
+all: 		Reader
+Reader:		startup.o CANJ1939Conv.o
 			gcc -o Reader startup.o CANJ1939Conv.o
 
 startup.o	:	startup.c	 includes.h
@@ -8,4 +8,4 @@ startup.o	:	startup.c	 includes.h
 CANJ1939Conv.o	:	CANJ1939Conv.c	 CANJ1939Conv.h
 			gcc -c CANJ1939Conv.c 
 clean	:
-			rm startup.o Reader 
+			rm *.o Reader 
