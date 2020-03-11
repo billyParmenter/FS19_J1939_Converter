@@ -13,8 +13,10 @@
 #include <linux/can/raw.h>
 #include <linux/can/bcm.h>
 #include "CANJ1939Conv.h"
+#include "SocketFunc.h"
 
 #define ARG_ERROR -1
+#define SOCKET_ERROR -2
 void CANMain(char* argv[], bool rawOrJ1939);
 
 void startupInfo()
@@ -22,8 +24,9 @@ void startupInfo()
     printf(	"Options:\n"
 	        " -r		Send CAN RAW calls\n"
             " -j		Send CAN J1939 calls\n"
-	        " -s		Run Setup\n"
+	        " -s		Run socker Server\n"
 
 	        "Example :\n"
-	        "test [-r]||[-j] vcan0:0x80\n\n");
+			//Running the socket server
+	        "./Reader [-s][IP ADDRESS][PORT]\n\n");
 };

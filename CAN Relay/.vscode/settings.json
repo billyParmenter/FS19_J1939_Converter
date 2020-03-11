@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "canj1939conv.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "socketfunc.h": "c",
+        "types.h": "c",
+        "string.h": "c",
+        "stdbool.h": "c",
+        "socket.h": "c"
     }
 }

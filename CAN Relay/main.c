@@ -22,18 +22,23 @@ int main(int argc, char *argv[])
             case 'j':
                 CANMain(argv, false);
                 break;
+			//Server mode
 	        case 's':
+				if(SocketStartup(argv) == SOCKET_ERROR)
+				{
+					printf("SocketS Error! Check Logs for more info.");
+				}
+				break;
 			default:
                 startupInfo();
 				break;
 		}
 	}
 
-
-
     
     return 0;
 }
+
 
 void CANMain(char* argv[], bool rawOrJ1939)
 {
