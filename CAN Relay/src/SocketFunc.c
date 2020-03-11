@@ -28,7 +28,7 @@ int SocketStartup(char *argv[])
     //Converts a port number in host byte order to a port number in network byte order.
     serv_addr.sin_port = htons(portNumber); 
 
-    if(successfulConn = bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
+    if(bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
 	{
         printf("%d", successfulConn);
         successfulConn = SOCKET_ERROR;
