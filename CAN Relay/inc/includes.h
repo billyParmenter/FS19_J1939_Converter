@@ -12,6 +12,7 @@
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <linux/can/bcm.h>
+
 #include "CANJ1939Conv.h"
 #include "SocketFunc.h"
 
