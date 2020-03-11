@@ -1,4 +1,4 @@
-#include "SocketFunc.h"
+#include "../inc/SocketFunc.h"
 
 int SocketStartup(char *argv[])
 {
@@ -28,8 +28,9 @@ int SocketStartup(char *argv[])
     //Converts a port number in host byte order to a port number in network byte order.
     serv_addr.sin_port = htons(portNumber); 
 
-    if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
+    if(successfulConn = bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
 	{
+        printf("%d", successfulConn);
         successfulConn = SOCKET_ERROR;
 		// error("ERROR on binding");
 		printf("ERROR on binding\n");

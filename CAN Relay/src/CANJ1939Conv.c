@@ -23,7 +23,7 @@
 
 #include <net/if.h>
 
-#include "CANJ1939Conv.h"
+#include "../inc/CANJ1939Conv.h"
 
 /* static data */
 static struct if_nameindex *saved;
