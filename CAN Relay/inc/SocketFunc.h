@@ -6,8 +6,10 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <pthread.h>
+#include <err.h>
 
 
 #define SOCKET_ERROR 0
+#define SOCKET_SUCCESS 1
 
 void *SocketSetup(void *arg);

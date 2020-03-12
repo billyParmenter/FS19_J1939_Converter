@@ -2,7 +2,7 @@
 
 void *SocketSetup(void *arg)
 {
-	int successfulConn; //Variable used for error checking
+	int successfulConn = SOCKET_SUCCESS; //Variable used for error checking
     int sockfd, newsockfd; //Socket variable in which the system registers onSS
     int *argBuffer = (int *)arg;
 	int portNumber;
@@ -10,21 +10,18 @@ void *SocketSetup(void *arg)
     socklen_t clilen;
     struct sockaddr_in serv_addr, cli_addr; //Struct containing an internet address.
 
-
-
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0)
 	{
         successfulConn = SOCKET_ERROR;
-        //error("ERROR opening socket");
-        printf("ERROR opening socket\n");
+        perror("ERROR opening socket");
+        //printf("ERROR opening socket\n");
 
 	}
 
     //Setting all values in a buffer to zero.
     bzero((char *) &serv_addr, sizeof(serv_addr));
     portNumber = *argBuffer;
-	printf("%d\n", portNumber);
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     //Converts a port number in host byte order to a port number in network byte order.
@@ -34,8 +31,8 @@ void *SocketSetup(void *arg)
 	{
         printf("%d", successfulConn);
         successfulConn = SOCKET_ERROR;
-		// error("ERROR on binding");
-		printf("ERROR on binding\n");
+		perror("ERROR on binding");
+		//printf("ERROR on binding\n");
 	}
 
 	listen(sockfd,10);
@@ -43,13 +40,14 @@ void *SocketSetup(void *arg)
 	{	
 
 		clilen = sizeof(cli_addr);
+		printf("Waiting for a message...\n");
 		newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
 
 		if (newsockfd < 0) 
 		{        
             successfulConn = SOCKET_ERROR;
-		    //error("ERROR on accept");
-		    printf("ERROR on accept\n");
+		    perror("ERROR on accept");
+		    //printf("ERROR on accept\n");
 		}    
 		
 		bzero(buffer,256);
@@ -58,15 +56,11 @@ void *SocketSetup(void *arg)
 		if (successfulConn < 0) 
 		{
             successfulConn = SOCKET_ERROR;
-		    //error("ERROR on accept");
-		    printf("ERROR reading from socket\n");
-			//error("ERROR reading from socket");
+		    //printf("ERROR reading from socket\n");
+			perror("ERROR reading from socket");
 		}
 
-		printf("Recieved a message:- %s\n",buffer);
-
-		//Broadcasting and Reading CAN message with threading involved
-
+		printf("Recieved a message:- %s",buffer);
 		
 	}
 

@@ -7,7 +7,6 @@ int main(int argc, char *argv[])
     int opt, error;
 	pthread_t socketThread;
 	int portNumber = atoi(argv[2]);
-	printf("%d\n", portNumber);
 
     if(argc <= 1)
     {
@@ -31,7 +30,7 @@ int main(int argc, char *argv[])
 				//Creating socket thread
 
 				error = pthread_create(&socketThread, NULL, SocketSetup, (void*)&portNumber);
-				if(error)
+				if(error < 0)
 				{
 					printf("SocketS Error! Check Logs for more info.");
 				}
@@ -46,6 +45,10 @@ int main(int argc, char *argv[])
     
     return 0;
 }
+
+
+
+
 
 
 // void CANMain(char* argv[], bool rawOrJ1939)
