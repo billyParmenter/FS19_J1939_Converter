@@ -27,14 +27,11 @@ int main(int argc, char *argv[])
                 break;
 			//Server mode
 	        case 's':
-				//Creating socket thread
-
-				error = pthread_create(&socketThread, NULL, SocketSetup, (void*)&portNumber);
-				if(error < 0)
+				//Creating socket server connection
+				if(SocketSetup(portNumber) == SOCKET_ERROR)
 				{
 					printf("SocketS Error! Check Logs for more info.");
 				}
-				pthread_join(socketThread, NULL);
 				break;
 			default:
                 startupInfo();

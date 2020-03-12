@@ -18,7 +18,7 @@ CC = g++
 LD = g++
 CFLAGS = -c -g -Wall 
 LDFLAGS = -pthread -o 
-OBJ = $(OBJDIR)SocketFunc.o $(OBJDIR)CANJ1939Conv.o $(OBJDIR)main.o 
+OBJ = $(OBJDIR)SocketFunc.o $(OBJDIR)CANJ1939Conv.o $(OBJDIR)sockCANFunc.o $(OBJDIR)main.o 
 EXE = Reader
 BINDIR = bin/
 INCDIR = inc/
@@ -33,6 +33,9 @@ $(OBJDIR)CANJ1939Conv.o: $(SRCDIR)CANJ1939Conv.c $(INCDIR)CANJ1939Conv.h
 
 $(OBJDIR)SocketFunc.o: $(SRCDIR)SocketFunc.c $(INCDIR)SocketFunc.h
 	$(CC) $(CFLAGS) $(SRCDIR)SocketFunc.c $(LDFLAGS) $(OBJDIR)SocketFunc.o 
+
+$(OBJDIR)sockCANFunc.o: $(SRCDIR)sockCANFunc.c $(INCDIR)sockCANFunc.h
+	$(CC) $(CFLAGS) $(SRCDIR)sockCANFunc.c $(LDFLAGS) $(OBJDIR)sockCANFunc.o 
 
 $(OBJDIR)main.o: $(SRCDIR)main.c $(INCDIR)includes.h
 	$(CC) $(CFLAGS) $(SRCDIR)main.c $(LDFLAGS)  $(OBJDIR)main.o 

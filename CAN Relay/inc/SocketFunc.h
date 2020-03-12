@@ -12,4 +12,4 @@
 #define SOCKET_ERROR 0
 #define SOCKET_SUCCESS 1
 
-void *SocketSetup(void *arg);
+bool SocketSetup(int portNumber);

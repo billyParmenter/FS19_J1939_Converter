@@ -1,11 +1,9 @@
 #include "../inc/SocketFunc.h"
 
-void *SocketSetup(void *arg)
+bool SocketSetup(int portNumber)
 {
 	int successfulConn = SOCKET_SUCCESS; //Variable used for error checking
     int sockfd, newsockfd; //Socket variable in which the system registers onSS
-    int *argBuffer = (int *)arg;
-	int portNumber;
     char buffer[256];
     socklen_t clilen;
     struct sockaddr_in serv_addr, cli_addr; //Struct containing an internet address.
@@ -14,14 +12,13 @@ void *SocketSetup(void *arg)
     if (sockfd < 0)
 	{
         successfulConn = SOCKET_ERROR;
-        perror("ERROR opening socket");
-        //printf("ERROR opening socket\n");
+        //perror("ERROR opening socket");
+        printf("ERROR opening socket\n");
 
 	}
 
     //Setting all values in a buffer to zero.
     bzero((char *) &serv_addr, sizeof(serv_addr));
-    portNumber = *argBuffer;
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     //Converts a port number in host byte order to a port number in network byte order.
@@ -46,8 +43,8 @@ void *SocketSetup(void *arg)
 		if (newsockfd < 0) 
 		{        
             successfulConn = SOCKET_ERROR;
-		    perror("ERROR on accept");
-		    //printf("ERROR on accept\n");
+		    //perror("ERROR on accept");
+		    printf("ERROR on accept\n");
 		}    
 		
 		bzero(buffer,256);
@@ -56,15 +53,15 @@ void *SocketSetup(void *arg)
 		if (successfulConn < 0) 
 		{
             successfulConn = SOCKET_ERROR;
-		    //printf("ERROR reading from socket\n");
-			perror("ERROR reading from socket");
+		    printf("ERROR reading from socket\n");
+			//perror("ERROR reading from socket");
 		}
 
 		printf("Recieved a message:- %s",buffer);
 		
+		close(newsockfd);
 	}
 
-	close(newsockfd);
-    pthread_exit(NULL);
+    return successfulConn;
 }
 
