@@ -70,7 +70,7 @@ void *SocketSetup(void *arg)
 
 		close(newsockfd);
 	}
-
+	close(newsockfd);
     pthread_exit(NULL);
 }
 
