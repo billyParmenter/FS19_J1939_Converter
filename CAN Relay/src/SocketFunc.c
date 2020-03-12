@@ -68,8 +68,9 @@ void *SocketSetup(void *arg)
 
 		//Broadcasting and Reading CAN message with threading involved
 
-		close(newsockfd);
+		
 	}
+	
 	close(newsockfd);
     pthread_exit(NULL);
 }
