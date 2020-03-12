@@ -38,11 +38,10 @@ void *SocketSetup(void *arg)
 		printf("ERROR on binding\n");
 	}
 
-
+	listen(sockfd,10);
 	while(((strcmp(buffer, "stop") != 0) || successfulConn != SOCKET_ERROR))
 	{	
 
-		listen(sockfd,5);
 		clilen = sizeof(cli_addr);
 		newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
 
@@ -70,7 +69,7 @@ void *SocketSetup(void *arg)
 
 		
 	}
-	
+
 	close(newsockfd);
     pthread_exit(NULL);
 }

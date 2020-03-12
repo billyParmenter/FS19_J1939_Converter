@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
     int opt, error;
 	pthread_t socketThread;
 	int portNumber = atoi(argv[2]);
+	printf("%d\n", portNumber);
 
     if(argc <= 1)
     {
