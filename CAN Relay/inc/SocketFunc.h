@@ -5,8 +5,9 @@
 #include <sys/types.h> 
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <pthread.h>
 
 
-#define SOCKET_ERROR -2
+#define SOCKET_ERROR 0
 
-int SocketStartup(char *argv[]);
+void *SocketSetup(void *arg);

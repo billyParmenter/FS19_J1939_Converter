@@ -12,12 +12,13 @@
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <linux/can/bcm.h>
+#include <pthread.h>
 
 #include "CANJ1939Conv.h"
 #include "SocketFunc.h"
 
 #define ARG_ERROR -1
-#define SOCKET_ERROR -2
+#define SOCKET_ERROR 0
 void CANMain(char* argv[], bool rawOrJ1939);
 
 void startupInfo()

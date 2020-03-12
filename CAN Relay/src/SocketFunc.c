@@ -1,14 +1,15 @@
 #include "../inc/SocketFunc.h"
 
-int SocketStartup(char *argv[])
+void *SocketSetup(void *arg)
 {
 	int successfulConn; //Variable used for error checking
     int sockfd, newsockfd; //Socket variable in which the system registers onSS
-    int portNumber;
+    int *argBuffer = (int *)arg;
+	int portNumber;
     char buffer[256];
     socklen_t clilen;
     struct sockaddr_in serv_addr, cli_addr; //Struct containing an internet address.
-    printf("%s\n", argv[2]);
+
 
 
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -22,7 +23,8 @@ int SocketStartup(char *argv[])
 
     //Setting all values in a buffer to zero.
     bzero((char *) &serv_addr, sizeof(serv_addr));
-    portNumber = atoi(argv[2]);
+    portNumber = *argBuffer;
+	printf("%d\n", portNumber);
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     //Converts a port number in host byte order to a port number in network byte order.
@@ -49,7 +51,6 @@ int SocketStartup(char *argv[])
             successfulConn = SOCKET_ERROR;
 		    //error("ERROR on accept");
 		    printf("ERROR on accept\n");
-
 		}    
 		
 		bzero(buffer,256);
@@ -63,12 +64,13 @@ int SocketStartup(char *argv[])
 			//error("ERROR reading from socket");
 		}
 
-		printf("Here is the message: %s\n",buffer);
+		printf("Recieved a message:- %s\n",buffer);
 
+		//Broadcasting and Reading CAN message with threading involved
 
 		close(newsockfd);
 	}
 
-    return successfulConn; 
+    pthread_exit(NULL);
 }
 

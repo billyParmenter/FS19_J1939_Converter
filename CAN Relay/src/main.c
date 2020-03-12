@@ -4,7 +4,10 @@ static const char optstring[] = ":if:rjs";
 
 int main(int argc, char *argv[])
 {
-    int opt;
+    int opt, error;
+	pthread_t socketThread;
+	int portNumber = atoi(argv[2]);
+
     if(argc <= 1)
     {
         startupInfo();
@@ -24,10 +27,14 @@ int main(int argc, char *argv[])
                 break;
 			//Server mode
 	        case 's':
-				if(SocketStartup(argv) == SOCKET_ERROR)
+				//Creating socket thread
+
+				error = pthread_create(&socketThread, NULL, SocketSetup, (void*)&portNumber);
+				if(error)
 				{
 					printf("SocketS Error! Check Logs for more info.");
 				}
+				pthread_join(socketThread, NULL);
 				break;
 			default:
                 startupInfo();
