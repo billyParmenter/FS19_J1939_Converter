@@ -4,8 +4,7 @@ static const char optstring[] = ":if:rjs";
 
 int main(int argc, char *argv[])
 {
-    int opt, error;
-	pthread_t socketThread;
+    int opt;
 	int portNumber = atoi(argv[2]);
 
     if(argc <= 1)
@@ -30,7 +29,7 @@ int main(int argc, char *argv[])
 				//Creating socket server connection
 				if(SocketSetup(portNumber) == SOCKET_ERROR)
 				{
-					printf("SocketS Error! Check Logs for more info.");
+					printf("Socket Error! Check Logs for more info.\n");
 				}
 				break;
 			default:

@@ -2,7 +2,7 @@
 
 bool SocketSetup(int portNumber)
 {
-	int successfulConn = SOCKET_SUCCESS; //Variable used for error checking
+	bool successfulConn = SOCKET_SUCCESS; //Variable used for error checking
     int sockfd, newsockfd; //Socket variable in which the system registers onSS
     char buffer[256];
     socklen_t clilen;
@@ -26,7 +26,6 @@ bool SocketSetup(int portNumber)
 
     if(bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
 	{
-        printf("%d", successfulConn);
         successfulConn = SOCKET_ERROR;
 		perror("ERROR on binding");
 		//printf("ERROR on binding\n");
@@ -48,18 +47,23 @@ bool SocketSetup(int portNumber)
 		}    
 		
 		bzero(buffer,256);
-		successfulConn = read(newsockfd,buffer,255);
-
-		if (successfulConn < 0) 
+		if(read(newsockfd,buffer,255) < 0) 
 		{
             successfulConn = SOCKET_ERROR;
 		    printf("ERROR reading from socket\n");
 			//perror("ERROR reading from socket");
 		}
 
-		printf("Recieved a message:- %s",buffer);
-		
+		printf("Recieved a message:- %s\n",buffer);
 		close(newsockfd);
+		//Create broadcast thread here
+		if(successfulConn)
+		{
+			pthread_t broadcastThhread;
+			int creatResult = pthread_create(&broadcastThhread, NULL, socCANBroadcast, (void*) buffer);
+			if(creatResult < 0) {printf("Error");}
+			pthread_join(broadcastThhread, NULL); 
+		}
 	}
 
     return successfulConn;

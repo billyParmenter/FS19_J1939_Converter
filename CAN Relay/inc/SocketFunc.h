@@ -7,6 +7,9 @@
 #include <netinet/in.h>
 #include <pthread.h>
 #include <err.h>
+#include <stdbool.h>
+#include "sockCANFunc.h"
+
 
 
 #define SOCKET_ERROR 0
