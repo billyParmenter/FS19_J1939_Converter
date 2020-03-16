@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			//Server mode
 	        case 's':
 				//Creating socket server connection
-				if(SocketSetup(portNumber) == SOCKET_ERROR)
+				if(SocketSetup(portNumber) == SOCKET_ERROR || THREAD_ERROR || PARSE_ERROR)
 				{
 					printf("Socket Error! Check Logs for more info.\n");
 				}

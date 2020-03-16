@@ -4,16 +4,19 @@ char delim[] = " ";
 
 void *socCANBroadcast(void *recvMsg)
 {
+    int errorCode = THREAD_SUCCESS;
     int broadcastSocket; //Endpoint for communication
-    unsigned int canID;
-
+    unsigned int canID; //Variable used to store the CAN ID from the incoming message
+    //Parsing to get the CAN ID from the incoming message
     char *msgPtr = strtok((char*)recvMsg, delim);
     canID = strtoul(msgPtr, NULL, 10);
 
-    printf("Creating socketCAN\n");
+    printf("Creating socketCAN to Broadcast\n"); //Implement logger here
     if((broadcastSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
     {
-        printf("Error, could not create socket over CAN network");
+        errorCode = CAN_ERROR;
+        printf("Error, could not create socket over CAN network\n");
+        pthread_exit((void*)&errorCode);
     }
     struct ifreq ifr;
     strcpy(ifr.ifr_name, "vcan0" );
@@ -58,7 +61,13 @@ void *socCANBroadcast(void *recvMsg)
         }   
     }
 
-    pthread_exit(NULL);
+    if (close(broadcastSocket) < 0) {
+        printf("Error, could not close socket over CAN network");
+        errorCode = CAN_ERROR;
+        pthread_exit((void*)&errorCode);
+    }
+
+    pthread_exit((void*)&errorCode);
 }
 
 
@@ -72,4 +81,68 @@ int getSize (char * s) {
     }
 
     return size;
+}
+
+void *socCANRead(void* outputMsg)
+{
+    int errorCode = THREAD_SUCCESS;
+    struct timeval tv;
+    tv.tv_sec = 45; //5 seconds
+    tv.tv_usec = 0;
+    int readingSocket; //Endpoint for communication
+
+    printf("Creating socketCAN to Read\n"); //Implement logger here
+    if((readingSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
+    {
+        errorCode = CAN_ERROR;
+        printf("Error, could not create socket over CAN network\n");
+        pthread_exit((void*)&errorCode);
+    }
+
+    setsockopt(readingSocket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+
+    struct ifreq ifr;
+    strcpy(ifr.ifr_name, "vcan0" );
+    ioctl(readingSocket, SIOCGIFINDEX, &ifr);
+
+    struct sockaddr_can addr;
+    memset(&addr, 0, sizeof(addr));
+    addr.can_family = AF_CAN;
+    addr.can_ifindex = ifr.ifr_ifindex;
+    if (bind(readingSocket, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
+        printf("Error, could not bind socket over CAN network");
+    }
+
+    struct can_frame frame;
+    int numOfBytesRead;
+    char* readMsgBuffer;
+    while(errorCode == THREAD_SUCCESS)
+    {
+        numOfBytesRead = read(readingSocket, &frame, sizeof(struct can_frame));
+
+        // Reads with timeout if uncommented.
+        // if (numOfBytesRead == EWOULDBLOCK || EAGAIN) {
+        //     printf("Reading Timeout\n");
+        //     errorCode = CAN_ERROR;
+        // }
+
+        if (numOfBytesRead < 0) {
+            printf("Error, could not read over CAN network\n");
+            errorCode = CAN_ERROR;
+        }
+        printf("0x%03X [%d] ",frame.can_id, frame.can_dlc);
+        for (int i = 0; i < frame.can_dlc; i++)
+        {
+            printf("%02X ",frame.data[i]);  //Try to acquire the data here
+        }
+        printf("\r\n");
+    }
+    
+
+    if (close(readingSocket) < 0) {
+        printf("Error, could not close socket over CAN network\n");
+        errorCode = CAN_ERROR;
+    }
+    
+    pthread_exit((void*)&errorCode);
 }

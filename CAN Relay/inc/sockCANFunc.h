@@ -15,8 +15,16 @@
 #include <pthread.h>
 #include <err.h>
 #include <stdbool.h>
+#include <sys/socket.h>      
+#include <errno.h>
+
+
 
 #define PARSE_ERROR 3
+#define THREAD_ERROR 0
+#define CAN_ERROR -3
+#define THREAD_SUCCESS 1
+
 // struct can_frame {
 //     canid_t can_id;  /* 32 bit CAN_ID + EFF/RTR/ERR flags */
 //     __u8    can_dlc; /* frame payload length in byte (0 .. 8) */
@@ -33,5 +41,5 @@ struct incomingCANMsg {
     char secondDataBit[8];
 };
 void *socCANBroadcast(void *recvMsg);
-int parseIntoCANMessage(char* recvMessage, struct incomingCANMsg* formattedMsg);
+void *socCANRead(void *outputMsg);
 int getSize (char * s);

@@ -54,15 +54,21 @@ bool SocketSetup(int portNumber)
 			//perror("ERROR reading from socket");
 		}
 
-		printf("Recieved a message:- %s\n",buffer);
 		close(newsockfd);
 		//Create broadcast thread here
 		if(successfulConn)
 		{
-			pthread_t broadcastThhread;
-			int creatResult = pthread_create(&broadcastThhread, NULL, socCANBroadcast, (void*) buffer);
-			if(creatResult < 0) {printf("Error");}
-			pthread_join(broadcastThhread, NULL); 
+			printf("Recieved a message:- %s\n",buffer);
+			pthread_t broadcastThread, readingThread;
+			void* resultFromThread;
+			if(pthread_create(&broadcastThread, NULL, socCANBroadcast, (void*) buffer)< 0) 
+			{	printf("Error: Cannot Write To SocketCAN\n");}
+
+			if(pthread_create(&readingThread, NULL, socCANRead, (void*) buffer) < 0) 
+			{	printf("Error: Cannot Read from SocketCAN\n"); }
+			pthread_join(broadcastThread, &resultFromThread); 
+			pthread_join(readingThread, &resultFromThread); 
+			printf("Recieved CAN Message:- %s\n", buffer);
 		}
 	}
 

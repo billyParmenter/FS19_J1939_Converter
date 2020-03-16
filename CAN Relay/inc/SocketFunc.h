@@ -13,6 +13,9 @@
 
 
 #define SOCKET_ERROR 0
+#define THREAD_ERROR 0
 #define SOCKET_SUCCESS 1
+#define THREAD_SUCCESS 1
+
 
 bool SocketSetup(int portNumber);
