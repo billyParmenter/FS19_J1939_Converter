@@ -34,3 +34,4 @@ struct incomingCANMsg {
 };
 void *socCANBroadcast(void *recvMsg);
 int parseIntoCANMessage(char* recvMessage, struct incomingCANMsg* formattedMsg);
+int getSize (char * s);

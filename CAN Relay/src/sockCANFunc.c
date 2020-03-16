@@ -5,10 +5,11 @@ char delim[] = " ";
 void *socCANBroadcast(void *recvMsg)
 {
     int broadcastSocket; //Endpoint for communication
-    struct incomingCANMsg CANMsg; //CAN message struct used for broadcasting incoming data
-    //Parsing Data
-    printf("Parsing Data\n");
-    parseIntoCANMessage((char*) recvMsg, &CANMsg);
+    unsigned int canID;
+
+    char *msgPtr = strtok((char*)recvMsg, delim);
+    canID = strtoul(msgPtr, NULL, 10);
+
     printf("Creating socketCAN\n");
     if((broadcastSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
     {
@@ -25,37 +26,50 @@ void *socCANBroadcast(void *recvMsg)
     if (bind(broadcastSocket, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
         printf("Error, could not bind socket over CAN network");
     }
-    // unsigned int canIDBuffer =  strtoul(payload, NULL, 10);
-    // printf("%d\n", canIDBuffer);
+
     struct can_frame frame;
-    // frame.can_id = 0x18FE00F0;
-    frame.can_id = 0x18FE00F0;
-    frame.can_dlc = 5;
-    // for (int j = 0; j < sizeCheck; ++j)
-    // {
-    //     frame.data[j] = ptr[j];
-    // }
+    //creating socketCAN Data
+    printf("Creating Data\n");
+    frame.can_id = canID;
+    frame.can_dlc = 8;
+    //Parsing to get the first 8 bits of the actual data.
+    msgPtr = strtok(NULL, delim);
+    int sizeCheck = getSize(msgPtr);
+    for (int j = 0; j <= sizeCheck/2 - 1; ++j)
+    {
+        frame.data[j] = msgPtr[j];
+    }
+
+
     if (write(broadcastSocket, &frame, sizeof(struct can_frame)) != sizeof(struct can_frame)) {
         printf("Error, could not write over CAN network");
     }
+    //In case there is more data, write another one
+    if(sizeCheck > 8)
+    {
+        int originalIndex = 0;
+        for (int j = 8; msgPtr[j] != '\0'; ++j)
+        {    
+            frame.data[originalIndex] = msgPtr[j];
+            originalIndex++;
+        }
+        if (write(broadcastSocket, &frame, sizeof(struct can_frame)) != sizeof(struct can_frame)) {
+            printf("Error, could not write over CAN network");
+        }   
+    }
+
     pthread_exit(NULL);
 }
 
-int parseIntoCANMessage(char* recvMessage, struct incomingCANMsg *formattedMsg)
-{
-    //Parsing the first bit of the message to get CAN ID
-    char *msgPtr = strtok(recvMessage, delim);
-    formattedMsg->canID = strtoul(msgPtr, NULL, 10);
-    //Formatting to get the first 8 bits of the actual data.
-    msgPtr = strtok(NULL, delim);
-    memcpy(formattedMsg->firstDataBit, msgPtr,8);
-    int sizeCheck = strlen(msgPtr);
-    if(sizeCheck > 8)
-    {   
-        sprintf(formattedMsg->secondDataBit, "%s\n", msgPtr);
+
+//From https://stackoverflow.com/questions/48367022/c-iterate-through-char-array-with-a-pointer
+int getSize (char * s) {
+    char * t; // first copy the pointer to not change the original
+    int size = 0;
+
+    for (t = s; *t != '\0'; t++) {
+        size++;
     }
-    printf("firstDataBit:-%s\n", formattedMsg->firstDataBit);
-    printf("secondDataBit:-%s\n", formattedMsg->secondDataBit);
-    printf("Size: %d\n", sizeCheck);
-    return true;
+
+    return size;
 }
