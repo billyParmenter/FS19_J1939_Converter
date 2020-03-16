@@ -49,7 +49,7 @@ namespace J1939Converter
                 }
                 else
                 {
-                        pduSpecific = int.Parse(result.PDU_Specifics);
+                    pduSpecific = int.Parse(result.PDU_Specifics);
 
                 }
 
