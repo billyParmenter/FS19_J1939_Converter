@@ -6,10 +6,10 @@ void *socCANBroadcast(void *recvMsg)
 {
     int errorCode = THREAD_SUCCESS;
     int broadcastSocket; //Endpoint for communication
-    unsigned int canID; //Variable used to store the CAN ID from the incoming message
+    canid_t canID; //Variable used to store the CAN ID from the incoming message
     //Parsing to get the CAN ID from the incoming message
     char *msgPtr = strtok((char*)recvMsg, delim);
-    canID = strtoul(msgPtr, NULL, 10);
+    canID = strtoul(msgPtr, NULL, 16);
 
     printf("Creating socketCAN to Broadcast\n"); //Implement logger here
     if((broadcastSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
