@@ -18,12 +18,14 @@
 #include <sys/socket.h>      
 #include <errno.h>
 
-
+#include <arpa/inet.h>
+#define SA struct sockaddr 
 
 #define PARSE_ERROR 3
 #define THREAD_ERROR 0
 #define CAN_ERROR -3
 #define THREAD_SUCCESS 1
+
 
 // struct can_frame {
 //     canid_t can_id;  /* 32 bit CAN_ID + EFF/RTR/ERR flags */
@@ -43,3 +45,5 @@ struct incomingCANMsg {
 void *socCANBroadcast(void *recvMsg);
 void *socCANRead(void *outputMsg);
 int getSize (char * s);
+
+void socketToDB(char* messageToBeSent);
