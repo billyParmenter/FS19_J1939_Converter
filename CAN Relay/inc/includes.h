@@ -16,7 +16,6 @@
 
 #include "CANJ1939Conv.h"
 #include "SocketFunc.h"
-#include "sockCANFunc.h"
 
 #define ARG_ERROR -1
 #define SOCKET_ERROR 0

@@ -4,8 +4,9 @@ static const char optstring[] = ":if:rjs";
 
 int main(int argc, char *argv[])
 {
-    int opt, error;
-	pthread_t socketThread;
+    int opt;
+	pthread_t readingThread; char buffer[256];
+	void* resultFromThread;
 	int portNumber = atoi(argv[2]);
 
     if(argc <= 1)
@@ -27,11 +28,19 @@ int main(int argc, char *argv[])
                 break;
 			//Server mode
 	        case 's':
+
+				//Creating a seperate thread to read from SocketCAN network
+				if(pthread_create(&readingThread, NULL, socCANRead, NULL) < 0) 
+				{	printf("Error: Cannot Read from SocketCAN\n"); }
+
 				//Creating socket server connection
-				if(SocketSetup(portNumber) == SOCKET_ERROR)
+				if(SocketSetup(portNumber) == SOCKET_ERROR || THREAD_ERROR || PARSE_ERROR)
 				{
-					printf("SocketS Error! Check Logs for more info.");
+					printf("Socket Error! Check Logs for more info.\n");
 				}
+				pthread_join(readingThread, &resultFromThread); 
+				strcpy(buffer, (char*)resultFromThread);
+				printf("Result from Thread:-%s\n", buffer);
 				break;
 			default:
                 startupInfo();

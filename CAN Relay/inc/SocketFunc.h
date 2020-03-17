@@ -7,9 +7,18 @@
 #include <netinet/in.h>
 #include <pthread.h>
 #include <err.h>
+#include <stdbool.h>
+#include <netdb.h> 
+
+#include "sockCANFunc.h"
+
 
 
 #define SOCKET_ERROR 0
+#define THREAD_ERROR 0
 #define SOCKET_SUCCESS 1
+#define THREAD_SUCCESS 1
+
+
 
 bool SocketSetup(int portNumber);

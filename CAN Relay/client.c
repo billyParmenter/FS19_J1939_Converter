@@ -7,16 +7,15 @@
 #define MAX 80 
 #define PORT 8080 
 #define SA struct sockaddr 
+// FF6480FF
 void func(int sockfd) 
 { 
     char buff[MAX]; 
     int n; 
     for (;;) { 
         bzero(buff, sizeof(buff)); 
-        printf("Enter the string : "); 
-        n = 0; 
-        while ((buff[n++] = getchar()) != '\n') 
-            ; 
+ 
+        sprintf(buff, "18FE00F0 FF6480FFFFFFFFFF");
         write(sockfd, buff, sizeof(buff)); 
         bzero(buff, sizeof(buff)); 
         read(sockfd, buff, sizeof(buff)); 
