@@ -21,4 +21,4 @@
 
 
 
-bool SocketSetup(int portNumber);
+bool ServerFunc(int portNumber);

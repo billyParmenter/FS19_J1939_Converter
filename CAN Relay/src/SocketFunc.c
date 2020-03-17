@@ -1,6 +1,6 @@
 #include "../inc/SocketFunc.h"
 
-bool SocketSetup(int portNumber)
+bool ServerFunc(int portNumber)
 {
 	bool successfulConn = SOCKET_SUCCESS; //Variable used for error checking
     int sockfd, newsockfd; //Socket variable in which the system registers onSS

@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 				{	printf("Error: Cannot Read from SocketCAN\n"); }
 
 				//Creating socket server connection
-				if(SocketSetup(portNumber) == SOCKET_ERROR || THREAD_ERROR || PARSE_ERROR)
+				if(ServerFunc(portNumber) == SOCKET_ERROR || THREAD_ERROR || PARSE_ERROR)
 				{
 					printf("Socket Error! Check Logs for more info.\n");
 				}

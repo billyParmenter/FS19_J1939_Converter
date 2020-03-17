@@ -136,6 +136,8 @@ void *socCANRead(void* outputMsg)
             readMsgBuffer[i] = frame.data[i];  //Try to acquire the data here
         }
         printf("Message from CAN Network: %s\n", readMsgBuffer);
+        //Format message in [CAN ID][16 Bits of Data]
+         
         //Sending message over to DB
         socketToDB(readMsgBuffer);   
     }
@@ -175,7 +177,7 @@ void socketToDB(char* messageToBeSent)
     //Sending Message
     write(sockfd, messageToBeSent, sizeof(messageToBeSent));
     printf("Sent message to DB\n");        
-    clear();
+    char clear();
    
     // close the socket 
     close(sockfd); 
