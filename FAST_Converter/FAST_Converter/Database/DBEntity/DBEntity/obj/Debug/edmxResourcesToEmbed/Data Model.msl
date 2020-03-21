@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="J1939ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Data">
+      <EntityTypeMapping TypeName="J1939Model.Datum">
+        <MappingFragment StoreEntitySet="Data">
+          <ScalarProperty Name="Record_ID" ColumnName="Record_ID" />
+          <ScalarProperty Name="PGN_Length_ID" ColumnName="PGN_Length_ID" />
+          <ScalarProperty Name="SPN_Length_ID" ColumnName="SPN_Length_ID" />
+          <ScalarProperty Name="PGN_ID" ColumnName="PGN_ID" />
+          <ScalarProperty Name="PGN_Label_ID" ColumnName="PGN_Label_ID" />
+          <ScalarProperty Name="PGN_Acronym_ID" ColumnName="PGN_Acronym_ID" />
+          <ScalarProperty Name="PGN_Description_ID" ColumnName="PGN_Description_ID" />
+          <ScalarProperty Name="SPN_ID" ColumnName="SPN_ID" />
+          <ScalarProperty Name="SPN_Label_ID" ColumnName="SPN_Label_ID" />
+          <ScalarProperty Name="SPN_Description_ID" ColumnName="SPN_Description_ID" />
+          <ScalarProperty Name="Units_ID" ColumnName="Units_ID" />
+          <ScalarProperty Name="Revised_ID" ColumnName="Revised_ID" />
+          <ScalarProperty Name="PGN_Revised_ID" ColumnName="PGN_Revised_ID" />
+          <ScalarProperty Name="SPN_Revised_ID" ColumnName="SPN_Revised_ID" />
+          <ScalarProperty Name="Map_Revised_ID" ColumnName="Map_Revised_ID" />
+          <ScalarProperty Name="EDP_ID" ColumnName="EDP_ID" />
+          <ScalarProperty Name="DP_ID" ColumnName="DP_ID" />
+          <ScalarProperty Name="PF_ID" ColumnName="PF_ID" />
+          <ScalarProperty Name="PS_ID" ColumnName="PS_ID" />
+          <ScalarProperty Name="Multipacket_ID" ColumnName="Multipacket_ID" />
+          <ScalarProperty Name="Transmission_Rate_ID" ColumnName="Transmission_Rate_ID" />
+          <ScalarProperty Name="Default_Priority_ID" ColumnName="Default_Priority_ID" />
+          <ScalarProperty Name="PGN_Reference_ID" ColumnName="PGN_Reference_ID" />
+          <ScalarProperty Name="Position_in_PGN_ID" ColumnName="Position_in_PGN_ID" />
+          <ScalarProperty Name="Resolution_ID" ColumnName="Resolution_ID" />
+          <ScalarProperty Name="Offset_ID" ColumnName="Offset_ID" />
+          <ScalarProperty Name="Data_Range_ID" ColumnName="Data_Range_ID" />
+          <ScalarProperty Name="Operational_Range_ID" ColumnName="Operational_Range_ID" />
+          <ScalarProperty Name="Slot_Identifier_ID" ColumnName="Slot_Identifier_ID" />
+          <ScalarProperty Name="Slot_Name_ID" ColumnName="Slot_Name_ID" />
+          <ScalarProperty Name="SPN_Type_ID" ColumnName="SPN_Type_ID" />
+          <ScalarProperty Name="SPN_Reference_ID" ColumnName="SPN_Reference_ID" />
+          <ScalarProperty Name="SPN_Document_ID" ColumnName="SPN_Document_ID" />
+          <ScalarProperty Name="PGN_Document_ID" ColumnName="PGN_Document_ID" />
+          <ScalarProperty Name="PGN_Date_ID" ColumnName="PGN_Date_ID" />
+          <ScalarProperty Name="SPN_Date_ID" ColumnName="SPN_Date_ID" />
+          <ScalarProperty Name="Mapping_Date_ID" ColumnName="Mapping_Date_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Data_Range">
+      <EntityTypeMapping TypeName="J1939Model.Data_Range">
+        <MappingFragment StoreEntitySet="Data_Range">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Default_Priority">
+      <EntityTypeMapping TypeName="J1939Model.Default_Priority">
+        <MappingFragment StoreEntitySet="Default_Priority">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DPs">
+      <EntityTypeMapping TypeName="J1939Model.DP">
+        <MappingFragment StoreEntitySet="DP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DP1" ColumnName="DP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EDPs">
+      <EntityTypeMapping TypeName="J1939Model.EDP">
+        <MappingFragment StoreEntitySet="EDP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EDP1" ColumnName="EDP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Map_Revised">
+      <EntityTypeMapping TypeName="J1939Model.Map_Revised">
+        <MappingFragment StoreEntitySet="Map_Revised">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Revised" ColumnName="Revised" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mapping_Date">
+      <EntityTypeMapping TypeName="J1939Model.Mapping_Date">
+        <MappingFragment StoreEntitySet="Mapping_Date">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Multipackets">
+      <EntityTypeMapping TypeName="J1939Model.Multipacket">
+        <MappingFragment StoreEntitySet="Multipacket">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Multipacket1" ColumnName="Multipacket" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offsets">
+      <EntityTypeMapping TypeName="J1939Model.Offset">
+        <MappingFragment StoreEntitySet="Offset">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Offset1" ColumnName="Offset" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operational_Range">
+      <EntityTypeMapping TypeName="J1939Model.Operational_Range">
+        <MappingFragment StoreEntitySet="Operational_Range">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PFs">
+      <EntityTypeMapping TypeName="J1939Model.PF">
+        <MappingFragment StoreEntitySet="PF">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PF1" ColumnName="PF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGNs">
+      <EntityTypeMapping TypeName="J1939Model.PGN">
+        <MappingFragment StoreEntitySet="PGN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PGN1" ColumnName="PGN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Acronym">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Acronym">
+        <MappingFragment StoreEntitySet="PGN_Acronym">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Date">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Date">
+        <MappingFragment StoreEntitySet="PGN_Date">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Description">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Description">
+        <MappingFragment StoreEntitySet="PGN_Description">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Document">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Document">
+        <MappingFragment StoreEntitySet="PGN_Document">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Document" ColumnName="Document" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Label">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Label">
+        <MappingFragment StoreEntitySet="PGN_Label">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Length">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Length">
+        <MappingFragment StoreEntitySet="PGN_Length">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Reference">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Reference">
+        <MappingFragment StoreEntitySet="PGN_Reference">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PGN_Revised">
+      <EntityTypeMapping TypeName="J1939Model.PGN_Revised">
+        <MappingFragment StoreEntitySet="PGN_Revised">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Revised" ColumnName="Revised" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Position_in_PGN">
+      <EntityTypeMapping TypeName="J1939Model.Position_in_PGN">
+        <MappingFragment StoreEntitySet="Position_in_PGN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PS">
+      <EntityTypeMapping TypeName="J1939Model.P">
+        <MappingFragment StoreEntitySet="PS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PS" ColumnName="PS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resolutions">
+      <EntityTypeMapping TypeName="J1939Model.Resolution">
+        <MappingFragment StoreEntitySet="Resolution">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Resolution1" ColumnName="Resolution" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reviseds">
+      <EntityTypeMapping TypeName="J1939Model.Revised">
+        <MappingFragment StoreEntitySet="Revised">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Revised1" ColumnName="Revised" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Slot_Identifier">
+      <EntityTypeMapping TypeName="J1939Model.Slot_Identifier">
+        <MappingFragment StoreEntitySet="Slot_Identifier">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Identifier" ColumnName="Identifier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Slot_Name">
+      <EntityTypeMapping TypeName="J1939Model.Slot_Name">
+        <MappingFragment StoreEntitySet="Slot_Name">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPNs">
+      <EntityTypeMapping TypeName="J1939Model.SPN">
+        <MappingFragment StoreEntitySet="SPN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SPN1" ColumnName="SPN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Date">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Date">
+        <MappingFragment StoreEntitySet="SPN_Date">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Description">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Description">
+        <MappingFragment StoreEntitySet="SPN_Description">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Document">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Document">
+        <MappingFragment StoreEntitySet="SPN_Document">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Document" ColumnName="Document" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Label">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Label">
+        <MappingFragment StoreEntitySet="SPN_Label">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Length">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Length">
+        <MappingFragment StoreEntitySet="SPN_Length">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Reference">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Reference">
+        <MappingFragment StoreEntitySet="SPN_Reference">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Revised">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Revised">
+        <MappingFragment StoreEntitySet="SPN_Revised">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Revised" ColumnName="Revised" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPN_Type">
+      <EntityTypeMapping TypeName="J1939Model.SPN_Type">
+        <MappingFragment StoreEntitySet="SPN_Type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transmission_Rate">
+      <EntityTypeMapping TypeName="J1939Model.Transmission_Rate">
+        <MappingFragment StoreEntitySet="Transmission_Rate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Units">
+      <EntityTypeMapping TypeName="J1939Model.Unit">
+        <MappingFragment StoreEntitySet="Units">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CreateJoinTable" FunctionName="J1939Model.Store.CreateJoinTable" />
+    <FunctionImportMapping FunctionImportName="GetSPNInfo" FunctionName="J1939Model.Store.GetSPNInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="J1939Model.GetSPNInfo_Result">
+          <ScalarProperty Name="PGN" ColumnName="PGN" />
+          <ScalarProperty Name="SPN_Length" ColumnName="SPN Length" />
+          <ScalarProperty Name="SPN_Position" ColumnName="SPN Position" />
+          <ScalarProperty Name="Data_Page" ColumnName="Data Page" />
+          <ScalarProperty Name="Default_Priority" ColumnName="Default Priority" />
+          <ScalarProperty Name="PDU_Format" ColumnName="PDU Format" />
+          <ScalarProperty Name="PDU_Specifics" ColumnName="PDU Specifics" />
+          <ScalarProperty Name="Resolution" ColumnName="Resolution" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

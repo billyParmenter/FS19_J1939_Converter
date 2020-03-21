@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="ShaqAttack.Views.MainPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FAST_Converter"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="9*"/>
+
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Grid.Column="1" Width="70" Height="30" Margin="4, 3"
+                Content="Start" Command="{Binding Start_Cmd}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Grid.Row="2" Grid.Column="1" Width="70" Height="30" Margin="4, 3"
+                Content="Stop" Command="{Binding Stop_Cmd}" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        
+        <Label Grid.Row="1" Grid.Column="2" 
+               Content="{Binding InfoMsg, UpdateSourceTrigger=PropertyChanged}"/>
+        
+        <ScrollViewer Name="_scrollViewer" Grid.Row="2" Grid.Column="2">
+            <TextBlock Text="{Binding VerboseMsg, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"/>
+        </ScrollViewer>
+        
+        <ScrollViewer Name="_scrollViewer2" Grid.Row="3" Grid.Column="2">
+            <ListView ItemsSource="{Binding MessageInfos, UpdateSourceTrigger=PropertyChanged}" Width="780">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="SPN Key" Width="100" DisplayMemberBinding="{Binding Spn.SpnKey}"/>
+                        <GridViewColumn Header="SPN #"   Width="100" DisplayMemberBinding="{Binding Spn.SpnNumber}"/>
+                        <GridViewColumn Header="Value"   Width="100" DisplayMemberBinding="{Binding Spn.Value}"/>
+                        <GridViewColumn Header="PGN"     Width="100" DisplayMemberBinding="{Binding Can.PGN}"/>
+                        <GridViewColumn Header="Message" Width="300" DisplayMemberBinding="{Binding Message}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
