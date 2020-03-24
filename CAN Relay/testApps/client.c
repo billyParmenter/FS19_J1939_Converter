@@ -7,23 +7,7 @@
 #define MAX 80 
 #define PORT 8080 
 #define SA struct sockaddr 
-void func(int sockfd) 
-{ 
-    char buff[MAX]; 
-    int n; 
-    for (;;) { 
-        bzero(buff, sizeof(buff)); 
-	sprintf(buff, "18FE00F0 FF6480FFFFFFFFFF"); 
-        write(sockfd, buff, sizeof(buff)); 
-        bzero(buff, sizeof(buff)); 
-        read(sockfd, buff, sizeof(buff)); 
-        printf("From Server : %s", buff); 
-        if ((strncmp(buff, "exit", 4)) == 0) { 
-            printf("Client Exit...\n"); 
-            break; 
-        } 
-    } 
-} 
+
   
 int main() 
 { 
@@ -42,7 +26,7 @@ int main()
   
     // assign IP, PORT 
     servaddr.sin_family = AF_INET; 
-    servaddr.sin_addr.s_addr = inet_addr("10.192.50.97"); 
+    servaddr.sin_addr.s_addr = inet_addr("192.168.50.84"); 
     servaddr.sin_port = htons(PORT); 
   
     // connect the client socket to server socket 
@@ -52,10 +36,12 @@ int main()
     } 
     else
         printf("connected to the server..\n"); 
-  
-    // function for chat 
-    func(sockfd); 
-  
-    // close the socket 
+
+    char buff[MAX]; 
+    int n; 
+    bzero(buff, sizeof(buff)); 
+    strcpy(buff, "18FE00F0 FF6480FFFFFFFFFF");
+    printf("This is the message: %s", buff);
+    write(sockfd, buff, sizeof(buff));
     close(sockfd); 
 }
