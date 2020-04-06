@@ -19,6 +19,6 @@
 #define SOCKET_SUCCESS 1
 #define THREAD_SUCCESS 1
 
+#define DEFAULT_SERVER_PORT 4000
 
-
-bool ServerFunc(int portNumber);
+bool ServerFunc();

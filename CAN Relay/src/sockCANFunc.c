@@ -17,6 +17,7 @@ void *socCANBroadcast(void *recvMsg)
         errorCode = CAN_ERROR;
         printf("Error: Could not create socket over CAN network\n");
         pthread_exit((void*)&errorCode);
+        
     }
     struct ifreq ifr;
     strcpy(ifr.ifr_name, "vcan0" );
@@ -38,6 +39,7 @@ void *socCANBroadcast(void *recvMsg)
     //Parsing to get the first 8 bits of the actual data.
     msgPtr = strtok(NULL, delim);
     int sizeCheck = getSize(msgPtr);
+
     for (int j = 0; j <= sizeCheck/2 - 1; ++j)
     {
         frame.data[j] = msgPtr[j];
@@ -113,7 +115,7 @@ void *socCANRead(void* outputMsg)
 
     struct can_frame frame;
     int numOfBytesRead;
-    char readMsgBuffer[10];
+    char readMsgBuffer[16];
     while(errorCode == THREAD_SUCCESS)
     {                   
         printf("Reading from SocketCAN network...\n"); //Implement logger here

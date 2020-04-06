@@ -1,6 +1,6 @@
 #include "../inc/SocketFunc.h"
 
-bool ServerFunc(int portNumber)
+bool ServerFunc()
 {
 	bool successfulConn = SOCKET_SUCCESS; //Variable used for error checking
     int sockfd, newsockfd; //Socket variable in which the system registers onSS
@@ -22,7 +22,7 @@ bool ServerFunc(int portNumber)
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     //Converts a port number in host byte order to a port number in network byte order.
-    serv_addr.sin_port = htons(portNumber); 
+    serv_addr.sin_port = htons(DEFAULT_SERVER_PORT); 
 
     if(bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0) 
 	{
@@ -32,11 +32,11 @@ bool ServerFunc(int portNumber)
 	}
 
 	listen(sockfd,10);
+	printf("Server is listening on port:%d...\n", DEFAULT_SERVER_PORT);
 	while(((strcmp(buffer, "stop") != 0) || successfulConn != SOCKET_ERROR))
 	{	
 
 		clilen = sizeof(cli_addr);
-		printf("Waiting for a message...\n");
 		newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
 
 		if (newsockfd < 0) 
