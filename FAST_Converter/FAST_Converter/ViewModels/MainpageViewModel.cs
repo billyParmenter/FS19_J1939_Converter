@@ -26,7 +26,7 @@ namespace FAST_Converter.ViewModel
     internal class MainPageViewModel : WrapperViewModel
     {
         private static bool stop = false;
-        private readonly Converter converter = new Converter();
+        private static Converter converter = new Converter();
         private readonly object _messageInfosLock = new object();
 
 
@@ -124,9 +124,17 @@ namespace FAST_Converter.ViewModel
         private void Convert()
         {
             Verbose("Started the system");
+            Verbose("Waiting for connection...");
+            converter.Init();
             ObservableCollection<MessageInfo> newMessageInfos = MessageInfos;
+            if(stop == false)
+            {
+                Verbose("Connected!\nSending messages.");
+            }
+
             while (stop == false)
             {
+
                 Logger.Log(Logger.ErrorLevel.INFO, "Getting new data from FS mod");
                 ObservableCollection<MessageInfo> tmpMessageInfos = converter.DoConvert();
 
@@ -154,6 +162,7 @@ namespace FAST_Converter.ViewModel
             Logger.Log(Logger.ErrorLevel.INFO, "Converter stopped");
             Verbose("Stopped the system");
             stop = true;
+            converter.Stop();
         }
 
 
@@ -170,6 +179,7 @@ namespace FAST_Converter.ViewModel
         internal static void OnWindowClosing(object sender, CancelEventArgs e)
         {
             stop = true;
+            converter.Stop(true);
         }
 
 

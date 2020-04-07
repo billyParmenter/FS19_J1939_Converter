@@ -33,7 +33,7 @@ namespace J1939Converter
         private static SPN _spn;
         private static CANid _canID;
         public static List<SPN> spnList = new List<SPN>();
-        public static SocketClient socketClient = new SocketClient();
+        public static SocketClient socketClient;
 
         // the lengths of each part of the canid
         private static readonly int[] dataLengths = new int[7] { 3, 1, 1, 8, 8, 8, 8 };
@@ -61,15 +61,17 @@ namespace J1939Converter
          */
         public Converter()
         {
-            Logger.Log(Logger.ErrorLevel.INFO, "Initializing Converter...");
-            string error = Init();
+            
 
-            if (error != null)
+        }
+
+        public void Stop(bool close = false)
+        {
+            SocketClient.Stop();
+            if (socketClient != null && close == true)
             {
-                Logger.Log(Logger.ErrorLevel.ERROR, "Could not initialize Converter: " + error);
-                throw new Exception("Could not initialize Converter: " + error);
+                socketClient.Close();
             }
-
         }
 
 
@@ -89,7 +91,7 @@ namespace J1939Converter
             _spn = spn;
 
             Logger.Log(Logger.ErrorLevel.INFO, "Getting spn and can id info from database...");
-            _canID = canID;//Database.GetSPN(ref spn);
+            _canID = canID;
 
             Logger.Log(Logger.ErrorLevel.INFO, "Generating CANid...");
             string canIdString = GenerateCanID();
@@ -241,15 +243,16 @@ namespace J1939Converter
          * PARAMETERS  : NONE
          * RETURNS     : string - Null if successfull or the error message
          */
-        public static string Init()
+        public string Init()
         {
             try
             {
+
                 Logger.InitializeLogger();
                 Logger.Log(Logger.ErrorLevel.INFO, "Logger initialized");
                 Logger.Log(Logger.ErrorLevel.INFO, "Getting spns");
                 spnList = SPN.GetSPNs();
-
+                socketClient = new SocketClient();
                 return null;
             }
             catch (Exception e)

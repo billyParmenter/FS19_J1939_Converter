@@ -72,7 +72,7 @@ namespace J1939Converter
             {
                 PGN = 0;
             }
-            SourceAddress = 240; //hardcoded tractor ECU source address ID 
+            SourceAddress = 254; //hardcoded tractor ECU source address ID 
 
             if (result.PDU_Specifics != null)
             {
@@ -89,7 +89,7 @@ namespace J1939Converter
             }
             else
             {
-                PduSpecific = 0;
+                PduSpecific = 241;
             }
             //values are whole numbers and null
             if (result.PDU_Format != null)

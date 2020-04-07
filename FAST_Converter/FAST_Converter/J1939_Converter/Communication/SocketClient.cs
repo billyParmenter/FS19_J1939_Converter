@@ -26,8 +26,10 @@ namespace J1939Converter.Communication
     {
         private string ip;
         private int port;
-
-        
+        private int numberOfMessages = 0;
+        private TcpClient client;
+        private NetworkStream stream;
+        public static bool stop = false;
         /*
          * METHOD      : SocketClient
          * DESCRIPTION : Constructor creates a socket client using values 
@@ -40,6 +42,7 @@ namespace J1939Converter.Communication
             Logger.Log(Logger.ErrorLevel.INFO, "Creating SocketClient...");
             if(int.TryParse(ConfigurationManager.AppSettings["MachinePort"], out int port))
             {
+                stop = false;
                 Init(ConfigurationManager.AppSettings["MachineIP"], port);
             }
             else
@@ -65,13 +68,32 @@ namespace J1939Converter.Communication
         public SocketClient(string ip, int port)
         {
             Logger.Log(Logger.ErrorLevel.INFO, "Creating SocketClient...");
+            stop = false;
             Init(ip, port);
         }
 
         private void Init(string ip, int port)
         {
-            this.ip = ip;
-            this.port = port;
+            while (stop == false)
+            {
+                this.ip = ip;
+                this.port = port;
+                Logger.Log(Logger.ErrorLevel.INFO, "Creating TcpClient: ip=" + ip + " port=" + port);
+                try
+                {
+                    client = new TcpClient(ip, port);
+
+                    Logger.Log(Logger.ErrorLevel.INFO, "Creating NetworkStream");
+                    stream = client.GetStream();
+                    return;
+                }
+                catch (Exception e)
+                {
+                    Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to test SocketClient: ", e);
+                    Logger.Log(Logger.ErrorLevel.INFO, "Trying again...");
+                    Init(ip, port);
+                }
+            }
         }
 
 
@@ -128,36 +150,53 @@ namespace J1939Converter.Communication
          */
         public void Send(string message)
         {
-            Logger.Log(Logger.ErrorLevel.INFO, "Sending message over socket: " + message);
+            Logger.Log(Logger.ErrorLevel.DEBUG, "Sending message over socket: " + message);
 
             try
             {
-                Logger.Log(Logger.ErrorLevel.INFO, "Creating TcpClient: ip=" + ip + " port=" + port);
-
-                TcpClient client = new TcpClient(ip, port);
+                
 
                 byte[] data = new byte[256];
                 Logger.Log(Logger.ErrorLevel.INFO, "Encoding data: " + data);
-                data = System.Text.Encoding.ASCII.GetBytes(message);
-                Logger.Log(Logger.ErrorLevel.INFO, "Creating NetworkStream");
-                NetworkStream stream = client.GetStream();
-                Logger.Log(Logger.ErrorLevel.INFO, "Writnig data to stream: data=" + data + " data length=" + data.Length);
-                stream.Write(data, 0, data.Length);
+                data = System.Text.Encoding.ASCII.GetBytes(message + "\0");
 
+                Logger.Log(Logger.ErrorLevel.INFO, "Writnig data to stream: data=" + data + " data length=" + data.Length);
+                if (stream.CanWrite)
+                {
+                    stream.Write(data, 0, data.Length);
+
+                }
                 data = new byte[256];
 
-                Logger.Log(Logger.ErrorLevel.INFO, "Closing stream and client");
-                stream.Close();
-                client.Close();
+
+                numberOfMessages++;
+                Logger.Log(Logger.ErrorLevel.DEBUG, "Number of messages: " + numberOfMessages);
+
             }
             catch (ArgumentNullException e)
             {
-                Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to test SocketClient: ", e);
+                Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to send message: ", e);
             }
             catch (SocketException e)
             {
-                Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to test SocketClient: ", e);
+                Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to send message: ", e);
             }
         }
+
+        public static void Stop()
+        {
+            stop = true;
+            Logger.Log(Logger.ErrorLevel.INFO, "Closing stream and client");
+        }
+
+        public void Close()
+        {
+            if (stream.CanRead == true)
+            {
+                stream.Close();
+                client.Close();
+            }
+        }
+
     }
 }

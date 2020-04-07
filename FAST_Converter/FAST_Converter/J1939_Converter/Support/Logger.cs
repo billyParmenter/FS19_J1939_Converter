@@ -8,6 +8,7 @@
 */
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.CompilerServices;
 
@@ -49,6 +50,8 @@ namespace J1939Converter.Support
 
         //Min error level to log
         private static ErrorLevel MinLevel = ErrorLevel.OFF;
+
+        private static List<ErrorLevel> errorLevels = new List<ErrorLevel>();
 
 
 
@@ -117,6 +120,19 @@ namespace J1939Converter.Support
             MinLevel = single;
         }
 
+        /**
+          * METHOD      : Logging
+          * DESCRIPTION : Initalizes a loggin class with one parameter, only that 
+          *                 error level will be logged.
+          * PARAMETERS  : LoggingInfo.ErrorLevel single : The only error level to be logged
+          * RETURNS     : NONE
+          */
+        public static void InitializeLogger(List<ErrorLevel> errorList)
+        {
+            logFile = logFilePath;
+
+            errorLevels = errorList;
+        }
 
 
 
@@ -153,7 +169,7 @@ namespace J1939Converter.Support
                         string message,
                         Exception ex)
         {
-            if (string.IsNullOrWhiteSpace(message) == false)
+            if (string.IsNullOrWhiteSpace(message) == false && CheckLevel(errorLevel) == true)
             {
                 message += message + Environment.NewLine + "\t Exception caught:" + Environment.NewLine;
                 string exMessage = ex.ToString();
@@ -237,14 +253,25 @@ namespace J1939Converter.Support
         {
             bool returnValue = false;
 
-            if (level == ErrorLevel.ALL || level == ErrorLevel.OFF)
+            if (errorLevels.Count != 0)
             {
-                throw new System.ArgumentException("A message being logged can not have an error level equal to OFF or ALL.");
-            }
 
-            else if (MinLevel <= level && level <= MaxLevel)
+                if (errorLevels.Contains(level))
+                {
+                    returnValue = true;
+                }
+            }
+            else
             {
-                returnValue = true;
+                if (level == ErrorLevel.ALL || level == ErrorLevel.OFF)
+                {
+                    throw new System.ArgumentException("A message being logged can not have an error level equal to OFF or ALL.");
+                }
+
+                else if (MinLevel <= level && level <= MaxLevel)
+                {
+                    returnValue = true;
+                }
             }
 
             return returnValue;

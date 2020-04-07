@@ -429,7 +429,7 @@ namespace FAST_Converter.ViewModel
                 return false;
             }
 
-            SocketClient socket = new SocketClient(MachineIP, port);
+            //SocketClient socket = new SocketClient(MachineIP, port);
 
             string socketResult = null;//socket.Test();
 

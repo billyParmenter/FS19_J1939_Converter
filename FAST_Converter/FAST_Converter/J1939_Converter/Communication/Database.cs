@@ -6,6 +6,7 @@
 * DESCRIPTION	:   Establishes communications to the DB to gatehr data
 *                   
 */
+using System;
 using System.Text.RegularExpressions;
 using DBEntity;
 
@@ -32,6 +33,10 @@ namespace J1939Converter.Communication
                         //regex expression means dash OR period (backslash is escape character)
                         string[] elements = System.Text.RegularExpressions.Regex.Split(test.SPN_Position, @"-|\.");
                         spn.Position = int.Parse(elements[0]);
+                    }
+                    else 
+                    {
+                        spn.Position = int.Parse(test.SPN_Position);
                     }
                     spn.SPNLength = new SPNLength(test.SPN_Length);
                     canID = new CANid(test);
@@ -67,9 +72,9 @@ namespace J1939Converter.Communication
                     }
                 }
             }
-            catch
+            catch (Exception e)
             {
-                return "Failed to connect to DB";
+                return e.Message;
             }
 
             return null;
