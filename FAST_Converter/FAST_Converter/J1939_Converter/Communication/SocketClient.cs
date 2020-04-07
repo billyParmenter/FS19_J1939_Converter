@@ -154,7 +154,7 @@ namespace J1939Converter.Communication
 
             try
             {
-                
+
 
                 byte[] data = new byte[256];
                 Logger.Log(Logger.ErrorLevel.INFO, "Encoding data: " + data);
@@ -173,13 +173,11 @@ namespace J1939Converter.Communication
                 Logger.Log(Logger.ErrorLevel.DEBUG, "Number of messages: " + numberOfMessages);
 
             }
-            catch (ArgumentNullException e)
+            catch (Exception e)
             {
                 Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to send message: ", e);
-            }
-            catch (SocketException e)
-            {
-                Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to send message: ", e);
+                Init(ip, port);
+
             }
         }
 
