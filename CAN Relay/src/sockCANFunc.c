@@ -87,6 +87,7 @@ int getSize (char * s) {
 void *socCANRead(void* outputMsg)
 {
     int errorCode = THREAD_SUCCESS;
+    bool keepRunning = true;
     struct timeval tv;
     tv.tv_sec = 45; //5 seconds
     tv.tv_usec = 0;
@@ -116,7 +117,8 @@ void *socCANRead(void* outputMsg)
     struct can_frame frame;
     int numOfBytesRead;
     char readMsgBuffer[16];
-    while(errorCode == THREAD_SUCCESS)
+    char msgToDB[32];
+    while(keepRunning)
     {                   
         printf("Reading from SocketCAN network...\n"); //Implement logger here
 
@@ -130,18 +132,25 @@ void *socCANRead(void* outputMsg)
 
         if (numOfBytesRead < 0) {
             printf("Error, could not read over CAN network\n");
-            errorCode = CAN_ERROR;
+            keepRunning = false;
         }
-        // printf("0x%03X [%d] ",frame.can_id, frame.can_dlc);
-        for (int i = 0; i < frame.can_dlc; i++)
-        {
-            readMsgBuffer[i] = frame.data[i];  //Try to acquire the data here
-        }
-        printf("Message from CAN Network: %s\n", readMsgBuffer);
-        //Format message in [CAN ID][16 Bits of Data]
-         
-        //Sending message over to DB
-        socketToDB(readMsgBuffer);   
+        printf("CAN ID:0x%03X\n",frame.can_id);
+        // for (int i = 0; i < frame.can_dlc; i++)
+        // {
+        //     readMsgBuffer[i] = frame.data[i];  //Try to acquire the data here
+        // }
+        // int sizeCheck = getSize(msgToDB);
+        // //Format message in [CAN ID][16 Bits of Data]
+        // if(sizeCheck < 16)
+        // {
+        //     strcpy(msgToDB, readMsgBuffer);
+        // }
+        // else
+        // {
+        //     printf("Message to Dashboard: %s\n", readMsgBuffer);
+        //     socketToDB(readMsgBuffer);   
+        // }
+
     }
 
     if (close(readingSocket) < 0) {

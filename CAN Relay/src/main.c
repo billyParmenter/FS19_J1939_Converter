@@ -2,76 +2,76 @@
 * Filename      :   main.c
 * Version Date  :   2020-04-05
 * Programmer    :   Oloruntoba Samuel Lagunju
-* Description   :   This file contains the source code for main in the mobile application
+* Description   :   This file contains the source code for main entry point of the application
 */
 
 
 #include "../inc/includes.h"
-
-static const char optstring[] = ":if:rjs"; //String containing the legitimate option characters.
+#include <signal.h>
+static const char optstring[] = "st:"; //String containing the legitimate option characters.
 
 int main(int argc, char *argv[])
 {
-    int opt;
-	pthread_t readingCanNtwrkThread; char buffer[256];
-	void* resultFromThread;
-	// int portNumber = atoi(argv[2]);
-
+    int opt;	//Variable used to parse the command line argument
+	bool serverFlag, transmitterFlag //Variables used to grant certain CAN relay functionalities
     if(argc <= 1)
     {
-        startupInfo();
-        return ARG_ERROR;
+        startupInfo("N/A");
     }
-
+	// pthread_t readingCanNtwrkThread; char buffer[256];
+	// void* resultFromThread;
     //Argument parsing
 	while ((opt = getopt(argc, argv, optstring)) != -1)
 	{
 		switch (opt) 
 		{
-			//Server mode
+			//Two Modes used to control the relay's behaviour (SEE StartupInfo())
 	        case 's':
-
-				//Creating a seperate thread to read from SocketCAN network
-				if(pthread_create(&readingCanNtwrkThread, NULL, socCANRead, NULL) < 0) 
-				{	printf("Error: Cannot Read from SocketCAN\n"); }
-
-				//Creating socket server connection
-				if(ServerFunc() == SOCKET_ERROR || THREAD_ERROR || PARSE_ERROR)
-				{
-					printf("Socket Error! Check Logs for more info.\n");
-				}
-				pthread_join(readingCanNtwrkThread, &resultFromThread); 
-				strcpy(buffer, (char*)resultFromThread);
-				printf("Result from Thread:-%s\n", buffer);
+				serverFlag = true;
 				break;
+			case 't':
+				transmitterFlag = true;
+				break;			
 			default:
-                startupInfo();
-				break;
+			case '?':
+				if (isprint (opt)){
+          			startupInfo(opt);
+				}
+				else {
+          			startupInfo(opt);
+				}
+			break;
 		}
 	}
     
+	relayStartup();
     return 0;
 }
 
+void relayStartup()
+{
+	printf("I'm heren\n");
+}
 /*
 * Function      : startupInfo
 * Parameters    : N/A
 * Returns       : Prints messages onto the screen.
 * Description   : Displays the necessary commands in order to run the program appropriately
 */
-void startupInfo()
+void startupInfo(char* optarg)
 {
 	system("clear") /*clear output screen*/;
-	printf("Invalid usage!\n");
-	printf("---How To Use CAN Relay---\n");
-    printf(	"Options:\n"
-	        " -s \t Run Socket Server\n"
-			"	 This will run the program as a server that will broadcast received message onto the socketCAN network\n"
-			"-b	 \tRun socketCAN Transmitter\n"
-			"	 This will run the program as a client that will transmit messages from the socketCAN network to the Dashboard\n"		
+	printf("\nInvalid Option = %s\n", optarg);
+   	printf(	PROGNAME " Usage: " PROGNAME " [MODES]\n"
+			"Modes:" "\tOptions:\n"
+	        "-s	Run Socket Server\n"
+			"	This will run the program as a server that will broadcast received message onto the socketCAN network\n"
+			"-t	Run socketCAN Transmitter\n"
+			"	This will run the program as a client that will transmit messages from the socketCAN network to the Dashboard\n"		
 	        "Example:\n"
 			//Running the socket server
 	        "\tbin/Reader [-s]\n"
-			"\tbin/Reader [-b]\n"
-			"\tbin/Reader [-s][-b]\n");
+			"\tbin/Reader [-t]\n"
+			"\tbin/Reader [-s][-t]\n"
+			"\tbin/Reader [-t][-s]\n");
 }

@@ -26,9 +26,12 @@
 //Threading Includes
 #include <pthread.h>
 
-#include "CANJ1939Conv.h"
+// #include "CANJ1939Conv.h"
 #include "SocketFunc.h"
 
 #define ARG_ERROR -1
 #define SOCKET_ERROR 0
-void startupInfo();
+
+#define PROGNAME "canRelay"
+void startupInfo(char* optarg);
+void relayStartup(int opt);
