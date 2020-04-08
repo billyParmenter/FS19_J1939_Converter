@@ -3,7 +3,7 @@ CC = g++
 LD = g++
 CFLAGS = -c -g -Wall 
 LDFLAGS = -pthread -o 
-OBJ = $(OBJDIR)SocketFunc.o  $(OBJDIR)sockCANFunc.o $(OBJDIR)Logger.o $(OBJDIR)main.o 
+OBJ = $(OBJDIR)relayController.o $(OBJDIR)Loggers.o $(OBJDIR)main.o 
 EXE = canRelay
 BINDIR = bin/
 INCDIR = inc/
@@ -19,14 +19,15 @@ $(BINDIR)$(EXE): $(OBJ)
 $(OBJDIR)SocketFunc.o: $(SRCDIR)SocketFunc.c $(INCDIR)SocketFunc.h
 	$(CC) $(CFLAGS) $(SRCDIR)SocketFunc.c $(LDFLAGS) $(OBJDIR)SocketFunc.o 
 
-$(OBJDIR)sockCANFunc.o: $(SRCDIR)sockCANFunc.c $(INCDIR)sockCANFunc.h
-	$(CC) $(CFLAGS) $(SRCDIR)sockCANFunc.c $(LDFLAGS) $(OBJDIR)sockCANFunc.o 
+$(OBJDIR)relayController.o: $(SRCDIR)relayController.c $(INCDIR)relayController.h 
+	$(CC) $(CFLAGS) $(SRCDIR)relayController.c $(LDFLAGS) $(OBJDIR)relayController.o 
+
+$(OBJDIR)Loggers.o: $(SRCDIR)Loggers.c $(INCDIR)Loggers.h
+	$(CC) $(CFLAGS) $(SRCDIR)Loggers.c $(LDFLAGS)  $(OBJDIR)Loggers.o 
 
 $(OBJDIR)main.o: $(SRCDIR)main.c $(INCDIR)includes.h
 	$(CC) $(CFLAGS) $(SRCDIR)main.c $(LDFLAGS)  $(OBJDIR)main.o 
 
-$(OBJDIR)Logger.o: $(SRCDIR)Loggers.c
-	$(CC) $(CFLAGS) $(SRCDIR)Loggers.c $(LDFLAGS)  $(OBJDIR)Logger.o 
 
 clean:
 	rm -f $(OBJDIR)*.o

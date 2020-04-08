@@ -1,0 +1,6 @@
+[2020-04-08 03:19:38]:	[INFO]:Logger initialized
+[2020-04-08 03:19:38]:	[INFO]:Test
+[2020-04-08 03:19:41]:	[INFO]:Logger initialized
+[2020-04-08 03:19:41]:	[INFO]:Test
+[2020-04-08 03:19:48]:	[INFO]:Logger initialized
+[2020-04-08 03:19:48]:	[FATAL]:Invalid number of command line arguments

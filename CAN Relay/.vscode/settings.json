@@ -8,6 +8,9 @@
         "stdbool.h": "c",
         "socket.h": "c",
         "pthread.h": "c",
-        "netdb.h": "c"
+        "netdb.h": "c",
+        "loggers.h": "c",
+        "includes.h": "c",
+        "relaycontroller.h": "c"
     }
 }

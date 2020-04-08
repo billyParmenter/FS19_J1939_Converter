@@ -28,10 +28,10 @@
 
 // #include "CANJ1939Conv.h"
 #include "SocketFunc.h"
+#include "relayController.h"
+#include "Loggers.h"
+
 
 #define ARG_ERROR -1
 #define SOCKET_ERROR 0
 
-#define PROGNAME "canRelay"
-void startupInfo(char* optarg);
-void relayStartup(int opt);
