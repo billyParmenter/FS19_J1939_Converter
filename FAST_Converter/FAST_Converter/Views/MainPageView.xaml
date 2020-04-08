@@ -28,14 +28,14 @@
                 Content="Start" Command="{Binding Start_Cmd}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Button Grid.Row="2" Grid.Column="1" Width="70" Height="30" Margin="4, 3"
                 Content="Stop" Command="{Binding Stop_Cmd}" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        
+
         <Label Grid.Row="1" Grid.Column="2" 
                Content="{Binding InfoMsg, UpdateSourceTrigger=PropertyChanged}"/>
-        
+
         <ScrollViewer Name="_scrollViewer" Grid.Row="2" Grid.Column="2">
             <TextBlock Text="{Binding VerboseMsg, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"/>
         </ScrollViewer>
-        
+
         <ScrollViewer Name="_scrollViewer2" Grid.Row="3" Grid.Column="2">
             <ListView ItemsSource="{Binding MessageInfos, UpdateSourceTrigger=PropertyChanged}" Width="780">
                 <ListView.View>
@@ -49,5 +49,7 @@
                 </ListView.View>
             </ListView>
         </ScrollViewer>
+        <Button Grid.Row="3" Grid.Column="1" Width="70" Height="30" Margin="4,0,0,0"
+            Content="Back" Command="{Binding Back_Cmd}" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
     </Grid>
 </UserControl>

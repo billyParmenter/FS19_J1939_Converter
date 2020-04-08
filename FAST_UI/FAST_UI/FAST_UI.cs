@@ -68,7 +68,7 @@ namespace FAST_UI
             //************************************This will start the socket listener*******************************//
             socketServer.StartListening();
             socketServer.Accept();
-            StartMessageParsing();
+            
 
             //*************************************split the message into CANID and Message*************************//
             //string[] splitData = socketServer.returnSock.Split(' ');
@@ -146,20 +146,29 @@ namespace FAST_UI
 
         private void getChartValues()
         {
+            int i = 0;
             while (stop == false)
             {
-                Invoke((MethodInvoker)delegate { updateChart(); });
+                try
+                {
+                    Invoke((MethodInvoker)delegate { updateChart(i); });
+                    i++;
+                }
+                catch
+                {
+
+                }
             }
         }
 
-        private void updateChart()
+        private void updateChart(int i)
         {
             List<SPN> newSPNs = spnList.GetRange(pastSPNs, spnList.Count - pastSPNs);
 
 
             foreach (SPN spn in newSPNs)
             {
-                LiveDataChart.Series[spn.SpnKey].Points.AddY(spn.Value );
+                LiveDataChart.Series[spn.SpnKey].Points.AddY(spn.Value + i);
                 pastSPNs++;
             }
             Thread.Sleep(10);
@@ -170,6 +179,8 @@ namespace FAST_UI
         //Start logging Button starts the live graphing
         private void LiveStartLogButt_Click(object sender, EventArgs e)
         {
+            StartMessageParsing();
+
             stop = false;
             Thread updateThread = new Thread(new ThreadStart(getChartValues))
             {
@@ -187,7 +198,7 @@ namespace FAST_UI
         private void FAST_UI_FormClosing(object sender, FormClosingEventArgs e)
         {
             stop = true;
-
+            Thread.Sleep(100);
         }
     }
 }

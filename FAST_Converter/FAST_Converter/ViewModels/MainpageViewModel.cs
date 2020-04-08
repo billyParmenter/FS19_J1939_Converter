@@ -8,6 +8,7 @@
 
 using J1939Converter;
 using J1939Converter.Support;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
@@ -25,10 +26,42 @@ namespace FAST_Converter.ViewModel
      */
     internal class MainPageViewModel : WrapperViewModel
     {
-        private static bool stop = false;
+
         private static Converter converter = new Converter();
         private readonly object _messageInfosLock = new object();
 
+
+        private static bool _stopped;
+        public bool Stopped
+        {
+            get { return _stopped; }
+            set
+            {
+                if (_stopped == value)
+                {
+                    return;
+                }
+                _stopped = value;
+                Stop_Cmd.ExecuteChanged();
+                Start_Cmd.ExecuteChanged();
+            }
+        }
+
+        private bool _started;
+        public bool Started
+        {
+            get { return _started; }
+            set
+            {
+                if (_started == value)
+                {
+                    return;
+                }
+                _started = value;
+                Stop_Cmd.ExecuteChanged();
+                Start_Cmd.ExecuteChanged();
+            }
+        }
 
 
         //This is the list of messages to be shown on the UI in the listView
@@ -71,8 +104,9 @@ namespace FAST_Converter.ViewModel
 
         #endregion
 
-        public ICommand Start_Cmd { get; set; }
-        public ICommand Stop_Cmd { get; set; }
+        public ButtonCommand Start_Cmd { get; set; }
+        public ButtonCommand Stop_Cmd { get; set; }
+        public RelayCommand Back_Cmd { get; set; }
 
 
 
@@ -87,8 +121,18 @@ namespace FAST_Converter.ViewModel
         public MainPageViewModel()
         {
             MessageInfos = new ObservableCollection<MessageInfo>();
-            Start_Cmd = new RelayCommand(Start);
-            Stop_Cmd = new RelayCommand(Stop);
+            Start_Cmd = new ButtonCommand(Start, EnableStart);
+            Stop_Cmd = new ButtonCommand(Stop, EnableStop);
+            Back_Cmd = new RelayCommand(Back);
+        }
+
+        private void Back()
+        {
+            if (Started == true)
+            {
+                Stop();
+            }
+            Navigate(new SettingsViewModel());
         }
 
 
@@ -104,7 +148,8 @@ namespace FAST_Converter.ViewModel
         private void Start()
         {
             Logger.Log(Logger.ErrorLevel.INFO, "Converter started, creating new thread");
-            stop = false;
+            Stopped = false;
+            Started = true;
             Thread test = new Thread(new ThreadStart(Convert));
             test.Start();
         }
@@ -127,12 +172,12 @@ namespace FAST_Converter.ViewModel
             Verbose("Waiting for connection...");
             converter.Init();
             ObservableCollection<MessageInfo> newMessageInfos = MessageInfos;
-            if(stop == false)
+            if(Stopped == false)
             {
                 Verbose("Connected!\nSending messages.");
             }
 
-            while (stop == false)
+            while (Stopped == false)
             {
 
                 Logger.Log(Logger.ErrorLevel.INFO, "Getting new data from FS mod");
@@ -161,7 +206,8 @@ namespace FAST_Converter.ViewModel
         {
             Logger.Log(Logger.ErrorLevel.INFO, "Converter stopped");
             Verbose("Stopped the system");
-            stop = true;
+            Stopped = true;
+            Started = false;
             converter.Stop();
         }
 
@@ -178,7 +224,7 @@ namespace FAST_Converter.ViewModel
          */
         internal static void OnWindowClosing(object sender, CancelEventArgs e)
         {
-            stop = true;
+            _stopped = true;
             converter.Stop(true);
         }
 
@@ -201,5 +247,21 @@ namespace FAST_Converter.ViewModel
             VerboseMsg = stringBuilder.ToString();
         }
 
+
+
+        private bool EnableStart()
+        {
+            if(Stopped == false && Started == false)
+            {
+                return true;
+            }
+
+            return Stopped;
+        }
+
+        private bool EnableStop()
+        {
+            return Started;
+        }
     }
 }

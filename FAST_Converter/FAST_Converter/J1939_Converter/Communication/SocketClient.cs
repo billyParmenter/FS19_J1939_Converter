@@ -92,6 +92,7 @@ namespace J1939Converter.Communication
                     Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to test SocketClient: ", e);
                     Logger.Log(Logger.ErrorLevel.INFO, "Trying again...");
                     Init(ip, port);
+                    return;
                 }
             }
         }
@@ -176,6 +177,7 @@ namespace J1939Converter.Communication
             catch (Exception e)
             {
                 Logger.Log(Logger.ErrorLevel.ERROR, "Exception trying to send message: ", e);
+                Close();
                 Init(ip, port);
 
             }
@@ -189,7 +191,7 @@ namespace J1939Converter.Communication
 
         public void Close()
         {
-            if (stream.CanRead == true)
+            if (stream != null)
             {
                 stream.Close();
                 client.Close();

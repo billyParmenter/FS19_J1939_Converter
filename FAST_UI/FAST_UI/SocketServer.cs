@@ -19,9 +19,13 @@ namespace FAST_UI
         public List<string> returnSock = new List<string>();//All entire messages
         public SocketServer()
         {
+            Init();
+        }
+        
+        private void Init()
+        {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         }
-
 
 
         public void StartListening()
@@ -48,7 +52,18 @@ namespace FAST_UI
         private void ReceivedCallback(IAsyncResult result)
         {
             Socket clientSock = result.AsyncState as Socket;
-            int buffSize = clientSock.EndReceive(result);
+
+            int buffSize;
+
+            try
+            {
+                buffSize = clientSock.EndReceive(result);
+            }
+            catch
+            {
+                Accept();
+                return;
+            }
 
 
 
