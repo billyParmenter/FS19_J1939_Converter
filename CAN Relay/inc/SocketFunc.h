@@ -20,3 +20,4 @@
 #define DEFAULT_SERVER_PORT 4000
 
 bool ServerFunc();
+void* serverThread(void* inputMsg);

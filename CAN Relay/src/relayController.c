@@ -20,7 +20,7 @@ static bool clientFlag = false; //Variables used to grant certain CAN relay func
 */
 bool relayController()
 {
-	bool stopAsking = false; //Variable used to check if the user wants to run with server with defaults
+	bool keepConRunning = false; //Variable used to check if the user wants to run with server with defaults
 	char userInputBuffer[MID_BUFSIZ] = { 0 };
 	//Variables needed to start the two seperate functions
 	char* ipAddress = (char*)malloc(sizeof(char)* MID_BUFSIZ);
@@ -43,17 +43,14 @@ bool relayController()
 	//If the server is supposed to run, obtain port numberand run it
 	if(serverFlag)
 	{
-		while(!stopAsking)
+		while(!keepConRunning)
 		{
 			printf("Enter port number to run server: ");
 			//If the value is greater than 
 			if((portNumber = getPortNum()) >= MINIMAL_PORT_LIMIT)
 			{
-				stopAsking= true;
-
-				// ServerFunc();
-				// pthread_join(readingCanNtwrkThread, NULL); 
-				// printf("socketCAN Transmitter Done...\n");
+				keepConRunning= true;
+				Log(INFO, "Valid Port Number Inputted by user...");
 			}
 			else
 			{
@@ -62,36 +59,48 @@ bool relayController()
 			}
 		}
 		
-		stopAsking = false;	
+		keepConRunning = false;	
 	}
 
 	//If the client is supposed to run, obtain ip address
 	if(clientFlag)
 	{
 		//Start the program with defaults, in a loop to avoid invalid input 
-		while(!stopAsking)
+		while(!keepConRunning)
 		{
 			printf("Enter IP Address to connect to Dashboard(xxx.xxx.xxx.xxx): ");
 			//If it is a valid IP, stop asking and run the client
 			if(getIP(userInputBuffer))
 			{
-				stopAsking = true;
+				keepConRunning = true;
+				Log(INFO, "Valid IP Address Inputted by user...");
+
 			}
+		}
+
+		keepConRunning = false;	
+
+	}
+	//If the user inputs are valid, run both functionalites
+	if(!keepConRunning)
+	{
+		//Thread creation here
+		pthread_t canNtwrkThread, socketNtwrkThread;
+		// // SIGINT       
+		if(pthread_create(&socketNtwrkThread, NULL, serverThread, (void*)&portNumber) < 0) 
+		{
+			// pthread_kill(readingCanNtwrkThread, SIGTERM);
+			// printf("Error: Cannot Read from SocketCAN\n"); }
+		// ServerFunc();
+		}
+		int threadResult = pthread_join(socketNtwrkThread, NULL);
+		if(threadResult == SOCKET_ERROR)
+		{
+			keepConRunning = SOCKET_ERROR;
 		}
 	}
 
-
-	//Thread creation here
-	pthread_t readingCanNtwrkThread;
-	// // SIGINT       
-	// if(pthread_create(&readingCanNtwrkThread, NULL, socCANRead, NULL) < 0) 
-	// {
-	// 	// pthread_kill(readingCanNtwrkThread, SIGTERM);
-	// 	printf("Error: Cannot Read from SocketCAN\n"); }
-	ServerFunc();
-	// pthread_join(readingCanNtwrkThread, NULL); 
-
-    return stopAsking;
+    return keepConRunning;
 }
 
 

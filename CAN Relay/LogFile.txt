@@ -321,3 +321,105 @@
 [2020-04-09 06:24:45]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
 [2020-04-09 12:56:10]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
 [2020-04-09 12:56:10]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 13:21:21]:	[INFO]:	Logger initialized
+[2020-04-09 13:21:21]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 13:21:21]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 13:21:24]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 13:21:24]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 13:23:59]:	[INFO]:	Logger initialized
+[2020-04-09 13:23:59]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 13:23:59]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 13:41:46]:	[INFO]:	Logger initialized
+[2020-04-09 13:41:46]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 13:41:46]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 13:42:45]:	[INFO]:	Logger initialized
+[2020-04-09 13:42:45]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 13:42:45]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 13:43:05]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 13:43:05]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 13:43:15]:	[INFO]:	Logger initialized
+[2020-04-09 13:43:15]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 13:43:15]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:23:04]:	[INFO]:	Logger initialized
+[2020-04-09 14:23:04]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:23:04]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:23:53]:	[INFO]:	Logger initialized
+[2020-04-09 14:23:53]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:23:53]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:23:56]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 14:23:56]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 14:44:21]:	[INFO]:	Logger initialized
+[2020-04-09 14:44:21]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:44:21]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:44:22]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 14:53:05]:	[INFO]:	Logger initialized
+[2020-04-09 14:53:05]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:53:05]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:53:05]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 14:56:42]:	[INFO]:	Logger initialized
+[2020-04-09 14:56:42]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:56:42]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:56:43]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 14:57:34]:	[INFO]:	Logger initialized
+[2020-04-09 14:57:34]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:57:34]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:57:35]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 14:58:56]:	[INFO]:	Logger initialized
+[2020-04-09 14:58:56]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:58:56]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:58:57]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 14:58:57]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 14:59:03]:	[INFO]:	Logger initialized
+[2020-04-09 14:59:03]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 14:59:03]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 14:59:04]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:00:26]:	[INFO]:	Logger initialized
+[2020-04-09 15:00:26]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:00:26]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:00:28]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:00:33]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:00:33]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:01:10]:	[INFO]:	Logger initialized
+[2020-04-09 15:01:10]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:01:10]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:01:11]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:01:13]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:01:13]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:02:35]:	[INFO]:	Logger initialized
+[2020-04-09 15:02:35]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:02:35]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:02:38]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:12:04]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:12:04]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:12:07]:	[INFO]:	Logger initialized
+[2020-04-09 15:12:07]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:12:07]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:12:10]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:14:32]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:14:32]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:14:36]:	[INFO]:	Logger initialized
+[2020-04-09 15:14:36]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:14:36]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:14:39]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:14:48]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:14:48]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:14:54]:	[INFO]:	Logger initialized
+[2020-04-09 15:14:54]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:14:54]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:14:57]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:18:36]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:18:36]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:19:47]:	[INFO]:	Logger initialized
+[2020-04-09 15:19:47]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:19:47]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:19:49]:	[INFO]:	Valid Port Number Inputted by user...
+[2020-04-09 15:27:03]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:27:03]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-09 15:27:05]:	[INFO]:	Logger initialized
+[2020-04-09 15:27:05]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-09 15:27:05]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-09 15:27:06]:	[WARN]:	Invalid Input...Try Again...
+[2020-04-09 15:27:06]:	[WARN]:	Invalid Input: Port must be greater than or equal to MINIMAL_PORT_LIMIT
+[2020-04-09 15:27:10]:	[WARN]:	Invalid Input: Port must be greater than or equal to MINIMAL_PORT_LIMIT
+[2020-04-09 15:27:14]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-09 15:27:14]:	[INFO]:	CAN Relay is shutting down...

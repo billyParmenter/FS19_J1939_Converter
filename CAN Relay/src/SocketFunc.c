@@ -1,5 +1,6 @@
 #include "../inc/SocketFunc.h"
 
+
 bool ServerFunc()
 {
 	bool successfulConn = SOCKET_SUCCESS; //Variable used for error checking
@@ -75,4 +76,71 @@ bool ServerFunc()
     return successfulConn;
 }
 
+/*
+* Function      : serverThread
+* Parameters    : void* args - General pointer passing to the function
+* Returns       : SOCKET_ERROR, THREAD_ERROR or NULL
+* Description   : Will run a thread that acts as a server for the Converter program.
+*/
+void* serverThread(void* args)
+{
+	int serverSocket, newSocket;	//Socket descriptors, an integer (like a file-handle)	
+	struct sockaddr_in serverAddr;	//Struct used to defined family/domain, port to listen on for the server and mulitple interfaces
+	struct sockaddr_storage serverStorage;	//Struct used to accommodate all supported protocol-specific address structures
+	socklen_t addr_size;	//Used to indicate the size of address
+	bool stopServer = false;
+	int serverPort = *(int*)args;
+
+	//Creating the socket. 
+	serverSocket = socket(AF_INET , SOCK_STREAM, 0);
+	if(serverSocket < 0)	//If serverSocket cannot be created return an error
+	{
+		pthread_exit(SOCKET_ERROR);
+	}
+	char client_message[2000];
+	// Configure settings of the server address struct
+	// Address family = Internet 
+	serverAddr.sin_family = AF_INET;
+	//Set port number, using htons function to use proper byte order 
+
+	serverAddr.sin_port = htons(serverPort);
+	//Set IP address to localhost 
+	serverAddr.sin_addr.s_addr = INADDR_ANY;
+	//Set all bits of the padding field to 0 
+	memset(serverAddr.sin_zero, '\0', sizeof serverAddr.sin_zero);
+	//Bind the address struct to the socket 
+	if (bind(serverSocket, (struct sockaddr *) &serverAddr, sizeof(serverAddr)) < 0)
+	{ 
+		pthread_exit(SOCKET_ERROR);
+	}
+	//Listen on the socket, with  32 max connection requests queued 
+	if(listen(serverSocket, 32) ==0 ) 
+	{
+		printf("Server is listening on port: %d\n", serverPort);
+	}
+	else
+	{
+	   	printf("Error\n");
+		pthread_exit(SOCKET_ERROR);
+	}
+
+	//Loop to keep the server running
+	while(!stopServer)
+	{
+		//Accept call creates a new socket for the incoming connection
+		addr_size = sizeof serverStorage;
+		newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size);
+		if (newSocket < 0) 
+		{  stopServer = true;   } 
+		else
+		{
+			//for each client request creates a thread and assign the client request to it to process
+       		//so the main thread can entertain next request
+			recv(newSocket , client_message , 2000 , 0);
+			printf("Mesage: %s...\n", client_message);
+		}
+		
+	}
+	pthread_exit(NULL);
+}
 
