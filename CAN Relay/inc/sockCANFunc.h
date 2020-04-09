@@ -1,5 +1,4 @@
 
-
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <endian.h>
@@ -27,7 +26,10 @@
 #define THREAD_ERROR 0
 #define CAN_ERROR -3
 #define THREAD_SUCCESS 1
+#define CANID_DELIM ' '
+#define DATA_SEPERATOR '.'
 
+#define CAN_ID_LEN 8
 
 // struct can_frame {
 //     canid_t can_id;  /* 32 bit CAN_ID + EFF/RTR/ERR flags */
@@ -44,8 +46,13 @@ struct incomingCANMsg {
     char firstDataBit[8];
     char secondDataBit[8];
 };
+
+
 void *socCANBroadcast(void *recvMsg);
-void *socCANRead(void *outputMsg);
+void *socCANRead(void* ipToDashboard);
 int getSize (char * s);
 
 void socketToDB(char* messageToBeSent);
+unsigned char asciiToNibble(char canidChar);
+
+

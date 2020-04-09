@@ -39,12 +39,12 @@ int main(int argc, char *argv[])
 	}
 
 	//Acquiring user input if need be and start threads to drive functionality
-	if(!relayStartup()){
+	if(!relayController()){
 
 		exit(0);
 		//Log error here
 	}
-
+	
 	Log(INFO, "Shutting down CAN Relay...");
 	ShutDownLogger();
     return 0;

@@ -22,6 +22,7 @@
         "vector": "c",
         "system_error": "c",
         "inet.h": "c",
-        "sockcanfunc.h": "c"
+        "sockcanfunc.h": "c",
+        "random": "c"
     }
 }

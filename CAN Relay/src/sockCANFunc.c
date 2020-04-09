@@ -6,11 +6,9 @@ void *socCANBroadcast(void *recvMsg)
 {
     int errorCode = THREAD_SUCCESS;
     int broadcastSocket; //Endpoint for communication
+    struct ifreq ifr;
+    struct can_frame frame;
     canid_t canID; //Variable used to store the CAN ID from the incoming message
-    //Parsing to get the CAN ID from the incoming message
-    char *msgPtr = strtok((char*)recvMsg, delim);
-    canID = strtoul(msgPtr, NULL, 16);
-
     printf("Creating socketCAN to Broadcast\n"); //Implement logger here
     if((broadcastSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
     {
@@ -19,7 +17,6 @@ void *socCANBroadcast(void *recvMsg)
         pthread_exit((void*)&errorCode);
         
     }
-    struct ifreq ifr;
     strcpy(ifr.ifr_name, "vcan0" );
     ioctl(broadcastSocket, SIOCGIFINDEX, &ifr);
 
@@ -30,12 +27,11 @@ void *socCANBroadcast(void *recvMsg)
     if (bind(broadcastSocket, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
         printf("Error, could not bind socket over CAN network");
     }
-
-    struct can_frame frame;
-    //creating socketCAN Data
-    printf("Creating Data\n");
+    
+    //Parsing to get the CAN ID from the incoming message
+    char *msgPtr = strtok((char*)recvMsg, delim);
+    canID = strtoul(msgPtr, NULL, 16);
     frame.can_id = canID;
-    frame.can_dlc = 8;
     //Parsing to get the first 8 bits of the actual data.
     msgPtr = strtok(NULL, delim);
     int sizeCheck = getSize(msgPtr);
@@ -45,23 +41,10 @@ void *socCANBroadcast(void *recvMsg)
         frame.data[j] = msgPtr[j];
     }
 
-    if (write(broadcastSocket, &frame, sizeof(struct can_frame)) != sizeof(struct can_frame)) {
+    if (write(broadcastSocket, &frame, sizeof(frame)) != sizeof(frame)) {
         printf("Error: Could not write over CAN network");
     }
-    //In case there is more data, write another one
-    if(sizeCheck > 8)
-    {
-        int originalIndex = 0;
-        for (int j = 8; msgPtr[j] != '\0'; ++j)
-        {    
-            frame.data[originalIndex] = msgPtr[j];
-            originalIndex++;
-        }
-        if (write(broadcastSocket, &frame, sizeof(struct can_frame)) != sizeof(struct can_frame)) {
-            printf("Error, could not write over CAN network");
-        }   
-    }
-
+    
     if (close(broadcastSocket) < 0) {
         printf("Error, could not close socket over CAN network");
         errorCode = CAN_ERROR;
@@ -84,11 +67,33 @@ int getSize (char * s) {
     return size;
 }
 
-void *socCANRead(void* outputMsg)
+unsigned char asciiToNibble(char canidChar) {
+    unsigned char convertedCharacter;
+    //Converting to the decimal value of a given ASCII hex character.
+    if ((canidChar >= '0') && (canidChar <= '9'))
+    {   
+        return canidChar - '0';   
+    }
+
+    else if ((canidChar >= 'A') && (canidChar <= 'F'))
+    {   
+        return canidChar - 'A' + 10; 
+    }
+
+    else if ((canidChar >= 'a') && (canidChar <= 'f'))
+    {   
+        return canidChar - 'a' + 10;  
+    }
+    return 16;
+}
+
+
+void *socCANRead(void* ipToDashboard)
 {
     int errorCode = THREAD_SUCCESS;
     bool keepRunning = true;
     struct timeval tv;
+
     tv.tv_sec = 45; //5 seconds
     tv.tv_usec = 0;
     int readingSocket; //Endpoint for communication
@@ -103,7 +108,7 @@ void *socCANRead(void* outputMsg)
     // setsockopt(readingSocket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
     struct ifreq ifr;
-    strcpy(ifr.ifr_name, "vcan0" );
+    strcpy(ifr.ifr_name, "vcan0");
     ioctl(readingSocket, SIOCGIFINDEX, &ifr);
 
     struct sockaddr_can addr;
@@ -134,11 +139,16 @@ void *socCANRead(void* outputMsg)
             printf("Error, could not read over CAN network\n");
             keepRunning = false;
         }
-        printf("CAN ID:0x%03X\n",frame.can_id);
-        // for (int i = 0; i < frame.can_dlc; i++)
-        // {
-        //     readMsgBuffer[i] = frame.data[i];  //Try to acquire the data here
-        // }
+
+        for (int i = 0; i < frame.can_dlc; i++)
+        {
+            readMsgBuffer[i] = frame.data[i];  //Try to acquire the data here
+        }
+
+        sprintf(msgToDB, "%03X %s", frame.can_id, readMsgBuffer);
+        // printf("CAN ID:0x%03X\n", frame.can_id);
+         
+        printf("Message: %s\n", msgToDB);
         // int sizeCheck = getSize(msgToDB);
         // //Format message in [CAN ID][16 Bits of Data]
         // if(sizeCheck < 16)
@@ -193,3 +203,4 @@ void socketToDB(char* messageToBeSent)
     // close the socket 
     close(sockfd); 
 }
+

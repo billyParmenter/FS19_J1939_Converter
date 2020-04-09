@@ -28,14 +28,19 @@ bool ServerFunc()
 	{
         successfulConn = SOCKET_ERROR;
 		perror("ERROR on binding");
+		
 		//printf("ERROR on binding\n");
 	}
+	//Another socket is already listening on the same port.
 
-	listen(sockfd,10);
-	printf("Server is listening on port:%d...\n", DEFAULT_SERVER_PORT);
-	while(((strcmp(buffer, "stop") != 0) || successfulConn != SOCKET_ERROR))
+	if(listen(sockfd, 10) < 0)
+	{
+        successfulConn = SOCKET_ERROR;
+	};
+	while(successfulConn != SOCKET_ERROR)
 	{	
 
+		printf("Server is listening on port:%d...\n", DEFAULT_SERVER_PORT);
 		clilen = sizeof(cli_addr);
 		newsockfd = accept(sockfd, (struct sockaddr *) &cli_addr, &clilen);
 
@@ -62,7 +67,7 @@ bool ServerFunc()
 			pthread_t broadcastThread;
 			void* resultFromThread;
 			if(pthread_create(&broadcastThread, NULL, socCANBroadcast, (void*) buffer)< 0) 
-			{	printf("Error: Cannot Write To SocketCAN\n");}
+			{	printf("Error: Cannot Write To SocketCAN\n"); return false; }
 			pthread_join(broadcastThread, &resultFromThread); 
 		}
 	}
