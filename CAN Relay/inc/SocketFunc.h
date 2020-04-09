@@ -12,8 +12,6 @@
 
 #include "sockCANFunc.h"
 
-
-
 #define SOCKET_ERROR 0
 #define THREAD_ERROR 0
 #define SOCKET_SUCCESS 1

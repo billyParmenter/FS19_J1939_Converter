@@ -11,6 +11,17 @@
         "netdb.h": "c",
         "loggers.h": "c",
         "includes.h": "c",
-        "relaycontroller.h": "c"
+        "relaycontroller.h": "c",
+        "*.tcc": "c",
+        "deque": "c",
+        "forward_list": "c",
+        "list": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "unordered_set": "c",
+        "vector": "c",
+        "system_error": "c",
+        "inet.h": "c",
+        "sockcanfunc.h": "c"
     }
 }

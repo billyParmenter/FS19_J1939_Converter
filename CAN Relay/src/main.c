@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     Log(INFO, "Logger initialized");
 
 	//Cannot run the program with just one arg, so exit.
-	if(argc <= 1 || argc >= 3)
+	if(argc <= 1 || argc > 3)
     {
         startupInfo();
 		Log(FATAL, "Invalid number of command line arguments");
@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
 		//Log error here
 	}
 
+	Log(INFO, "Shutting down CAN Relay...");
 	ShutDownLogger();
     return 0;
 }

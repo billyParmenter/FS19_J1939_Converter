@@ -1,6 +1,36 @@
-[2020-04-08 03:19:38]:	[INFO]:Logger initialized
-[2020-04-08 03:19:38]:	[INFO]:Test
-[2020-04-08 03:19:41]:	[INFO]:Logger initialized
-[2020-04-08 03:19:41]:	[INFO]:Test
-[2020-04-08 03:19:48]:	[INFO]:Logger initialized
-[2020-04-08 03:19:48]:	[FATAL]:Invalid number of command line arguments
+[2020-04-08 15:49:59]:	[INFO]:	Logger initialized
+[2020-04-08 15:49:59]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 15:49:59]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-08 15:50:05]:	[WARN]:	Invalid IP Address Input...Try Again...
+[2020-04-08 15:50:05]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-08 15:50:05]:	[INFO]:	Cleaned up all log resources
+[2020-04-08 15:57:13]:	[INFO]:	Logger initialized
+[2020-04-08 15:57:13]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 15:57:13]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-08 15:57:30]:	[WARN]:	Invalid IP Address Input...Try Again...
+[2020-04-08 15:57:30]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-08 15:57:30]:	[INFO]:	Cleaned up all log resources
+[2020-04-08 16:00:27]:	[INFO]:	Logger initialized
+[2020-04-08 16:00:27]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 16:00:27]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-08 16:00:37]:	[WARN]:	Invalid IP Address Input...Try Again...
+[2020-04-08 16:00:37]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-08 16:00:37]:	[INFO]:	Cleaned up all log resources
+[2020-04-08 16:00:50]:	[INFO]:	Logger initialized
+[2020-04-08 16:00:50]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 16:00:50]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-08 16:00:57]:	[WARN]:	Invalid IP Address Input...Try Again...
+[2020-04-08 16:00:57]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-08 16:00:57]:	[INFO]:	Cleaned up all log resources
+[2020-04-08 20:23:40]:	[INFO]:	Logger initialized
+[2020-04-08 20:23:40]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 20:23:40]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-08 20:23:49]:	[WARN]:	Invalid IP Address Input...Try Again...
+[2020-04-08 20:23:49]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-08 20:23:49]:	[INFO]:	Cleaned up all log resources
+[2020-04-08 20:57:16]:	[INFO]:	Logger initialized
+[2020-04-08 20:57:16]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 21:17:12]:	[INFO]:	Logger initialized
+[2020-04-08 21:17:12]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-08 21:19:50]:	[INFO]:	Logger initialized
+[2020-04-08 21:19:50]:	[INFO]:	User started CAN Relay with server mode option

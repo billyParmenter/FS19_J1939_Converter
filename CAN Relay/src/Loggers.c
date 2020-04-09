@@ -38,13 +38,12 @@ const bool InitializeLog()
 
 const void ShutDownLogger()
 {
+    Log(INFO, "Cleaned up all log resources");
     //Clearing up all memory before closing application
     free(errorLevelString);
     free(filePath);
     free(logMessage);
-
     fclose(logFilePtr);
-    printf("Messages clear\n");
 }
 
 const void Log(ErrorLevel currentErrorLevel, const char* logBufferMsg)

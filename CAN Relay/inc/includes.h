@@ -27,7 +27,6 @@
 #include <pthread.h>
 
 // #include "CANJ1939Conv.h"
-#include "SocketFunc.h"
 #include "relayController.h"
 #include "Loggers.h"
 
