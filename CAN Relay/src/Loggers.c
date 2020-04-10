@@ -16,7 +16,7 @@ char* errorLevelString = NULL;
 char* filePath = NULL;  //String used to how signify how serious the error is
 char* logMessage = NULL;
 FILE* logFilePtr = NULL; //a pointer of type file
-const bool InitializeLog()
+const int InitializeLog()
 {
     errorLevelString = (char*)malloc(sizeof(char) * SML_BUFFSIZ); 
     filePath = (char*)malloc(sizeof(char) * SML_BUFFSIZ);
@@ -28,7 +28,7 @@ const bool InitializeLog()
         logFilePtr = fopen(filePath, "a");
         if(logFilePtr != NULL)  //if there was no error opening the file, logger is ready
         {
-            initialized = true;
+            initialized = OK_SIG;
    
         }
     }
@@ -112,8 +112,6 @@ const void GetErrorLevelString(ErrorLevel errorLevel, char* errorLevelString)
             break;
         case FATAL:
             strcpy(errorLevelString ,"FATAL");
-
-            // strcpy(errorLevelString ,"FATAL");
             break;
     }
 }

@@ -88,16 +88,19 @@ void* serverThread(void* args)
 	struct sockaddr_in serverAddr;	//Struct used to defined family/domain, port to listen on for the server and mulitple interfaces
 	struct sockaddr_storage serverStorage;	//Struct used to accommodate all supported protocol-specific address structures
 	socklen_t addr_size;	//Used to indicate the size of address
-	bool stopServer = false;
 	int serverPort = *(int*)args;
+	pthread_t newClientThread;	//thread to continue communication with the server
+	char* client_message = (char*)malloc(sizeof(char*) * LRG_BUFSIZ);
+	char* logMessage = (char*)malloc(sizeof(char*) * LRG_BUFSIZ);
 
 	//Creating the socket. 
-	serverSocket = socket(AF_INET , SOCK_STREAM, 0);
+	serverSocket = socket(AF_INET , SOCK_STREAM, DEFAULT_INTERNET_PROTOCOL);
 	if(serverSocket < 0)	//If serverSocket cannot be created return an error
 	{
+		sprintf(logMessage, "%s","Failed to create server socket.");
+		Log(FATAL, logMessage);
 		pthread_exit(SOCKET_ERROR);
 	}
-	char client_message[2000];
 	// Configure settings of the server address struct
 	// Address family = Internet 
 	serverAddr.sin_family = AF_INET;
@@ -111,36 +114,61 @@ void* serverThread(void* args)
 	//Bind the address struct to the socket 
 	if (bind(serverSocket, (struct sockaddr *) &serverAddr, sizeof(serverAddr)) < 0)
 	{ 
+		sprintf(logMessage, "%s","Failed to bind server socket.");
+		Log(FATAL, logMessage);
 		pthread_exit(SOCKET_ERROR);
 	}
 	//Listen on the socket, with  32 max connection requests queued 
-	if(listen(serverSocket, 32) ==0 ) 
+	if(listen(serverSocket, 32) == 0 ) 
 	{
-		printf("Server is listening on port: %d\n", serverPort);
+		sprintf(logMessage, "Server is listening on port: %d", serverPort);
+		Log(INFO, logMessage);
+		addr_size = sizeof(serverStorage);
+
 	}
 	else
 	{
-	   	printf("Error\n");
+		sprintf(logMessage, "Failed to listen over socket");
+		Log(FATAL, logMessage);
 		pthread_exit(SOCKET_ERROR);
 	}
 
 	//Loop to keep the server running
-	while(!stopServer)
+	while((newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size)))
 	{
 		//Accept call creates a new socket for the incoming connection
-		addr_size = sizeof serverStorage;
-		newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size);
-		if (newSocket < 0) 
-		{  stopServer = true;   } 
+		if (newSocket < SOCKET_ERROR){
+			sprintf(logMessage, "Failed to accept connection over socket");
+	  		Log(FATAL, logMessage);
+			pthread_exit(SOCKET_ERROR);   
+		} 
 		else
 		{
 			//for each client request creates a thread and assign the client request to it to process
        		//so the main thread can entertain next request
-			recv(newSocket , client_message , 2000 , 0);
-			printf("Mesage: %s...\n", client_message);
+			if(recv(newSocket , client_message , LRG_BUFSIZ , 0) < SOCKET_ERROR)
+			{
+				sprintf(logMessage, "Error code from recv function: %d", errno);
+				Log(FATAL, logMessage);
+				//Cleanup here
+				pthread_exit(SOCKET_ERROR);   
+
+			}
+			sprintf(logMessage, "Incoming message: %s", client_message);
+			Log(INFO, logMessage);
+			void* resultFromThread;
+			if(pthread_create(&newClientThread, NULL, socCANBroadcast, (void*) client_message)< THREAD_ERROR){
+
+				sprintf(logMessage, "Error: Cannot Write To SocketCAN"); 
+				Log(FATAL, logMessage);
+				pthread_exit(SOCKET_ERROR); 
+
+			}
+			pthread_join(newClientThread, &resultFromThread); 
 		}
 		
 	}
+	
 	pthread_exit(NULL);
 }
 

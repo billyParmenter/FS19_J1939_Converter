@@ -13,11 +13,12 @@
 #include "sockCANFunc.h"
 
 #define SOCKET_ERROR 0
+#define DEFAULT_INTERNET_PROTOCOL 0
 #define THREAD_ERROR 0
 #define SOCKET_SUCCESS 1
 #define THREAD_SUCCESS 1
-
 #define DEFAULT_SERVER_PORT 4000
+#define LRG_BUFSIZ 256  //Definition used for a large size array
 
 bool ServerFunc();
 void* serverThread(void* inputMsg);

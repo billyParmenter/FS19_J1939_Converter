@@ -40,6 +40,7 @@ enum ErrorLevel
 
 #define SML_BUFFSIZ 64  //Constant for a smaller buffer size
 #define RW_MODE 0777   // Mode Bits for Access Permission
+#define OK_SIG  1 //Signal used to indicate everything is running okay
 
 
 // static bool initialized;
@@ -53,7 +54,7 @@ extern FILE* logFilePtr; //a pointer of type file
 void InitializeLogger();
 const void Log(ErrorLevel errorLevel, const char* logMessage);
 const void GetErrorLevelString(ErrorLevel errorLevel, char* errorLevelString);
-const bool InitializeLog();
+const int InitializeLog();
 const void ShutDownLogger();
 bool CheckLevel(ErrorLevel levelToCheck);
 

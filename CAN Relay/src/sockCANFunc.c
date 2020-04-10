@@ -4,16 +4,19 @@ char delim[] = " ";
 
 void *socCANBroadcast(void *recvMsg)
 {
-    int errorCode = THREAD_SUCCESS;
+   int errorCode = THREAD_SUCCESS;
     int broadcastSocket; //Endpoint for communication
     struct ifreq ifr;
-    struct can_frame frame;
+    struct canfd_frame frame;
+    unsigned char data[CANFD_MAX_DLEN];
+   	char* logMessage = (char*)malloc(sizeof(char*) * LRG_BUFSIZ);
+
     canid_t canID; //Variable used to store the CAN ID from the incoming message
-    printf("Creating socketCAN to Broadcast\n"); //Implement logger here
-    if((broadcastSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
+    if((broadcastSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < CAN_ERROR) 
     {
         errorCode = CAN_ERROR;
-        printf("Error: Could not create socket over CAN network\n");
+        sprintf(logMessage, "Error: Could not create socket over CAN network");
+        Log(FATAL, logMessage);
         pthread_exit((void*)&errorCode);
         
     }
@@ -24,31 +27,74 @@ void *socCANBroadcast(void *recvMsg)
     memset(&addr, 0, sizeof(addr));
     addr.can_family = AF_CAN;
     addr.can_ifindex = ifr.ifr_ifindex;
-    if (bind(broadcastSocket, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
-        printf("Error, could not bind socket over CAN network");
+
+    setsockopt(broadcastSocket, SOL_CAN_RAW, CAN_RAW_FILTER, NULL, 0);
+    frame.len = 8;
+    int todo_broadcast = 1;
+	setsockopt(broadcastSocket, SOL_SOCKET, SO_BROADCAST, &todo_broadcast, sizeof(todo_broadcast));
+
+
+    if (bind(broadcastSocket, (struct sockaddr *)&addr, sizeof(addr)) < CAN_ERROR) {
+        errorCode = CAN_ERROR;
+        sprintf(logMessage, "Error, could not bind socket over CAN network");
+        Log(FATAL, logMessage);
+        pthread_exit((void*)&errorCode);
+
     }
     
     //Parsing to get the CAN ID from the incoming message
     char *msgPtr = strtok((char*)recvMsg, delim);
     canID = strtoul(msgPtr, NULL, 16);
+    // Log(DEBUG, msgPtr);
+    
+
     frame.can_id = canID;
+
+    int mtu = CAN_MTU;
+    int maxdlen = CAN_MAX_DLEN;
+
+    frame.can_id &= CAN_EFF_MASK;
+    frame.can_id |= CAN_EFF_FLAG;
+
+
+    
     //Parsing to get the first 8 bits of the actual data.
     msgPtr = strtok(NULL, delim);
+
     int sizeCheck = getSize(msgPtr);
 
-    for (int j = 0; j <= sizeCheck/2 - 1; ++j)
-    {
-        frame.data[j] = msgPtr[j];
-    }
+    // for (int j = 0; j <= sizeCheck/2 - 1; ++j)
+    // {
+    //     frame.data[j] = msgPtr[j];
+    // }
+    hexstring2data(msgPtr, data, CANFD_MAX_DLEN);
+    memcpy(frame.data, data, CANFD_MAX_DLEN);
 
-    if (write(broadcastSocket, &frame, sizeof(frame)) != sizeof(frame)) {
-        printf("Error: Could not write over CAN network");
+    // char buff[BUFSIZ];
+    
+    // int i;
+    // for (i = 0; i < 8; i++)
+    // {
+    //     if (i > 0) printf(":");
+    //     printf("%02X", frame.data[i]);
+    // }
+    // printf("\n");
+
+
+    if (write(broadcastSocket, &frame, mtu) < CAN_ERROR) {
+        errorCode = CAN_ERROR;
+        sprintf(logMessage, "Error: Could not write over CAN network");
+        Log(FATAL, logMessage);
+        close(broadcastSocket);
+        pthread_exit((void*)&errorCode);
     }
     
     if (close(broadcastSocket) < 0) {
-        printf("Error, could not close socket over CAN network");
         errorCode = CAN_ERROR;
+        sprintf(logMessage, "Error, could not close socket over CAN network");
+        Log(FATAL, logMessage);
         pthread_exit((void*)&errorCode);
+
     }
 
     pthread_exit((void*)&errorCode);
@@ -65,26 +111,6 @@ int getSize (char * s) {
     }
 
     return size;
-}
-
-unsigned char asciiToNibble(char canidChar) {
-    unsigned char convertedCharacter;
-    //Converting to the decimal value of a given ASCII hex character.
-    if ((canidChar >= '0') && (canidChar <= '9'))
-    {   
-        return canidChar - '0';   
-    }
-
-    else if ((canidChar >= 'A') && (canidChar <= 'F'))
-    {   
-        return canidChar - 'A' + 10; 
-    }
-
-    else if ((canidChar >= 'a') && (canidChar <= 'f'))
-    {   
-        return canidChar - 'a' + 10;  
-    }
-    return 16;
 }
 
 
@@ -204,3 +230,52 @@ void socketToDB(char* messageToBeSent)
     close(sockfd); 
 }
 
+
+unsigned char asciiToNibble(char canidChar) {
+    unsigned char convertedCharacter;
+    //Converting to the decimal value of a given ASCII hex character.
+    if ((canidChar >= '0') && (canidChar <= '9'))
+    {   
+        return canidChar - '0';   
+    }
+
+    else if ((canidChar >= 'A') && (canidChar <= 'F'))
+    {   
+        return canidChar - 'A' + 10; 
+    }
+
+    else if ((canidChar >= 'a') && (canidChar <= 'f'))
+    {   
+        return canidChar - 'a' + 10;  
+    }
+    return 16;
+}
+
+int hexstring2data(char *arg, unsigned char *data, int maxdlen) {
+
+	int len = strlen(arg);
+	int i;
+	unsigned char tmp;
+
+	if (!len || len%2 || len > maxdlen*2)
+		return 1;
+
+	memset(data, 0, maxdlen);
+
+	for (i=0; i < len/2; i++) {
+
+		tmp = asciiToNibble(*(arg+(2*i)));
+		if (tmp > 0x0F)
+			return 1;
+
+		data[i] = (tmp << 4);
+
+		tmp = asciiToNibble(*(arg+(2*i)+1));
+		if (tmp > 0x0F)
+			return 1;
+
+		data[i] |= tmp;
+	}
+
+	return 0;
+}

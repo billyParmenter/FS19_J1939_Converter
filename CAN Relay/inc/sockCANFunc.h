@@ -20,6 +20,7 @@
 #include <errno.h>
 
 #include <arpa/inet.h>
+#include "Loggers.h"
 #define SA struct sockaddr 
 
 #define PARSE_ERROR 3
@@ -28,6 +29,7 @@
 #define THREAD_SUCCESS 1
 #define CANID_DELIM ' '
 #define DATA_SEPERATOR '.'
+#define LRG_BUFSIZ 256  //Definition used for a large size array
 
 #define CAN_ID_LEN 8
 
@@ -56,3 +58,4 @@ void socketToDB(char* messageToBeSent);
 unsigned char asciiToNibble(char canidChar);
 
 
+int hexstring2data(char *arg, unsigned char *data, int maxdlen);

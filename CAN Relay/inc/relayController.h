@@ -26,6 +26,7 @@
 #define INVALID_INPUT -1    //Definition for getPortNum to signify an invalid input from the user
 
 #define SIGNAL_ERROR -1 //Definition used to recognise the return value from sig functions
+#define OK_SIG  1 //Signal used to indicate everything is running okay
 //IP Location defintions
 #define FIRST_IP_GRP 0
 #define SCND_IP_GRP 1
@@ -36,15 +37,13 @@
 #define IP_ARR_LENGTH 4 //Defines number of parts to an IP address
 #define EQUAL_STRING 0  //Define used to signifiy both strings are equal in strcmp
 static const char optstring[] = "sc"; //String containing the legitimate option characters.#include <ctype.h>
-
 //Program Declarations
-bool ArgParsing(int argc, char* argv[]);
-bool relayController();
+int ArgParsing(int argc, char* argv[]);
+int relayController();
 void startupInfo();
-int getPortNum(void);
-bool getIP(char* userInputBuffer);
+int getNum(void);
+int getIP(char* userInputBuffer);
 
 void CleanupHandler(int id);
 
-// void startupInfo(char* optarg);
 #endif /* !RELAYCON_H */

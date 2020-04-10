@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
     {
         startupInfo();
 		Log(FATAL, "Invalid number of command line arguments");
+		ShutDownLogger();
 		exit(0);
     }
 	
@@ -34,13 +35,13 @@ int main(int argc, char *argv[])
 	{
 		//Log Error Here
 		Log(FATAL, "Invalid Argument to start CAN Relay!");
-        startupInfo();
+        ShutDownLogger();
 		exit(0);
 	}
 
 	//Acquiring user input if need be and start threads to drive functionality
 	if(!relayController()){
-
+		ShutDownLogger();
 		exit(0);
 		//Log error here
 	}

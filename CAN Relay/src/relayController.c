@@ -11,6 +11,7 @@
 static bool serverFlag = false; 
 static bool clientFlag = false; //Variables used to grant certain CAN relay functionalities
 
+static pthread_t canNtwrkThread, socketNtwrkThread;  //Threads for running a server and reading from the CAN network
 
 /*
 * Function      : relayController
@@ -18,18 +19,16 @@ static bool clientFlag = false; //Variables used to grant certain CAN relay func
 * Returns       : N/A
 * Description   : Will obtain port number and IP address in order to start the CAN Relay
 */
-bool relayController()
+int relayController()
 {
-	bool keepConRunning = false; //Variable used to check if the user wants to run with server with defaults
-	char userInputBuffer[MID_BUFSIZ] = { 0 };
+	int settingStatus = false;
 	//Variables needed to start the two seperate functions
 	char* ipAddress = (char*)malloc(sizeof(char)* MID_BUFSIZ);
 	int portNumber;
-
+	int threadResult; 
 	//Assigning Signal Handler
 	struct sigaction signalStruct;
 	signalStruct.sa_handler = CleanupHandler;
-
 	//If there was an error in creating the signal handler, exit the program.
 	if((sigfillset(&signalStruct.sa_mask) == SIGNAL_ERROR 
 		|| (sigaction(SIGINT, &signalStruct, NULL)) == SIGNAL_ERROR))
@@ -39,70 +38,55 @@ bool relayController()
 	}
 
 	else{Log(INFO, "CAN Relay uses SIGINT as a signal to close program");}	
-
-	//If the server is supposed to run, obtain port numberand run it
-	if(serverFlag)
+	//Getting connection settings 
+	do
 	{
-		while(!keepConRunning)
+		if (serverFlag)
 		{
-			printf("Enter port number to run server: ");
-			//If the value is greater than 
-			if((portNumber = getPortNum()) >= MINIMAL_PORT_LIMIT)
+			do
 			{
-				keepConRunning= true;
-				Log(INFO, "Valid Port Number Inputted by user...");
-			}
-			else
-			{
-				printf("Invalid Input: Port must be greater than or equal to %d\n", MINIMAL_PORT_LIMIT);
-				Log(WARN, "Invalid Input: Port must be greater than or equal to MINIMAL_PORT_LIMIT" );
-			}
-		}
-		
-		keepConRunning = false;	
-	}
-
-	//If the client is supposed to run, obtain ip address
-	if(clientFlag)
-	{
-		//Start the program with defaults, in a loop to avoid invalid input 
-		while(!keepConRunning)
-		{
-			printf("Enter IP Address to connect to Dashboard(xxx.xxx.xxx.xxx): ");
-			//If it is a valid IP, stop asking and run the client
-			if(getIP(userInputBuffer))
-			{
-				keepConRunning = true;
-				Log(INFO, "Valid IP Address Inputted by user...");
-
-			}
+				printf("Enter port number to run server: ");
+				portNumber = getNum();
+				//If the port number is invalid, let the user know and log it 
+				if(portNumber < MINIMAL_PORT_LIMIT) {			
+					printf("Invalid Input: Port must be greater than or equal to %d\n", MINIMAL_PORT_LIMIT);
+					Log(WARN, "Invalid Input: Port must be greater than or equal to MINIMAL_PORT_LIMIT" );
+				}
+			} while (portNumber < MINIMAL_PORT_LIMIT);
+			
+			settingStatus = OK_SIG;
 		}
 
-		keepConRunning = false;	
+		if(clientFlag)
+		{
+			do
+			{
+				printf("Enter IP Address to connect to Dashboard(xxx.xxx.xxx.xxx): ");
+				settingStatus = getIP(ipAddress);
+				if(settingStatus == ERROR)
+				{
+					printf("Invalid Input: Not valid IP Address format\n");
+					Log(WARN, "Invalid Input: Not valid IP Address format" );
+				}
+			} while (settingStatus != OK_SIG);
+			
+		}
+	}while(!settingStatus);
 
-	}
-	//If the user inputs are valid, run both functionalites
-	if(!keepConRunning)
-	{
-		//Thread creation here
-		pthread_t canNtwrkThread, socketNtwrkThread;
-		// // SIGINT       
+	//Running the server
+	if(serverFlag){
 		if(pthread_create(&socketNtwrkThread, NULL, serverThread, (void*)&portNumber) < 0) 
 		{
 			// pthread_kill(readingCanNtwrkThread, SIGTERM);
-			// printf("Error: Cannot Read from SocketCAN\n"); }
-		// ServerFunc();
+			printf("Fatal Error: Cannot write from SocketCAN\n");
+			threadResult = ERROR;
 		}
-		int threadResult = pthread_join(socketNtwrkThread, NULL);
-		if(threadResult == SOCKET_ERROR)
-		{
-			keepConRunning = SOCKET_ERROR;
-		}
-	}
 
-    return keepConRunning;
+	}	
+	
+	pthread_join(socketNtwrkThread, NULL);
+	return OK_SIG;
 }
-
 
 
 
@@ -116,12 +100,12 @@ void CleanupHandler(int id)
 
 
 //From https://www.gnu.org/software/libc/manual/html_node/Example-of-Getopt.html
-bool ArgParsing(int argc, char* argv[])
+int ArgParsing(int argc, char* argv[])
 {	
 	
     int opt;	//Variable used to parse the command line argument
     int argIndex = 0;
-	bool validParsing = false; //Variables used to determine if the parsing was valid
+	int validParsing; //Variables used to determine if the parsing was valid
     //Argument parsing for "-" used with option
 	while ((opt = getopt(argc, argv, optstring)) != NO_MORE_OPTIONS)
 	{
@@ -130,18 +114,18 @@ bool ArgParsing(int argc, char* argv[])
 		{
 			//Two Modes used to control the relay's behaviour (SEE StartupInfo())
 	        case 's':
-				serverFlag = true;
+				serverFlag = OK_SIG;
                 //Log here
 				Log(INFO, "User started CAN Relay with server mode option");
 				break;
 			case 'c':
-				clientFlag = true;
+				clientFlag = OK_SIG;
                 //Log here
 				Log(INFO, "User started CAN Relay with client mode option");
 				break;			
 			default:
 				printf("\nInvalid Option = %s\n", argv[argIndex]);	//if the user inputs an invalid command.
-				validParsing = false;
+				validParsing = FATAL;
 			    break;
 		}
 	}
@@ -160,7 +144,7 @@ bool ArgParsing(int argc, char* argv[])
     //If either flags were not signalled, print a help message to the user
     if(serverFlag || clientFlag)
     {
-        validParsing = true;
+        validParsing = OK_SIG;
     }
     
     return validParsing;  //If either flags are signalled, true will be returned to signal successfull parsing
@@ -197,9 +181,9 @@ void startupInfo()
 * Returns       : bool validIP
 * Description   : Displays the necessary commands in order to run the program appropriately
 */
-bool getIP(char* userInputBuffer)
+int getIP(char* userInputBuffer)
 {
-	bool validIP = false;
+	int validIP ;
 	int ipAddressBuf[IP_ARR_LENGTH] = {0};	//Buffer to acquire the IP address in bits
 
 	/* use fgets() to get a string from the keyboard */
@@ -211,13 +195,13 @@ bool getIP(char* userInputBuffer)
 	{
 		/* if the user did not enter a char recognizable by
 		* the system, set number to NULL */
-		Log(WARN, "Invalid Input! Remember IPv4 is in XXX.XXX.XXX.XXX Format...Try Again...");
-		printf("Error! See Logs...\n");
+		Log(ERROR, "Sscanf detected invalid IP format! Try again");
+		validIP = ERROR;
 	}
 
 	else
 	{
-		validIP = true;
+		validIP = OK_SIG;
 	}
 	
 	return validIP;
@@ -226,14 +210,14 @@ bool getIP(char* userInputBuffer)
 
 
 /*
-* FUNCTION:		getPortNum
+* FUNCTION:		getNum
 * DESCRIPTION:	This function gets input from a user and 
 *				helps to assign it to a variable.
 * AUTHOR:		Foundation of this function was provided by Sean Clarke.	
 * PARAMETERS:	N/A.
 * RETURNS:		The input provided by the user.
 */
-int getPortNum(void)
+int getNum(void)
 {
 	/* function limitation: only accepts 120 characters of input */
 	char record[MID_BUFSIZ] = { 0 };
