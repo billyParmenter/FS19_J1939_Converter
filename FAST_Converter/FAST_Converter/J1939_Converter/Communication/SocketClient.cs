@@ -165,7 +165,7 @@ namespace J1939Converter.Communication
                 if (stream.CanWrite)
                 {
                     stream.Write(data, 0, data.Length);
-
+                    
                 }
                 data = new byte[256];
 

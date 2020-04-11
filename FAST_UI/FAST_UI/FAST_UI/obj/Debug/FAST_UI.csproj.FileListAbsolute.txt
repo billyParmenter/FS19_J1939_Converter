@@ -1,0 +1,76 @@
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe.config
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\FAST_UI.pdb
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csprojAssemblyReference.cache
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.FAST_UI.resources
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.Properties.Resources.resources
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.GenerateResource.cache
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.exe
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.pdb
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.dll
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.pdb
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.xml
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Mike\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.CopyComplete
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe.config
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\FAST_UI.pdb
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.dll
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.pdb
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.xml
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csprojAssemblyReference.cache
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.FAST_UI.resources
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.Properties.Resources.resources
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.GenerateResource.cache
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.CopyComplete
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.exe
+C:\Users\billy\source\repos\FAST_UI\FAST_UI\obj\Debug\FAST_UI.pdb
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe.config
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\FAST_UI.pdb
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.dll
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.pdb
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.xml
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csprojAssemblyReference.cache
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.FAST_UI.resources
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.Properties.Resources.resources
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.GenerateResource.cache
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.CopyComplete
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.exe
+C:\Users\Mike\Desktop\SET Year 3\Semester 2\Systems Project\FS19_J1939_Converter-Dashboard\FS19_J1939_Converter-Dashboard\FAST_UI\FAST_UI\obj\Debug\FAST_UI.pdb
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe.config
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\FAST_UI.exe
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\FAST_UI.pdb
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.dll
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.pdb
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.xml
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csprojAssemblyReference.cache
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.FAST_UI.resources
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.Properties.Resources.resources
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.GenerateResource.cache
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.csproj.CopyComplete
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.exe
+C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\obj\Debug\FAST_UI.pdb
