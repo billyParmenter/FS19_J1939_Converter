@@ -189,7 +189,7 @@ void socketToDB(char* ipAddress, char* messageToBeSent)
     }  
   
     //Sending Message
-    write(sockfd, messageToBeSent, sizeof(messageToBeSent));
+    write(sockfd, messageToBeSent, strlen(messageToBeSent));
     printf("Sent message to DB\n");        
     char clear();
    

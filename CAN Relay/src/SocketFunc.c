@@ -59,7 +59,8 @@ void* serverThread(void* args)
 	}
 
 	//Loop to keep the server running
-	while((newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size)))
+	newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size);
+	while(true)
 	{
 		//Accept call creates a new socket for the incoming connection
 		if (newSocket < SOCKET_ERROR){
