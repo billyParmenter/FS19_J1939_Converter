@@ -448,3 +448,169 @@
 [2020-04-10 19:25:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
 [2020-04-10 19:25:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
 [2020-04-10 19:25:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:28:16]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 19:28:16]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-10 19:28:36]:	[INFO]:	Logger initialized
+[2020-04-10 19:28:36]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 19:28:36]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 19:28:36]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 19:28:42]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 19:28:59]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:28:59]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:28:59]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:00]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:00]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:29:00]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:01]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:01]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:29:02]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:29:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:29:44]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 19:29:44]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-10 19:29:49]:	[INFO]:	Logger initialized
+[2020-04-10 19:29:49]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 19:29:49]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 19:29:49]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 19:30:01]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 19:30:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:30:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:30:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:30:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:30:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:30:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:04]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:04]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:31:04]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:31:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:06]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:07]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:31:07]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:08]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:31:08]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:31:08]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:35:56]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 19:35:56]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-10 19:36:00]:	[INFO]:	Logger initialized
+[2020-04-10 19:36:00]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 19:36:00]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 19:36:00]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 19:36:11]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 19:36:16]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:36:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:18]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:18]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:36:18]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:19]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:19]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:36:19]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:20]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:21]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:36:21]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:22]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:22]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:36:22]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:23]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:36:23]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:36:23]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:55:30]:	[INFO]:	Logger initialized
+[2020-04-10 19:55:30]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 19:55:30]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 19:55:30]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 19:55:36]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 19:55:55]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:55:55]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:55:55]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:55:56]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 19:55:56]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 19:55:57]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:05:55]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 20:05:55]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-10 20:05:59]:	[INFO]:	Logger initialized
+[2020-04-10 20:05:59]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 20:05:59]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 20:05:59]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 20:06:06]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 20:06:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:06:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:06:41]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:06:42]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:06:42]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:06:42]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:09:36]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 20:09:36]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-10 20:09:39]:	[INFO]:	Logger initialized
+[2020-04-10 20:09:39]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 20:09:39]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 20:09:39]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 20:09:45]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 20:10:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:10:24]:	[INFO]:	Logger initialized
+[2020-04-10 20:10:24]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 20:10:24]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 20:10:24]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 20:10:31]:	[FATAL]:	Failed to bind server socket.
+[2020-04-10 20:10:31]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-10 20:10:31]:	[INFO]:	Cleaned up all log resources
+[2020-04-10 20:11:28]:	[INFO]:	Logger initialized
+[2020-04-10 20:11:28]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 20:11:28]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 20:11:28]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 20:11:36]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 20:11:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:38]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:38]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:39]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:41]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:41]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:41]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:42]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:43]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:43]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:44]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:44]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:44]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:45]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:11:46]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:11:46]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:21:43]:	[INFO]:	Logger initialized
+[2020-04-10 20:21:43]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 20:21:43]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 20:21:43]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 20:21:48]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 20:22:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:22:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:22:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:22:13]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:22:13]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:22:14]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:22:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:22:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:22:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:34:24]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 20:34:24]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-10 20:34:37]:	[INFO]:	Logger initialized
+[2020-04-10 20:34:37]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-10 20:34:37]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-10 20:34:37]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-10 20:34:44]:	[INFO]:	Server is listening on port: 4000
+[2020-04-10 20:38:36]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:38:36]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:38:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:38:38]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:38:38]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:38:39]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:38:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:38:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0005FFFFFFFFFF
+[2020-04-10 20:38:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-10 20:46:09]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-10 20:46:09]:	[INFO]:	CAN Relay is shutting down...
