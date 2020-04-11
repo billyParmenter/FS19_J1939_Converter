@@ -23,6 +23,8 @@
         "system_error": "c",
         "inet.h": "c",
         "sockcanfunc.h": "c",
-        "random": "c"
+        "random": "c",
+        "array": "c",
+        "string_view": "c"
     }
 }

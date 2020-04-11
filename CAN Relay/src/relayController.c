@@ -34,7 +34,6 @@ int relayController()
 		|| (sigaction(SIGINT, &signalStruct, NULL)) == SIGNAL_ERROR))
 	{
 		Log(WARN, "Cannot register signal handler");
-
 	}
 
 	else{Log(INFO, "CAN Relay uses SIGINT as a signal to close program");}	
@@ -65,7 +64,7 @@ int relayController()
 				settingStatus = getIP(ipAddress);
 				if(settingStatus == ERROR)
 				{
-					printf("Invalid Input: Not valid IP Address format\n");
+					printf("Invalid Input: %s Not valid IP Address format\n", ipAddress);
 					Log(WARN, "Invalid Input: Not valid IP Address format" );
 				}
 			} while (settingStatus != OK_SIG);
@@ -82,8 +81,17 @@ int relayController()
 			threadResult = ERROR;
 		}
 
-	}	
-	
+	}
+	//Running the client
+	if(clientFlag){
+		if(pthread_create(&canNtwrkThread, NULL, socCANRead, (void*)ipAddress) < 0) 
+		{
+			// pthread_kill(readingCanNtwrkThread, SIGTERM);
+			printf("Fatal Error: Cannot read from SocketCAN\n");
+			threadResult = ERROR;
+		}
+
+	}
 	pthread_join(socketNtwrkThread, NULL);
 	return OK_SIG;
 }
@@ -124,8 +132,8 @@ int ArgParsing(int argc, char* argv[])
 				Log(INFO, "User started CAN Relay with client mode option");
 				break;			
 			default:
-				printf("\nInvalid Option = %s\n", argv[argIndex]);	//if the user inputs an invalid command.
-				validParsing = FATAL;
+				//if the user inputs an invalid command.
+				validParsing = false;
 			    break;
 		}
 	}

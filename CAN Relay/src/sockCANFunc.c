@@ -1,5 +1,6 @@
 #include "../inc/sockCANFunc.h"
 
+
 char delim[] = " ";
 
 void *socCANBroadcast(void *recvMsg)
@@ -55,30 +56,11 @@ void *socCANBroadcast(void *recvMsg)
 
     frame.can_id &= CAN_EFF_MASK;
     frame.can_id |= CAN_EFF_FLAG;
-
-
     
     //Parsing to get the first 8 bits of the actual data.
     msgPtr = strtok(NULL, delim);
-
-    int sizeCheck = getSize(msgPtr);
-
-    // for (int j = 0; j <= sizeCheck/2 - 1; ++j)
-    // {
-    //     frame.data[j] = msgPtr[j];
-    // }
     hexstring2data(msgPtr, data, CANFD_MAX_DLEN);
     memcpy(frame.data, data, CANFD_MAX_DLEN);
-
-    // char buff[BUFSIZ];
-    
-    // int i;
-    // for (i = 0; i < 8; i++)
-    // {
-    //     if (i > 0) printf(":");
-    //     printf("%02X", frame.data[i]);
-    // }
-    // printf("\n");
 
 
     if (write(broadcastSocket, &frame, mtu) < CAN_ERROR) {
@@ -114,15 +96,17 @@ int getSize (char * s) {
 }
 
 
-void *socCANRead(void* ipToDashboard)
+void *socCANRead(void* ipArg)
 {
     int errorCode = THREAD_SUCCESS;
     bool keepRunning = true;
     struct timeval tv;
-
+    char* ipToDB = (char*)ipArg;
     tv.tv_sec = 45; //5 seconds
     tv.tv_usec = 0;
     int readingSocket; //Endpoint for communication
+    char* formattedMessage = (char*)malloc(sizeof(char*) * LRG_BUFSIZ);
+
 
     if((readingSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
     {
@@ -145,10 +129,9 @@ void *socCANRead(void* ipToDashboard)
         printf("Error, could not bind socket over CAN network\n");
     }
 
-    struct can_frame frame;
+    struct canfd_frame frame;    
     int numOfBytesRead;
-    char readMsgBuffer[16];
-    char msgToDB[32];
+    char readMsgBuffer[BUFSIZ];
     while(keepRunning)
     {                   
         printf("Reading from SocketCAN network...\n"); //Implement logger here
@@ -165,27 +148,11 @@ void *socCANRead(void* ipToDashboard)
             printf("Error, could not read over CAN network\n");
             keepRunning = false;
         }
+    
 
-        for (int i = 0; i < frame.can_dlc; i++)
-        {
-            readMsgBuffer[i] = frame.data[i];  //Try to acquire the data here
-        }
-
-        sprintf(msgToDB, "%03X %s", frame.can_id, readMsgBuffer);
-        // printf("CAN ID:0x%03X\n", frame.can_id);
-         
-        printf("Message: %s\n", msgToDB);
-        // int sizeCheck = getSize(msgToDB);
-        // //Format message in [CAN ID][16 Bits of Data]
-        // if(sizeCheck < 16)
-        // {
-        //     strcpy(msgToDB, readMsgBuffer);
-        // }
-        // else
-        // {
-        //     printf("Message to Dashboard: %s\n", readMsgBuffer);
-        //     socketToDB(readMsgBuffer);   
-        // }
+        sprint_canframe(readMsgBuffer, &frame, 0, 8);
+        sprintf(formattedMessage, "%s", readMsgBuffer);
+        socketToDB(ipToDB, readMsgBuffer);
 
     }
 
@@ -197,7 +164,7 @@ void *socCANRead(void* ipToDashboard)
     pthread_exit((void*)&errorCode);
 }
 
-void socketToDB(char* messageToBeSent)
+void socketToDB(char* ipAddress, char* messageToBeSent)
 {
 	int sockfd; 
     struct sockaddr_in servaddr; 
@@ -212,8 +179,8 @@ void socketToDB(char* messageToBeSent)
   
     // assign IP, PORT 
     servaddr.sin_family = AF_INET; 
-    servaddr.sin_addr.s_addr = inet_addr("10.192.201.95"); 
-    servaddr.sin_port = htons(4040); 
+    servaddr.sin_addr.s_addr = inet_addr(ipAddress); 
+    servaddr.sin_port = htons(DEFAULT_DB_PORT); 
   
     //Connect the client socket to server socket 
     if (connect(sockfd, (SA*)&servaddr, sizeof(servaddr)) != 0) { 
@@ -278,4 +245,54 @@ int hexstring2data(char *arg, unsigned char *data, int maxdlen) {
 	}
 
 	return 0;
+}
+
+void sprint_canframe(char *buf , struct canfd_frame *cf, int sep, int maxdlen) 
+{
+    /* documentation see lib.h */
+
+    int i,offset;
+    int len = (cf->len > maxdlen) ? maxdlen : cf->len;
+
+    if (cf->can_id & CAN_ERR_FLAG) {
+        put_eff_id(buf, cf->can_id & (CAN_ERR_MASK|CAN_ERR_FLAG));
+        buf[8] = ' ';
+        offset = 9;
+    } else if (cf->can_id & CAN_EFF_FLAG) {
+        put_eff_id(buf, cf->can_id & CAN_EFF_MASK);
+        buf[8] = ' ';
+        offset = 9;
+    } else {
+        put_sff_id(buf, cf->can_id & CAN_SFF_MASK);
+        buf[3] = ' ';
+        offset = 4;
+    }
+
+    /* standard CAN frames may have RTR enabled. There are no ERR frames with RTR */
+    if (maxdlen == CAN_MAX_DLEN && cf->can_id & CAN_RTR_FLAG) {
+        buf[offset++] = 'R';
+        /* print a given CAN 2.0B DLC if it's not zero */
+        if (cf->len && cf->len <= CAN_MAX_DLC)
+            buf[offset++] = hex_asc_upper_lo(cf->len);
+
+        buf[offset] = 0;
+        return;
+    }
+
+    if (maxdlen == CANFD_MAX_DLEN) {
+        /* add CAN FD specific escape char and flags */
+        buf[offset++] = ' ';
+        buf[offset++] = hex_asc_upper_lo(cf->flags);
+        if (sep && len)
+            buf[offset++] = '.';
+    }
+
+    for (i = 0; i < len; i++) {
+        put_hex_byte(buf + offset, cf->data[i]);
+        offset += 2;
+        if (sep && (i+1 < len))
+            buf[offset++] = '.';
+    }
+
+    buf[offset] = 0;
 }

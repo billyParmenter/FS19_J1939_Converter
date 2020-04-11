@@ -43,7 +43,7 @@ const void ShutDownLogger()
     free(errorLevelString);
     free(filePath);
     free(logMessage);
-    fclose(logFilePtr);
+    // fclose(logFilePtr);
 }
 
 const void Log(ErrorLevel currentErrorLevel, const char* logBufferMsg)

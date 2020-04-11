@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
 	//Acquiring user input if need be and start threads to drive functionality
 	if(!relayController()){
 		ShutDownLogger();
+		perror("System Error...Check Llogs for more details");
 		exit(0);
 		//Log error here
 	}

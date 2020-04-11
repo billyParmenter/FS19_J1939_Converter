@@ -1,4 +1,3 @@
-
 CC = g++
 LD = g++
 CFLAGS = -c -g -Wall 
@@ -9,8 +8,8 @@ BINDIR = bin/
 INCDIR = inc/
 OBJDIR = obj/
 SRCDIR = src/
-
 $(BINDIR)$(EXE): $(OBJ)
+
 	$(LD) $(OBJ) $(LDFLAGS) $(BINDIR)$(EXE)
 
 # $(OBJDIR)CANJ1939Conv.o: $(SRCDIR)CANJ1939Conv.c $(INCDIR)CANJ1939Conv.h
@@ -30,7 +29,6 @@ $(OBJDIR)Loggers.o: $(SRCDIR)Loggers.c $(INCDIR)Loggers.h
 
 $(OBJDIR)main.o: $(SRCDIR)main.c $(INCDIR)includes.h
 	$(CC) $(CFLAGS) $(SRCDIR)main.c $(LDFLAGS)  $(OBJDIR)main.o 
-
 
 clean:
 	rm -f $(OBJDIR)*.o

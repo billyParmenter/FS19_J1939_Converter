@@ -29,18 +29,13 @@
 #define THREAD_SUCCESS 1
 #define CANID_DELIM ' '
 #define DATA_SEPERATOR '.'
+#define  EOF_MESSAGE_DELIM '\0'; 
+
 #define LRG_BUFSIZ 256  //Definition used for a large size array
 
 #define CAN_ID_LEN 8
 
-// struct can_frame {
-//     canid_t can_id;  /* 32 bit CAN_ID + EFF/RTR/ERR flags */
-//     __u8    can_dlc; /* frame payload length in byte (0 .. 8) */
-//     __u8    __pad;   /* padding */
-//     __u8    __res0;  /* reserved / padding */
-//     __u8    __res1;  /* reserved / padding */
-//     __u8    data[8] __attribute__((aligned(8)));
-// };
+#define DEFAULT_DB_PORT 4040
 // Struct used to capture all parts of the data being transmitted from the converted
 struct incomingCANMsg {
 
@@ -54,8 +49,34 @@ void *socCANBroadcast(void *recvMsg);
 void *socCANRead(void* ipToDashboard);
 int getSize (char * s);
 
-void socketToDB(char* messageToBeSent);
+void socketToDB(char* ipAddress, char* messageToBeSent);
 unsigned char asciiToNibble(char canidChar);
 
 
 int hexstring2data(char *arg, unsigned char *data, int maxdlen);
+void sprint_canframe(char *buf , struct canfd_frame *cf, int sep, int maxdlen); 
+
+
+//CAN-UTILS tools:
+const char hex_asc_upper[] = "0123456789ABCDEF";
+
+#define hex_asc_upper_lo(x)    hex_asc_upper[((x) & 0x0F)]
+#define hex_asc_upper_hi(x)    hex_asc_upper[((x) & 0xF0) >> 4]
+
+static inline void put_hex_byte(char *buf, __u8 byte)
+{
+    buf[0] = hex_asc_upper_hi(byte);
+    buf[1] = hex_asc_upper_lo(byte);
+}
+
+static inline void _put_id(char *buf, int end_offset, canid_t id)
+{
+    /* build 3 (SFF) or 8 (EFF) digit CAN identifier */
+    while (end_offset >= 0) {
+        buf[end_offset--] = hex_asc_upper_lo(id);
+        id >>= 4;
+    }
+}
+
+#define put_sff_id(buf, id) _put_id(buf, 2, id)
+#define put_eff_id(buf, id) _put_id(buf, 7, id)
