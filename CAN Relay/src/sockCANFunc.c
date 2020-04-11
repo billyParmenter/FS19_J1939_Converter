@@ -105,7 +105,9 @@ void *socCANRead(void* ipArg)
     tv.tv_sec = 45; //5 seconds
     tv.tv_usec = 0;
     int readingSocket; //Endpoint for communication
-    char* formattedMessage = (char*)malloc(sizeof(char*) * LRG_BUFSIZ);
+    char readMsgBuffer[BUFSIZ];
+
+    char* formattedMessage = (char*)malloc(sizeof(readMsgBuffer)+ SML_BUFFSIZ);
 
 
     if((readingSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
@@ -131,7 +133,6 @@ void *socCANRead(void* ipArg)
 
     struct canfd_frame frame;    
     int numOfBytesRead;
-    char readMsgBuffer[BUFSIZ];
     while(keepRunning)
     {                   
         printf("Reading from SocketCAN network...\n"); //Implement logger here
@@ -149,10 +150,13 @@ void *socCANRead(void* ipArg)
             keepRunning = false;
         }
     
-
+        //Getting CAN ID of message
         sprint_canframe(readMsgBuffer, &frame, 0, 8);
         sprintf(formattedMessage, "%s", readMsgBuffer);
+        formattedMessage[strlen(formattedMessage)+1] = '\0';
+        printf("Formatted Message: %s\n", formattedMessage);
         socketToDB(ipToDB, readMsgBuffer);
+        memset(readMsgBuffer, 0, sizeof (readMsgBuffer));
 
     }
 
@@ -189,14 +193,24 @@ void socketToDB(char* ipAddress, char* messageToBeSent)
     }  
   
     //Sending Message
-    write(sockfd, messageToBeSent, sizeof(messageToBeSent));
+    write(sockfd, messageToBeSent, strlen(messageToBeSent));
     printf("Sent message to DB\n");        
-    char clear();
-   
+  
     // close the socket 
     close(sockfd); 
 }
 
+char* data2hexstring(unsigned char *data)
+{
+    char *string = (char*) malloc(sizeof data *2 + 1);
+
+    for (size_t i = 0; i < sizeof data; i++)
+    {
+        sprintf(string + i * 2, "%02x", data[i]);
+    }
+
+    return string;
+}
 
 unsigned char asciiToNibble(char canidChar) {
     unsigned char convertedCharacter;

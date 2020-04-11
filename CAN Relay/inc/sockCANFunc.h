@@ -51,6 +51,7 @@ int getSize (char * s);
 
 void socketToDB(char* ipAddress, char* messageToBeSent);
 unsigned char asciiToNibble(char canidChar);
+char* data2hexstring(unsigned char *data);
 
 
 int hexstring2data(char *arg, unsigned char *data, int maxdlen);
