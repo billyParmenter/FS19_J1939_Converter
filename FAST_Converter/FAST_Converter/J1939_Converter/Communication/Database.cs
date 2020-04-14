@@ -14,11 +14,15 @@ namespace J1939Converter.Communication
 {
     class Database
     {
+
+        /*
+         * METHOD      : GetSPN
+         * DESCRIPTION : Gets the SPN and CANid info from the database
+         * PARAMETERS  : SPN - The spn to search for
+         * RETURNS     : CANid - The canID info
+         */
         public static CANid GetSPN(ref J1939Converter.SPN spn)
         {
-
-
-
             System.Data.Entity.Core.Objects.ObjectResult<GetSPNInfo_Result> result;
             CANid canID = null;
             using (Entities db = new Entities())
@@ -47,6 +51,17 @@ namespace J1939Converter.Communication
             return canID;
 
         }
+
+
+
+
+
+        /*
+         * METHOD      : Test
+         * DESCRIPTION : Test the connection to the database
+         * PARAMETERS  : NONE
+         * RETURNS     : string - null if no error message
+         */
         public static string Test()
         {
             try

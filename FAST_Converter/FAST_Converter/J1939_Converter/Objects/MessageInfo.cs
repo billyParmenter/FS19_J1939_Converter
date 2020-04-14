@@ -27,7 +27,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : MessageInfo
+         * METHOD      : MessageInfo
          * DESCRIPTION : Default constructor, creates an empty MessageInfo with 
          *                  a message of "Testing"
          * PARAMETERS  : NONE
@@ -46,7 +46,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : MessageInfo
+         * METHOD      : MessageInfo
          * DESCRIPTION : A constructor that creates a MessageInfo with the given values
          * PARAMETERS  : SPN spn        - The spn to be added to the message info
          *               CANid can      - The CANid to be added to the message info
@@ -67,7 +67,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : FillInfo
+         * METHOD      : FillInfo
          * DESCRIPTION : Fills and empty Message info with the given values
          * PARAMETERS  : SPN spn        - The spn to be added to the message info
          *               CANid can      - The CANid to be added to the message info
@@ -88,7 +88,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : Error
+         * METHOD      : Error
          * DESCRIPTION : Sets the message of a MessageInfo to the given string and then
          *                  sets the ErrorFound value to true
          * PARAMETERS  : string message - the error message to be saved

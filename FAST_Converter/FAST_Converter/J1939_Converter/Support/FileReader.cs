@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * FILE          : FileReader.cs
+ * PROJECT       : J1939Converter
+ * PROGRAMMER    : Mike Ramoutsakis
+ * FIRST VERSION : Jan 27 2020
+ */
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;

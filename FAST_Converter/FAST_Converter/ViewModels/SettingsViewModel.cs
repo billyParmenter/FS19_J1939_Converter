@@ -167,7 +167,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : SettingsViewModel
+         * METHOD      : SettingsViewModel
          * DESCRIPTION : The default constrictor, will initialize the button commands and 
          *                  load any available settings
          * PARAMETERS  : NONE
@@ -191,7 +191,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : Save
+         * METHOD      : Save
          * DESCRIPTION : Saves the settings from the UI to the app.config and navigates to the
          *                  MainPageView
          * PARAMETERS  : NONE
@@ -211,7 +211,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : LoadSettings
+         * METHOD      : LoadSettings
          * DESCRIPTION : Loads settings from the app.config to the UI
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -231,7 +231,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : ConvertBoolSetting
+         * METHOD      : ConvertBoolSetting
          * DESCRIPTION : Converts a string value to bool
          * PARAMETERS  : string boolSetting - the string to convert to bool
          * RETURNS     : bool - the converted value of booltSetting
@@ -253,7 +253,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : SaveSettings
+         * METHOD      : SaveSettings
          * DESCRIPTION : Saves all the settings on the page to the app.config file
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -277,7 +277,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : SaveBoolSetting
+         * METHOD      : SaveBoolSetting
          * DESCRIPTION : Converts the given bool to a string
          * PARAMETERS  : bool appSetting - the value to convert
          * RETURNS     : string - the string value of appSetting
@@ -301,7 +301,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : CheckSettings
+         * METHOD      : CheckSettings
          * DESCRIPTION : Checks that all required fields are filled and generates a string 
          *                  to be displayed to the user, telling them what values are still 
          *                  needed to be filled
@@ -335,7 +335,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : CheckRequired
+         * METHOD      : CheckRequired
          * DESCRIPTION : 
          * PARAMETERS  : StringBuilder RequiredFields -  the string builder to add\append to
          *               string field - the field to check
@@ -362,7 +362,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : TestSettings
+         * METHOD      : TestSettings
          * DESCRIPTION : Tests the database and the socket settings
          * PARAMETERS  : NONE
          * RETURNS     : bool - true if tests pass
@@ -387,7 +387,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : TestDatabase
+         * METHOD      : TestDatabase
          * DESCRIPTION : Tests the database settings
          * PARAMETERS  : NONE
          * RETURNS     : bool - true if test passes
@@ -410,7 +410,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : TestSocket
+         * METHOD      : TestSocket
          * DESCRIPTION : Tests the socket settings
          * PARAMETERS  : NONE
          * RETURNS     : bool - true if test passes
@@ -452,7 +452,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : SelectFile
+         * METHOD      : SelectFile
          * DESCRIPTION : Opens the file explorer to allow the user to select a file
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -475,7 +475,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : SelectFolder
+         * METHOD      : SelectFolder
          * DESCRIPTION : Opens the file explorer to allow the user to select a folder
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -498,7 +498,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : ClosePopup
+         * METHOD      : ClosePopup
          * DESCRIPTION : Closes the popup window
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -513,7 +513,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : OpenPopup
+         * METHOD      : OpenPopup
          * DESCRIPTION : Opens the popupwindow and displays the message
          * PARAMETERS  : string msg - the message to display on the popup window
          * RETURNS     : NONE

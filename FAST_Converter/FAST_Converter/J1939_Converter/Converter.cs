@@ -52,7 +52,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : Converter
+         * METHOD      : Converter
          * DESCRIPTION : This is the default custructor, it calls the init method, if
          *                  the init is not successfull then this constructor will
          *                  throw an exception
@@ -166,7 +166,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : DoConvert
+         * METHOD      : DoConvert
          * DESCRIPTION : This is the main method of this program. It will get the 
          *                  latest values from the file, check that they are what
          *                  is wanted to track based on the spn list and then 
@@ -238,7 +238,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : Init
+         * METHOD      : Init
          * DESCRIPTION : Initializes the logger and gets the spns
          * PARAMETERS  : NONE
          * RETURNS     : string - Null if successfull or the error message

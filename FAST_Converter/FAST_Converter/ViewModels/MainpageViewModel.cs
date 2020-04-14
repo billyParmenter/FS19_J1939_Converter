@@ -27,10 +27,9 @@ namespace FAST_Converter.ViewModel
     internal class MainPageViewModel : WrapperViewModel
     {
 
-        private static Converter converter = new Converter();
-        private readonly object _messageInfosLock = new object();
+        
 
-
+        #region Bool declarations
         private static bool _stopped;
         public bool Stopped
         {
@@ -63,20 +62,7 @@ namespace FAST_Converter.ViewModel
             }
         }
 
-
-        //This is the list of messages to be shown on the UI in the listView
-        private ObservableCollection<MessageInfo> _messageInfos;
-        public ObservableCollection<MessageInfo> MessageInfos
-        {
-            get => _messageInfos;
-            set
-            {
-                _messageInfos = value;
-                // Allows for updating the UI in a seperate thread
-                BindingOperations.EnableCollectionSynchronization(_messageInfos, _messageInfosLock);
-                OnPropertyChanged("MessageInfos");
-            }
-        }
+        #endregion
 
         // Strings that are displayed on the UI but are updated by code
         #region String declarations
@@ -104,16 +90,30 @@ namespace FAST_Converter.ViewModel
 
         #endregion
 
+        private static Converter converter = new Converter();
+        private readonly object _messageInfosLock = new object();
         public ButtonCommand Start_Cmd { get; set; }
         public ButtonCommand Stop_Cmd { get; set; }
         public RelayCommand Back_Cmd { get; set; }
-
+        //This is the list of messages to be shown on the UI in the listView
+        private ObservableCollection<MessageInfo> _messageInfos;
+        public ObservableCollection<MessageInfo> MessageInfos
+        {
+            get => _messageInfos;
+            set
+            {
+                _messageInfos = value;
+                // Allows for updating the UI in a seperate thread
+                BindingOperations.EnableCollectionSynchronization(_messageInfos, _messageInfosLock);
+                OnPropertyChanged("MessageInfos");
+            }
+        }
 
 
 
 
         /*
-         * FUNCTION    : MainPageViewModel
+         * METHOD      : MainPageViewModel
          * DESCRIPTION : The default constructor
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -126,6 +126,16 @@ namespace FAST_Converter.ViewModel
             Back_Cmd = new RelayCommand(Back);
         }
 
+
+
+
+
+        /*
+         * METHOD      : Back
+         * DESCRIPTION : Stops the converter and message sending to go back to settings
+         * PARAMETERS  : NONE
+         * RETURNS     : NONE
+         */
         private void Back()
         {
             if (Started == true)
@@ -140,7 +150,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : Start
+         * METHOD      : Start
          * DESCRIPTION : Spawns a new thread to start doing the conversion
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -159,7 +169,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : Convert
+         * METHOD      : Convert
          * DESCRIPTION : Runs untill the stop button is pressed. Will conn the converters 
          *                  DoConvert method to generate messages. The method will get the 
          *                  MessageInfos back to be added to the UIs list view
@@ -197,7 +207,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : Stop
+         * METHOD      : Stop
          * DESCRIPTION : Tells the thread to finish the last message and to stop.
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -216,7 +226,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : OnWindowClosing
+         * METHOD      : OnWindowClosing
          * DESCRIPTION : Tells the thread to finish the last message and to stop when 
          *                  the window is closed 
          * PARAMETERS  : object sender, CancelEventArgs e
@@ -233,7 +243,7 @@ namespace FAST_Converter.ViewModel
 
 
         /*
-         * FUNCTION    : Verbose
+         * METHOD      : Verbose
          * DESCRIPTION : Updates the verbose message on the UI
          * PARAMETERS  : string verbose - the message to add the the verbose message box
          * RETURNS     : NONE
@@ -249,6 +259,14 @@ namespace FAST_Converter.ViewModel
 
 
 
+
+
+        /*
+         * METHOD      : EnableStart
+         * DESCRIPTION : Enables and disables the start button
+         * PARAMETERS  : NONE
+         * RETURNS     : bool - If the button is enabled or not
+         */
         private bool EnableStart()
         {
             if(Stopped == false && Started == false)
@@ -259,6 +277,16 @@ namespace FAST_Converter.ViewModel
             return Stopped;
         }
 
+
+
+
+
+        /*
+         * METHOD      : EnableStop
+         * DESCRIPTION : Enables and disables the stop button
+         * PARAMETERS  : NONE
+         * RETURNS     : bool - If the button is enabled or not
+         */
         private bool EnableStop()
         {
             return Started;

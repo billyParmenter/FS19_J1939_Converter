@@ -32,7 +32,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : CANid
+         * METHOD      : CANid
          * DESCRIPTION : Default constructor used for when database is unavailable
          * PARAMETERS  : NONE
          * RETURNS     : NONE

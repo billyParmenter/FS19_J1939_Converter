@@ -30,6 +30,8 @@ namespace J1939Converter.Communication
         private TcpClient client;
         private NetworkStream stream;
         public static bool stop = false;
+
+
         /*
          * METHOD      : SocketClient
          * DESCRIPTION : Constructor creates a socket client using values 
@@ -72,6 +74,17 @@ namespace J1939Converter.Communication
             Init(ip, port);
         }
 
+
+
+
+
+        /*
+         * METHOD      : Init
+         * DESCRIPTION : Initializes the TcpClient and stream
+         * PARAMETERS  : string ip - The ip to initialize the TcpClient with
+         *               int port - The port to initialize the TcpClient with
+         * RETURNS     : NONE
+         */
         private void Init(string ip, int port)
         {
             while (stop == false)
@@ -183,12 +196,32 @@ namespace J1939Converter.Communication
             }
         }
 
+
+
+
+
+        /*
+         * METHOD      : Stop
+         * DESCRIPTION : Stops the socket from trtying to initialize
+         * PARAMETERS  : NONE
+         * RETURNS     : NONE
+         */
         public static void Stop()
         {
             stop = true;
             Logger.Log(Logger.ErrorLevel.INFO, "Closing stream and client");
         }
 
+
+
+
+
+        /*
+         * METHOD      : Close
+         * DESCRIPTION : Closes the stream and socket
+         * PARAMETERS  : NONE
+         * RETURNS     : NONE
+         */
         public void Close()
         {
             if (stream != null)

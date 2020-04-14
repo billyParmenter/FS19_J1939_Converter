@@ -27082,3 +27082,1347 @@ INFO  [2020-04-11 12:46:02 PM] - storeData at offset 328 in file:line:column C:\
  
 	Number of messages: 21
 
+INFO  [2020-04-14 8:09:19 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:20 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 2
+
+INFO  [2020-04-14 8:09:20 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:20 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 3
+
+INFO  [2020-04-14 8:09:21 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:21 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 4
+
+INFO  [2020-04-14 8:09:21 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:21 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 5
+
+INFO  [2020-04-14 8:09:21 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:21 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 6
+
+INFO  [2020-04-14 8:09:22 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:22 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 7
+
+INFO  [2020-04-14 8:09:22 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:22 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 8
+
+INFO  [2020-04-14 8:09:23 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:23 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 9
+
+INFO  [2020-04-14 8:09:24 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:24 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 10
+
+INFO  [2020-04-14 8:09:24 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:24 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 11
+
+INFO  [2020-04-14 8:09:24 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:24 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 12
+
+INFO  [2020-04-14 8:09:25 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:25 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 13
+
+INFO  [2020-04-14 8:09:25 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:25 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 14
+
+INFO  [2020-04-14 8:09:25 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:25 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 15
+
+INFO  [2020-04-14 8:09:27 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:27 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 16
+
+INFO  [2020-04-14 8:09:27 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:27 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 17
+
+INFO  [2020-04-14 8:09:27 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:27 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 18
+
+INFO  [2020-04-14 8:09:28 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:28 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 19
+
+INFO  [2020-04-14 8:09:28 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:28 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 20
+
+INFO  [2020-04-14 8:09:28 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:28 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 21
+
+INFO  [2020-04-14 8:09:30 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:30 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 22
+
+INFO  [2020-04-14 8:09:30 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:30 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 23
+
+INFO  [2020-04-14 8:09:30 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:30 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 24
+
+INFO  [2020-04-14 8:09:31 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:31 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 25
+
+INFO  [2020-04-14 8:09:31 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:31 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 26
+
+INFO  [2020-04-14 8:09:31 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:31 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 27
+
+INFO  [2020-04-14 8:09:32 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF00ACFFFFFFFFFF
+
+INFO  [2020-04-14 8:09:32 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 28
+
+INFO  [2020-04-14 8:09:32 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:32 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 29
+
+INFO  [2020-04-14 8:09:33 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:33 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 30
+
+INFO  [2020-04-14 8:09:34 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0D14FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:34 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 31
+
+INFO  [2020-04-14 8:09:34 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:34 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 32
+
+INFO  [2020-04-14 8:09:34 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:34 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 33
+
+INFO  [2020-04-14 8:09:35 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF1248FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:35 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 34
+
+INFO  [2020-04-14 8:09:35 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:35 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 35
+
+INFO  [2020-04-14 8:09:35 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:35 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 36
+
+INFO  [2020-04-14 8:09:37 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF1903FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:37 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 37
+
+INFO  [2020-04-14 8:09:37 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF14FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:37 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 38
+
+INFO  [2020-04-14 8:09:37 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:37 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 39
+
+INFO  [2020-04-14 8:09:38 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF18F3FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:38 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 40
+
+INFO  [2020-04-14 8:09:38 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF14FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:38 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 41
+
+INFO  [2020-04-14 8:09:38 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:38 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 42
+
+INFO  [2020-04-14 8:09:40 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF18D4FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:40 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 43
+
+INFO  [2020-04-14 8:09:40 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF14FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:40 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 44
+
+INFO  [2020-04-14 8:09:40 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:40 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 45
+
+INFO  [2020-04-14 8:09:41 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF1864FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:41 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 46
+
+INFO  [2020-04-14 8:09:41 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF14FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:41 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 47
+
+INFO  [2020-04-14 8:09:41 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:41 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 48
+
+INFO  [2020-04-14 8:09:42 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF1871FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:42 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 49
+
+INFO  [2020-04-14 8:09:43 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:43 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 50
+
+INFO  [2020-04-14 8:09:43 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:43 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 51
+
+INFO  [2020-04-14 8:09:44 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF18FDFFFFFFFFFF
+
+INFO  [2020-04-14 8:09:44 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 52
+
+INFO  [2020-04-14 8:09:48 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:48 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 53
+
+INFO  [2020-04-14 8:09:48 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:48 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 54
+
+INFO  [2020-04-14 8:09:49 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:49 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 55
+
+INFO  [2020-04-14 8:09:50 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:50 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 56
+
+INFO  [2020-04-14 8:09:50 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:50 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 57
+
+INFO  [2020-04-14 8:09:51 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0000FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:51 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 58
+
+INFO  [2020-04-14 8:09:51 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:51 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 59
+
+INFO  [2020-04-14 8:09:51 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:51 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 60
+
+INFO  [2020-04-14 8:09:53 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0633FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:53 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 61
+
+INFO  [2020-04-14 8:09:53 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:53 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 62
+
+INFO  [2020-04-14 8:09:53 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:53 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 63
+
+INFO  [2020-04-14 8:09:54 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF14AEFFFFFFFFFF
+
+INFO  [2020-04-14 8:09:54 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 64
+
+INFO  [2020-04-14 8:09:54 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:54 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 65
+
+INFO  [2020-04-14 8:09:54 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:54 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 66
+
+INFO  [2020-04-14 8:09:55 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF18FBFFFFFFFFFF
+
+INFO  [2020-04-14 8:09:55 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 67
+
+INFO  [2020-04-14 8:09:56 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:56 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 68
+
+INFO  [2020-04-14 8:09:56 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:56 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 69
+
+INFO  [2020-04-14 8:09:57 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF082EFFFFFFFFFF
+
+INFO  [2020-04-14 8:09:57 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 70
+
+INFO  [2020-04-14 8:09:57 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:57 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 71
+
+INFO  [2020-04-14 8:09:57 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:57 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 72
+
+INFO  [2020-04-14 8:09:58 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0605FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:58 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 73
+
+INFO  [2020-04-14 8:09:58 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:09:58 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 74
+
+INFO  [2020-04-14 8:09:59 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:09:59 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 75
+
+INFO  [2020-04-14 8:10:00 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0C4DFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:00 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 76
+
+INFO  [2020-04-14 8:10:00 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:00 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 77
+
+INFO  [2020-04-14 8:10:00 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:00 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 78
+
+INFO  [2020-04-14 8:10:01 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF1380FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:01 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 79
+
+INFO  [2020-04-14 8:10:01 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:01 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 80
+
+INFO  [2020-04-14 8:10:01 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:01 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 81
+
+INFO  [2020-04-14 8:10:03 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF17F6FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:03 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 82
+
+INFO  [2020-04-14 8:10:03 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:03 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 83
+
+INFO  [2020-04-14 8:10:03 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:03 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 84
+
+INFO  [2020-04-14 8:10:04 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0703FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:04 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 85
+
+INFO  [2020-04-14 8:10:04 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:04 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 86
+
+INFO  [2020-04-14 8:10:04 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:04 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 87
+
+INFO  [2020-04-14 8:10:05 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF053DFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:05 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 88
+
+INFO  [2020-04-14 8:10:06 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:06 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 89
+
+INFO  [2020-04-14 8:10:08 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:08 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 90
+
+INFO  [2020-04-14 8:10:09 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF081AFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:09 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 91
+
+INFO  [2020-04-14 8:10:09 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:09 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 92
+
+INFO  [2020-04-14 8:10:09 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:09 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 93
+
+INFO  [2020-04-14 8:10:10 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0821FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:10 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 94
+
+INFO  [2020-04-14 8:10:11 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:11 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 95
+
+INFO  [2020-04-14 8:10:11 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:11 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 96
+
+INFO  [2020-04-14 8:10:12 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0903FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:12 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 97
+
+INFO  [2020-04-14 8:10:12 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:12 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 98
+
+INFO  [2020-04-14 8:10:12 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:12 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 99
+
+INFO  [2020-04-14 8:10:13 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF04E1FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:13 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 100
+
+INFO  [2020-04-14 8:10:13 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:13 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 101
+
+INFO  [2020-04-14 8:10:14 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:14 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 102
+
+INFO  [2020-04-14 8:10:15 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0236FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:15 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 103
+
+INFO  [2020-04-14 8:10:15 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:15 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 104
+
+INFO  [2020-04-14 8:10:15 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:15 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 105
+
+INFO  [2020-04-14 8:10:16 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0517FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:16 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 106
+
+INFO  [2020-04-14 8:10:16 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:16 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 107
+
+INFO  [2020-04-14 8:10:16 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:16 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 108
+
+INFO  [2020-04-14 8:10:18 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF05A4FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:18 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 109
+
+INFO  [2020-04-14 8:10:18 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:18 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 110
+
+INFO  [2020-04-14 8:10:18 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:18 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 111
+
+INFO  [2020-04-14 8:10:19 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF011FFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:19 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 112
+
+INFO  [2020-04-14 8:10:19 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:19 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 113
+
+INFO  [2020-04-14 8:10:19 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:19 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 114
+
+INFO  [2020-04-14 8:10:20 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF02A9FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:20 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 115
+
+INFO  [2020-04-14 8:10:21 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:21 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 116
+
+INFO  [2020-04-14 8:10:21 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:21 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 117
+
+INFO  [2020-04-14 8:10:22 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF04AEFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:22 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 118
+
+INFO  [2020-04-14 8:10:22 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:22 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 119
+
+INFO  [2020-04-14 8:10:22 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:22 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 120
+
+INFO  [2020-04-14 8:10:23 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0805FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:23 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 121
+
+INFO  [2020-04-14 8:10:24 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:24 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 122
+
+INFO  [2020-04-14 8:10:26 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:26 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 123
+
+INFO  [2020-04-14 8:10:27 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF01AEFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:27 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 124
+
+INFO  [2020-04-14 8:10:27 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:27 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 125
+
+INFO  [2020-04-14 8:10:27 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:27 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 126
+
+INFO  [2020-04-14 8:10:28 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF021AFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:28 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 127
+
+INFO  [2020-04-14 8:10:29 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:29 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 128
+
+INFO  [2020-04-14 8:10:29 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:29 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 129
+
+INFO  [2020-04-14 8:10:30 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0369FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:30 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 130
+
+INFO  [2020-04-14 8:10:30 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:30 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 131
+
+INFO  [2020-04-14 8:10:30 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:30 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 132
+
+INFO  [2020-04-14 8:10:31 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF032EFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:31 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 133
+
+INFO  [2020-04-14 8:10:31 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:31 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 134
+
+INFO  [2020-04-14 8:10:32 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:32 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 135
+
+INFO  [2020-04-14 8:10:33 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF01C5FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:33 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 136
+
+INFO  [2020-04-14 8:10:33 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:33 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 137
+
+INFO  [2020-04-14 8:10:33 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:33 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 138
+
+INFO  [2020-04-14 8:10:34 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF00C5FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:34 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 139
+
+INFO  [2020-04-14 8:10:34 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:34 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 140
+
+INFO  [2020-04-14 8:10:34 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:34 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 141
+
+INFO  [2020-04-14 8:10:36 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0048FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:36 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 142
+
+INFO  [2020-04-14 8:10:36 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:36 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 143
+
+INFO  [2020-04-14 8:10:36 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:36 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 144
+
+INFO  [2020-04-14 8:10:37 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0085FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:37 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 145
+
+INFO  [2020-04-14 8:10:38 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:38 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 146
+
+INFO  [2020-04-14 8:10:38 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:38 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 147
+
+INFO  [2020-04-14 8:10:39 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0017FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:39 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 148
+
+INFO  [2020-04-14 8:10:39 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:39 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 149
+
+INFO  [2020-04-14 8:10:39 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:39 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 150
+
+INFO  [2020-04-14 8:10:40 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0036FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:40 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 151
+
+INFO  [2020-04-14 8:10:40 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:40 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 152
+
+INFO  [2020-04-14 8:10:41 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:41 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 153
+
+INFO  [2020-04-14 8:10:42 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0033FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:42 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 154
+
+INFO  [2020-04-14 8:10:42 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:42 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 155
+
+INFO  [2020-04-14 8:10:42 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:42 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 156
+
+INFO  [2020-04-14 8:10:43 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF003DFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:43 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 157
+
+INFO  [2020-04-14 8:10:43 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:43 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 158
+
+INFO  [2020-04-14 8:10:43 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:43 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 159
+
+INFO  [2020-04-14 8:10:45 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0033FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:45 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 160
+
+INFO  [2020-04-14 8:10:45 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:45 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 161
+
+INFO  [2020-04-14 8:10:45 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:45 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 162
+
+INFO  [2020-04-14 8:10:46 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF0036FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:46 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 163
+
+INFO  [2020-04-14 8:10:46 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:46 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 164
+
+INFO  [2020-04-14 8:10:46 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:46 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 165
+
+INFO  [2020-04-14 8:10:48 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF004AFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:48 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 166
+
+INFO  [2020-04-14 8:10:48 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FC9FFE FFFF12FFFFFFFFFF
+
+INFO  [2020-04-14 8:10:48 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 167
+
+INFO  [2020-04-14 8:10:48 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FCE1FE 00000000FFFFFFFF
+
+INFO  [2020-04-14 8:10:48 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 168
+
+INFO  [2020-04-14 8:10:49 AM] - storeData at offset 272 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:154:21
+ 
+	Got message: 18FEF1FE FF004AFFFFFFFFFF
+
+INFO  [2020-04-14 8:10:49 AM] - storeData at offset 329 in file:line:column C:\Users\billy\source\repos\FAST_UI (2)\FAST_UI\FAST_UI\SocketServer.cs:155:21
+ 
+	Number of messages: 169
+

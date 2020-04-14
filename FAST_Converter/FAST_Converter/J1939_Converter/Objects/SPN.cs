@@ -38,7 +38,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : SPN
+         * METHOD      : SPN
          * DESCRIPTION : Default constructor
          * PARAMETERS  : NONE
          * RETURNS     : NONE
@@ -55,7 +55,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : Convert
+         * METHOD      : Convert
          * DESCRIPTION : Converts a key value pair to a value
          * PARAMETERS  : KeyValuePair<string, string> pair - the key is the spn key,
          *                  value is the spn number
@@ -82,7 +82,7 @@ namespace J1939Converter
 
 
         /*
-         * FUNCTION    : GetSPNs
+         * METHOD      : GetSPNs
          * DESCRIPTION : Gets the spn objects from the config file
          * PARAMETERS  : NONE
          * RETURNS     : List<SPN> - a list of spns

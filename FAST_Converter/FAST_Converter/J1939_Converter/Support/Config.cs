@@ -21,16 +21,16 @@ namespace J1939Converter.Support
      */
     public class Config
     {
-        
+
 
 
 
 
         /*
-         * FUNCTION    : 
-         * DESCRIPTION : 
-         * PARAMETERS  : 
-         * RETURNS     : 
+         * METHOD      : GetObjectsFromConfig
+         * DESCRIPTION : Reads a file and fills a list of objects from the file
+         * PARAMETERS  : IConfig objectModel - The interface of the object to be read
+         * RETURNS     : List<Object> - The list of objects read from the config file
          */
         public static List<Object> GetObjectsFromConfig(IConfig objectModel)
         {
@@ -51,10 +51,10 @@ namespace J1939Converter.Support
 
 
         /*
-         * FUNCTION    : 
-         * DESCRIPTION : 
-         * PARAMETERS  : 
-         * RETURNS     : 
+         * METHOD      : ReadFromFile
+         * DESCRIPTION : Reads a file filled with keyvalue pairs
+         * PARAMETERS  : string filePath - The path to the file to read
+         * RETURNS     : IEnumerable<KeyValuePair<string, string>> - The key value pairs read from the file
          */
         private static IEnumerable<KeyValuePair<string, string>> ReadFromFile(string filePath)
         {
