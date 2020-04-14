@@ -127,7 +127,7 @@ function VehicleReader:update(dt)
 		local file, err = io.open ("data.txt","w");
 		if file ~= nil then
 			-- file:write(DebugUtil.printTableRecursively(g_currentMission,".",0,5));
-			file:write(tostring(VehicleReader.vehicle:getName()) .. "," .. g_i18n:getSpeed(tostring(VehicleReader.vehicle:getLastSpeed())) .. "," .. tostring(VehicleReader.setDefaults() * 3600000 / 3.786 ) .. "," .. tostring(VehicleReader.curFuelUsed));
+			file:write(tostring(VehicleReader.vehicle:getName()) .. "," .. g_i18n:getSpeed(tostring(VehicleReader.vehicle:getLastSpeed())) .. "," .. tostring(VehicleReader.setDefaults() * 3600000 / 3.786 ) .. "," .. tostring(VehicleReader.setDefaults() * g_currentMission.missionInfo.timeScale));
 			file:close();
 		end;		
 		VehicleReader.dumpTimer = 0;
