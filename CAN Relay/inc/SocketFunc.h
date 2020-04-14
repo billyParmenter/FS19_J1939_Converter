@@ -1,3 +1,10 @@
+/*
+* FILE          : SocketFunc.h
+* PROJECT       : CAN Relay
+* PROGRAMMER    : Oloruntoba Samuel Lagunju
+* DATE          : April 6th 2020
+* DESCRIPTION   : Contains methods that will cause the relay to act as a server
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -1,4 +1,10 @@
-
+/*
+* FILE          : socketCANFunc.h
+* PROJECT       : CAN Relay
+* PROGRAMMER    : Oloruntoba Samuel Lagunju
+* DATE          : April 6th 2020
+* DESCRIPTION   : Contains methods that will cause the relay to act as a CAN network reader and writer
+*/
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <endian.h>
@@ -23,7 +29,7 @@
 #include "Loggers.h"
 #define SA struct sockaddr 
 
-#define PARSE_ERROR 3
+#define SOCKET_ERROR 0
 #define THREAD_ERROR 0
 #define CAN_ERROR -3
 #define THREAD_SUCCESS 1
@@ -47,10 +53,9 @@ struct incomingCANMsg {
 
 void *socCANBroadcast(void *recvMsg);
 void *socCANRead(void* ipToDashboard);
-int getSize (char * s);
-
-void socketToDB(char* ipAddress, char* messageToBeSent);
+int socketToDB(char* ipAddress, char* messageToBeSent);
 unsigned char asciiToNibble(char canidChar);
+char* data2hexstring(unsigned char *data);
 
 
 int hexstring2data(char *arg, unsigned char *data, int maxdlen);

@@ -96,17 +96,25 @@ int relayController()
 	return OK_SIG;
 }
 
-
-
+/*
+* Function      : CleanupHandler
+* Parameters    : int id
+* Returns       : void
+* Description   : Provides an exit point when the user's inputs Ctrl+C
+*/
 void CleanupHandler(int id)
 {
 	Log(WARN,"CAN Relay recieved SIGINT as a signal to close program");
 	Log(INFO,"CAN Relay is shutting down...");
-
 	exit(0);
 }
 
-
+/*
+* Function      : ArgParsing
+* Parameters    : int argc, char* argv[]
+* Returns       : int validParsing
+* Description   : Parses arguments once the program starts up
+*/
 //From https://www.gnu.org/software/libc/manual/html_node/Example-of-Getopt.html
 int ArgParsing(int argc, char* argv[])
 {	

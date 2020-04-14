@@ -1,3 +1,10 @@
+/*
+* FILE          : SocketFunc.c
+* PROJECT       : CAN Relay
+* PROGRAMMER    : Oloruntoba Samuel Lagunju
+* DATE          : April 6th 2020
+* DESCRIPTION   : Contains methods that will cause the relay to act as a server
+*/
 #include "../inc/SocketFunc.h"
 
 
@@ -57,10 +64,11 @@ void* serverThread(void* args)
 		Log(FATAL, logMessage);
 		pthread_exit(SOCKET_ERROR);
 	}
-
 	//Loop to keep the server running
 	newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size);
 	while(true)
+	//Loop to keep the server running
+	// while((newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size)))
 	{
 		//Accept call creates a new socket for the incoming connection
 		if (newSocket < SOCKET_ERROR){
@@ -91,6 +99,7 @@ void* serverThread(void* args)
 
 			}
 			pthread_join(newClientThread, &resultFromThread); 
+
 		}
 		
 	}

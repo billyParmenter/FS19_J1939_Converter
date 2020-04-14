@@ -1,3 +1,11 @@
+/*
+* FILE          : relayController.h
+* PROJECT       : CAN Relay
+* PROGRAMMER    : Oloruntoba Samuel Lagunju
+* DATE          : April 6th 2020
+* DESCRIPTION   : Contains methods that controls what goes on with the CAN Relay once arguments have been parsed and validated
+*/
+
 #ifndef RELAYCON_H
 #define RELAYCON_H
 //Default includes
@@ -16,8 +24,6 @@
 
 
 #include "SocketFunc.h"
-
-
 #include "../inc/Loggers.h" //Include
 
 #define PROGNAME "canRelay" //Definition for the program name

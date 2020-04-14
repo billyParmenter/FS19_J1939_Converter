@@ -1,7 +1,22 @@
+/*
+* FILE          : socketCANFunc.c
+* PROJECT       : CAN Relay
+* PROGRAMMER    : Oloruntoba Samuel Lagunju
+* DATE          : April 6th 2020
+* DESCRIPTION   : Contains methods that will read or write to the socketCAN network
+                    Also contains methods that aid in these functionalities
+*/
+
 #include "../inc/sockCANFunc.h"
 
-
 char delim[] = " ";
+
+/*
+* Function      : socCANBroadcast
+* Parameters    : void *recvMsg
+* Returns       : void* &errorCode
+* Description   : Will connect to socketCAN network and write a message to it
+*/
 
 void *socCANBroadcast(void *recvMsg)
 {
@@ -46,13 +61,9 @@ void *socCANBroadcast(void *recvMsg)
     //Parsing to get the CAN ID from the incoming message
     char *msgPtr = strtok((char*)recvMsg, delim);
     canID = strtoul(msgPtr, NULL, 16);
-    // Log(DEBUG, msgPtr);
-    
-
     frame.can_id = canID;
 
     int mtu = CAN_MTU;
-    int maxdlen = CAN_MAX_DLEN;
 
     frame.can_id &= CAN_EFF_MASK;
     frame.can_id |= CAN_EFF_FLAG;
@@ -83,41 +94,31 @@ void *socCANBroadcast(void *recvMsg)
 }
 
 
-//From https://stackoverflow.com/questions/48367022/c-iterate-through-char-array-with-a-pointer
-int getSize (char * s) {
-    char * t; // first copy the pointer to not change the original
-    int size = 0;
-
-    for (t = s; *t != '\0'; t++) {
-        size++;
-    }
-
-    return size;
-}
-
-
+/*
+* Function      : socCANRead
+* Parameters    : void *ipArg
+* Returns       : void* &errorCode
+* Description   : Will connect to socketCAN network and read a message from it
+*/
 void *socCANRead(void* ipArg)
 {
     int errorCode = THREAD_SUCCESS;
     bool keepRunning = true;
-    struct timeval tv;
     char* ipToDB = (char*)ipArg;
-    tv.tv_sec = 45; //5 seconds
-    tv.tv_usec = 0;
     int readingSocket; //Endpoint for communication
     char readMsgBuffer[BUFSIZ];
 
     char* formattedMessage = (char*)malloc(sizeof(readMsgBuffer)+ SML_BUFFSIZ);
+   	char* logMessage = (char*)malloc(sizeof(char*) * LRG_BUFSIZ);
 
 
     if((readingSocket = socket(PF_CAN, SOCK_RAW, CAN_RAW)) < 0) 
     {
         errorCode = CAN_ERROR;
-        printf("Error, could not create socket over CAN network\n");
+        sprintf(logMessage, "Error, could not create socket over CAN network");
+        Log(FATAL, logMessage);
         pthread_exit((void*)&errorCode);
     }
-
-    // setsockopt(readingSocket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
     struct ifreq ifr;
     strcpy(ifr.ifr_name, "vcan0");
@@ -128,56 +129,74 @@ void *socCANRead(void* ipArg)
     addr.can_family = AF_CAN;
     addr.can_ifindex = ifr.ifr_ifindex;
     if (bind(readingSocket, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
-        printf("Error, could not bind socket over CAN network\n");
+        errorCode = CAN_ERROR;
+        sprintf(logMessage, "Error, could not bind socket over CAN network");
+        Log(FATAL, logMessage);
+        pthread_exit((void*)&errorCode);
+
     }
 
     struct canfd_frame frame;    
     int numOfBytesRead;
     while(keepRunning)
     {                   
-        printf("Reading from SocketCAN network...\n"); //Implement logger here
+        sprintf(logMessage, "Client is reading  from socketCAN network");
+		Log(INFO, logMessage);
 
         numOfBytesRead = read(readingSocket, &frame, sizeof(struct can_frame));
 
-        // Reads with timeout if uncommented.
-        // if (numOfBytesRead == EWOULDBLOCK || EAGAIN) {
-        //     printf("Reading Timeout\n");
-        //     errorCode = CAN_ERROR;
-        // }
-
         if (numOfBytesRead < 0) {
-            printf("Error, could not read over CAN network\n");
+            errorCode = CAN_ERROR;
+            sprintf(logMessage, "Error, could not read over CAN network");
+            Log(FATAL, logMessage);
             keepRunning = false;
         }
     
         //Getting CAN ID of message
         sprint_canframe(readMsgBuffer, &frame, 0, 8);
         sprintf(formattedMessage, "%s", readMsgBuffer);
-        formattedMessage[strlen(formattedMessage)+1] = '\0';
-        printf("Formatted Message: %s\n", formattedMessage);
-        socketToDB(ipToDB, readMsgBuffer);
-        memset(readMsgBuffer, 0, sizeof (readMsgBuffer));
 
+        sprintf(logMessage, "socketCAN Client recieved %s", formattedMessage);
+        Log(INFO, logMessage);
+        formattedMessage[strlen(formattedMessage)+1] = '\0';
+
+
+        if(socketToDB(ipToDB, readMsgBuffer) == SOCKET_ERROR)
+        {errorCode = SOCKET_ERROR, keepRunning = false;}
+        else{
+            sprintf(logMessage, "Sent %s to Dashboard", readMsgBuffer);
+            Log(INFO, logMessage);
+        }
+        memset(readMsgBuffer, 0, sizeof (readMsgBuffer));
     }
 
     if (close(readingSocket) < 0) {
-        printf("Error, could not close socket over CAN network\n");
-        errorCode = CAN_ERROR;
+        sprintf(logMessage, "Error, could not close socket over CAN network");
+        Log(FATAL, logMessage);
+        errorCode = CAN_ERROR; 
     }
     
     pthread_exit((void*)&errorCode);
 }
 
-void socketToDB(char* ipAddress, char* messageToBeSent)
+/*
+* Function      : socketToDB
+* Parameters    : char* ipAddress, char* messageToBeSent
+* Returns       : SOCKET_ERROR or OK_SIG
+* Description   : Will connect to dashboard and send message to it
+*/
+int socketToDB(char* ipAddress, char* messageToBeSent)
 {
+    int successfulConn = OK_SIG;
 	int sockfd; 
     struct sockaddr_in servaddr; 
   
     // socket create and varification 
     sockfd = socket(AF_INET, SOCK_STREAM, 0); 
     if (sockfd == -1) { 
-        printf("socket creation failed...\n"); 
-        exit(0); 
+        sprintf(logMessage, "Error, Socket creation failed");
+        Log(FATAL, logMessage);
+        return SOCKET_ERROR;
     } 
     bzero(&servaddr, sizeof(servaddr)); 
   
@@ -188,18 +207,31 @@ void socketToDB(char* ipAddress, char* messageToBeSent)
   
     //Connect the client socket to server socket 
     if (connect(sockfd, (SA*)&servaddr, sizeof(servaddr)) != 0) { 
-        printf("connection with the server failed...\n"); 
-        exit(0); 
-    }  
-  
+        sprintf(logMessage, "Error, connection with the server failed...");
+        Log(FATAL, logMessage);
+        return SOCKET_ERROR;
+    }
+
+
     //Sending Message
-    write(sockfd, messageToBeSent, strlen(messageToBeSent));
-    printf("Sent message to DB\n");        
-  
+    if(write(sockfd, messageToBeSent, strlen(messageToBeSent)) < 0){
+        sprintf(logMessage, "Error, Write to server failed...");
+        Log(FATAL, logMessage);
+        return SOCKET_ERROR;
+    } 
+
     // close the socket 
     close(sockfd); 
+    return successfulConn;
 }
 
+/*
+* Function      :   data2hexstring
+* Parameters    :   unsigned char *data
+* Returns       :   char* string
+* Description   :   Will convert data in socketCAN frame to hex string
+* Source        :   From CAN-UTILS: https://github.com/linux-can/can-utils
+*/
 char* data2hexstring(unsigned char *data)
 {
     char *string = (char*) malloc(sizeof data *2 + 1);
@@ -212,8 +244,14 @@ char* data2hexstring(unsigned char *data)
     return string;
 }
 
+/*
+* Function      :   asciiToNibble
+* Parameters    :   char canidChar
+* Returns       :   unsigned char
+* Description   :   Will convert a char to a nibble data format
+* Source        :   From CAN-UTILS: https://github.com/linux-can/can-utils
+*/
 unsigned char asciiToNibble(char canidChar) {
-    unsigned char convertedCharacter;
     //Converting to the decimal value of a given ASCII hex character.
     if ((canidChar >= '0') && (canidChar <= '9'))
     {   
@@ -232,6 +270,13 @@ unsigned char asciiToNibble(char canidChar) {
     return 16;
 }
 
+/*
+* Function      :   hexstring2data
+* Parameters    :   char *arg, unsigned char *data, int maxdlen
+* Returns       :   1 or 0 
+* Description   :   Will convert a string to a socketCAN frame format
+* Source        :   From CAN-UTILS: https://github.com/linux-can/can-utils
+*/
 int hexstring2data(char *arg, unsigned char *data, int maxdlen) {
 
 	int len = strlen(arg);
@@ -261,6 +306,13 @@ int hexstring2data(char *arg, unsigned char *data, int maxdlen) {
 	return 0;
 }
 
+/*
+* Function      :   sprint_canframe
+* Parameters    :   char *buf , struct canfd_frame *cf, int sep, int maxdlen
+* Returns       :   void
+* Description   :   Copies content from a buffer to the socketCAN frame
+* Source        :   From CAN-UTILS: https://github.com/linux-can/can-utils
+*/
 void sprint_canframe(char *buf , struct canfd_frame *cf, int sep, int maxdlen) 
 {
     /* documentation see lib.h */

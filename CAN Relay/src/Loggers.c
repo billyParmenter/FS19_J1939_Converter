@@ -16,6 +16,13 @@ char* errorLevelString = NULL;
 char* filePath = NULL;  //String used to how signify how serious the error is
 char* logMessage = NULL;
 FILE* logFilePtr = NULL; //a pointer of type file
+
+/*
+* Function      : InitializeLog
+* Parameters    : N/A
+* Returns       : N/A
+* Description   : Will instatiate the logger used to track all functionality in the CAN relay
+*/
 const int InitializeLog()
 {
     errorLevelString = (char*)malloc(sizeof(char) * SML_BUFFSIZ); 
@@ -36,9 +43,15 @@ const int InitializeLog()
     return initialized;
 }
 
+/*
+* Function      : ShutDownLogger
+* Parameters    : N/A
+* Returns       : N/A
+* Description   : Will free all allocated memory
+*/
 const void ShutDownLogger()
 {
-    Log(INFO, "Cleaned up all log resources");
+    Log(INFO, "Cleaning up all log resources...");
     //Clearing up all memory before closing application
     free(errorLevelString);
     free(filePath);
@@ -46,6 +59,12 @@ const void ShutDownLogger()
     // fclose(logFilePtr);
 }
 
+/*
+* Function      : Log
+* Parameters    : ErrorLevel currentErrorLevel, const char* logBufferMsg
+* Returns       : N/A
+* Description   : Will log a specific message with its error level to the log file.
+*/
 const void Log(ErrorLevel currentErrorLevel, const char* logBufferMsg)
 {  
     char currentDate[1280];
@@ -68,13 +87,12 @@ const void Log(ErrorLevel currentErrorLevel, const char* logBufferMsg)
     }
 }
 
-
-
-
-
-
-
-
+/*
+* Function      : CheckLevel
+* Parameters    : ErrorLevel levelToCheck
+* Returns       : bool validLevel
+* Description   : Checks if the proposed error level is within bounds
+*/
 bool CheckLevel(ErrorLevel levelToCheck)
 {
     bool validLevel = false;
@@ -92,6 +110,12 @@ bool CheckLevel(ErrorLevel levelToCheck)
     return validLevel;
 }
 
+/*
+* Function      : GetErrorLevelString
+* Parameters    : ErrorLevel errorLevel, char* errorLevelString
+* Returns       : void
+* Description   : Converts enum error level to an actual string
+*/
 const void GetErrorLevelString(ErrorLevel errorLevel, char* errorLevelString)
 {
     int errorIntValue = (int)errorLevel;
