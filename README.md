@@ -57,10 +57,6 @@ Farming Simulator 2019 </br>
 3.	Open the folder and paste the folder
 4.	Right click on FS_DataReader and click on send to>Compressed(Zipped) folder
 
-## Usage
-
-
-
 ## Authors
 
 [Sam Lagunju](https://github.com/SamueLagunju) </br>
