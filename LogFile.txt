@@ -1,4 +1,0 @@
-INFO  [2020-04-20 10:35:38 PM] - Stop at offset 42 in file:line:column C:\Users\billy\source\FS19_J1939_Converter\FAST_Converter\FAST_Converter\J1939_Converter\Communication\SocketClient.cs:189:13
- 
-	Closing stream and client
-
