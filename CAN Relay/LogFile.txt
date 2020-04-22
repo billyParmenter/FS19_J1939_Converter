@@ -1,0 +1,531 @@
+[2020-04-13 23:52:57]:	[INFO]:	Logger initialized
+[2020-04-13 23:52:57]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-13 23:52:57]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-13 23:52:57]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-13 23:53:01]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-13 23:53:01]:	[INFO]:	Server is listening on port: 4001
+[2020-04-13 23:54:36]:	[FATAL]:	Error code from recv function: 104
+[2020-04-13 23:54:36]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-13 23:54:36]:	[INFO]:	Cleaned up all log resources
+[2020-04-13 23:55:15]:	[INFO]:	Logger initialized
+[2020-04-13 23:55:15]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-13 23:55:15]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-13 23:55:15]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-13 23:55:20]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-13 23:55:20]:	[INFO]:	Server is listening on port: 4000
+[2020-04-13 23:56:30]:	[INFO]:	Server recieved:- 18FEF1F0 FF0D92FFFFFFFFFF
+[2020-04-13 23:56:30]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0D92FFFFFFFFFF
+[2020-04-13 23:56:30]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-13 23:56:31]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-13 23:56:32]:	[INFO]:	Server recieved:- 18FEF1F0 FF0E80FFFFFFFFFF
+[2020-04-13 23:56:32]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-13 23:56:33]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-13 23:56:34]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EA9FFFFFFFFFF
+[2020-04-13 23:56:35]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-13 23:56:35]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-13 23:56:36]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EACFFFFFFFFFF
+[2020-04-13 23:56:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-13 23:56:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-13 23:58:39]:	[FATAL]:	[2020-04-13 23:58:39]:	[FATAL]:	r failed...
+[2020-04-14 00:00:03]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-14 00:00:03]:	[INFO]:	CAN Relay is shutting down...
+[2020-04-14 00:00:04]:	[INFO]:	Logger initialized
+[2020-04-14 00:00:04]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-14 00:00:04]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-14 00:00:04]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-14 00:00:10]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:00:10]:	[FATAL]:	Failed to bind server socket.
+[2020-04-14 00:00:10]:	[INFO]:	Shutting down CAN Relay...
+[2020-04-14 00:00:10]:	[INFO]:	Cleaned up all log resources
+[2020-04-14 00:00:24]:	[INFO]:	Logger initialized
+[2020-04-14 00:00:24]:	[INFO]:	User started CAN Relay with server mode option
+[2020-04-14 00:00:24]:	[INFO]:	User started CAN Relay with client mode option
+[2020-04-14 00:00:24]:	[INFO]:	CAN Relay uses SIGINT as a signal to close program
+[2020-04-14 00:00:45]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:00:45]:	[INFO]:	Server is listening on port: 4001
+[2020-04-14 00:03:48]:	[INFO]:	Server recieved:- 18FEF1F0 FF0B88FFFFFFFFFF
+[2020-04-14 00:03:48]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0B88FFFFFFFFFF
+[2020-04-14 00:03:48]:	[INFO]:	Sent 18FEF1F0 FF0B88FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:48]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:48]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:48]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:48]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:48]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:49]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:49]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:49]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:49]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:50]:	[INFO]:	Server recieved:- 18FEF1F0 FF0DD7FFFFFFFFFF
+[2020-04-14 00:03:50]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0DD7FFFFFFFFFF
+[2020-04-14 00:03:50]:	[INFO]:	Sent 18FEF1F0 FF0DD7FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:50]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:50]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:50]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:50]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:50]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:51]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:51]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:51]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:51]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:52]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EB3FFFFFFFFFF
+[2020-04-14 00:03:52]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0EB3FFFFFFFFFF
+[2020-04-14 00:03:52]:	[INFO]:	Sent 18FEF1F0 FF0EB3FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:52]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:52]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:52]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:52]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:52]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:52]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:52]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:52]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:52]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:54]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EF6FFFFFFFFFF
+[2020-04-14 00:03:54]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0EF6FFFFFFFFFF
+[2020-04-14 00:03:54]:	[INFO]:	Sent 18FEF1F0 FF0EF6FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:54]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:54]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:54]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:54]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:54]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:54]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:54]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:54]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:54]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:56]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EC3FFFFFFFFFF
+[2020-04-14 00:03:56]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0EC3FFFFFFFFFF
+[2020-04-14 00:03:56]:	[INFO]:	Sent 18FEF1F0 FF0EC3FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:56]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:56]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:56]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:56]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:56]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:56]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:56]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:56]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:56]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:57]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EBDFFFFFFFFFF
+[2020-04-14 00:03:57]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0EBDFFFFFFFFFF
+[2020-04-14 00:03:57]:	[INFO]:	Sent 18FEF1F0 FF0EBDFFFFFFFFFF to Dashboard
+[2020-04-14 00:03:57]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:58]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:58]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:03:58]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:58]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:58]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:58]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:03:58]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:58]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:03:59]:	[INFO]:	Server recieved:- 18FEF1F0 FF0E94FFFFFFFFFF
+[2020-04-14 00:03:59]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0E94FFFFFFFFFF
+[2020-04-14 00:03:59]:	[INFO]:	Sent 18FEF1F0 FF0E94FFFFFFFFFF to Dashboard
+[2020-04-14 00:03:59]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:00]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:00]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:00]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:00]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:00]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:00]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:00]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:00]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:01]:	[INFO]:	Server recieved:- 18FEF1F0 FF0EE6FFFFFFFFFF
+[2020-04-14 00:04:01]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0EE6FFFFFFFFFF
+[2020-04-14 00:04:01]:	[INFO]:	Sent 18FEF1F0 FF0EE6FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:01]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:02]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:02]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:02]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:02]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:02]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:02]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:02]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:02]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0ECFFFFFFFFFFF
+[2020-04-14 00:04:03]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0ECFFFFFFFFFFF
+[2020-04-14 00:04:03]:	[INFO]:	Sent 18FEF1F0 FF0ECFFFFFFFFFFF to Dashboard
+[2020-04-14 00:04:03]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:03]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:03]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:03]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:04]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:04]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:04]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:04]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF05C3FFFFFFFFFF
+[2020-04-14 00:04:05]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF05C3FFFFFFFFFF
+[2020-04-14 00:04:05]:	[INFO]:	Sent 18FEF1F0 FF05C3FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:05]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:05]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0857FFFFFFFFFF
+[2020-04-14 00:04:05]:	[INFO]:	Sent 18FEF1F0 FF0857FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:05]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:06]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:06]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:06]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:06]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:07]:	[INFO]:	Server recieved:- 18FEF1F0 FF08E4FFFFFFFFFF
+[2020-04-14 00:04:07]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF08E4FFFFFFFFFF
+[2020-04-14 00:04:07]:	[INFO]:	Sent 18FEF1F0 FF08E4FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:07]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:07]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:07]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:07]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:07]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:08]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:08]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:08]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:08]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:09]:	[INFO]:	Server recieved:- 18FEF1F0 FF04B1FFFFFFFFFF
+[2020-04-14 00:04:09]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF04B1FFFFFFFFFF
+[2020-04-14 00:04:09]:	[INFO]:	Sent 18FEF1F0 FF04B1FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:09]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:09]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:09]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:09]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:09]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:10]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:10]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:10]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:10]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:11]:	[INFO]:	Server recieved:- 18FEF1F0 FF031AFFFFFFFFFF
+[2020-04-14 00:04:11]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF031AFFFFFFFFFF
+[2020-04-14 00:04:11]:	[INFO]:	Sent 18FEF1F0 FF031AFFFFFFFFFF to Dashboard
+[2020-04-14 00:04:11]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:11]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:11]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:11]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:11]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:11]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:11]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:11]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:11]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:13]:	[INFO]:	Server recieved:- 18FEF1F0 FF0D52FFFFFFFFFF
+[2020-04-14 00:04:13]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0D52FFFFFFFFFF
+[2020-04-14 00:04:13]:	[INFO]:	Sent 18FEF1F0 FF0D52FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:13]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:13]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:13]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:13]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:13]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:13]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:13]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:13]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:13]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF04C5FFFFFFFFFF
+[2020-04-14 00:04:15]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF04C5FFFFFFFFFF
+[2020-04-14 00:04:15]:	[INFO]:	Sent 18FEF1F0 FF04C5FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:15]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:15]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:15]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:15]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:15]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:15]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:15]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0212FFFFFFFFFF
+[2020-04-14 00:04:17]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0212FFFFFFFFFF
+[2020-04-14 00:04:17]:	[INFO]:	Sent 18FEF1F0 FF0212FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:17]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:17]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:17]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:17]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:17]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:17]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:17]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:19]:	[INFO]:	Server recieved:- 18FEF1F0 FF085AFFFFFFFFFF
+[2020-04-14 00:04:19]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF085AFFFFFFFFFF
+[2020-04-14 00:04:19]:	[INFO]:	Sent 18FEF1F0 FF085AFFFFFFFFFF to Dashboard
+[2020-04-14 00:04:19]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:19]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:19]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:19]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:19]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:19]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:19]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:19]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:19]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:21]:	[INFO]:	Server recieved:- 18FEF1F0 FF0003FFFFFFFFFF
+[2020-04-14 00:04:21]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0003FFFFFFFFFF
+[2020-04-14 00:04:21]:	[INFO]:	Sent 18FEF1F0 FF0003FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:21]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:21]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:21]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:21]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:21]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:21]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:21]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:21]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:21]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:23]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:23]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:23]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:23]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:23]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:23]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:23]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:23]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:23]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:23]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:23]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:23]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:24]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:24]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:24]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:25]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:25]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:25]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:25]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:25]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:25]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:25]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:25]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:25]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:26]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:26]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:26]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:26]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:27]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:27]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:27]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:27]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:27]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:27]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:27]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:27]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:29]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:29]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:29]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:29]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:29]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:29]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:29]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:29]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:29]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:29]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:29]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:29]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:31]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:31]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:31]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:31]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:31]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:31]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:31]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:31]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:31]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:31]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:31]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:31]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:32]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:32]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:32]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:32]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:33]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:33]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:33]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:33]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:33]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:33]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:33]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:33]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:34]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:34]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:34]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:34]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:35]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:35]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:35]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:35]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:35]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:35]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:35]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:35]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:36]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:36]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:36]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:36]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:37]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:37]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:37]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:37]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:37]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:37]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:37]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:38]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:38]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:38]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:38]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:39]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:39]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:39]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:39]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:39]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:39]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:39]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:39]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:40]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:40]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:40]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:40]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:41]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:41]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:41]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:41]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:41]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:41]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:41]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:41]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:42]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:42]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:42]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:42]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:43]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:43]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:43]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:43]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:43]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:43]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:43]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:43]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:45]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:45]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:45]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:45]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:45]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:45]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:45]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:45]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:46]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:46]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:46]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:46]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:48]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:48]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:48]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:48]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:48]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:48]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:48]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:48]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:49]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:49]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:49]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:49]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:51]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:51]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:51]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:51]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:51]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:51]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:51]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:51]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:52]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:52]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:52]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:52]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:53]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:53]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:53]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:53]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:54]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:54]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:54]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:54]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:54]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:54]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:54]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:54]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:56]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:56]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:56]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:56]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:57]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:57]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:04:57]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:57]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:58]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:58]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:58]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:58]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:04:59]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:59]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:04:59]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:04:59]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:00]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:00]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:00]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:00]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:01]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:01]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:01]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:01]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:02]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:02]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:02]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:02]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:03]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:03]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:03]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:03]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:03]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:03]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:03]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:05]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:05]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:05]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:05]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:06]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:06]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:06]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:06]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:07]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:07]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:07]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:07]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:09]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:09]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:09]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:09]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:10]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:10]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:10]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:10]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:11]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:11]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:11]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:11]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:12]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:12]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:12]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:12]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:13]:	[INFO]:	Server recieved:- 18FEF1F0 FF07D7FFFFFFFFFF
+[2020-04-14 00:05:13]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF07D7FFFFFFFFFF
+[2020-04-14 00:05:13]:	[INFO]:	Sent 18FEF1F0 FF07D7FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:13]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:14]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:14]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:14]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:14]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:15]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:15]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:15]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:15]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:16]:	[INFO]:	Server recieved:- 18FEF1F0 FF0608FFFFFFFFFF
+[2020-04-14 00:05:16]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0608FFFFFFFFFF
+[2020-04-14 00:05:16]:	[INFO]:	Sent 18FEF1F0 FF0608FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:16]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:17]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0778FFFFFFFFFF
+[2020-04-14 00:05:17]:	[INFO]:	Sent 18FEF1F0 FF0778FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:17]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:17]:	[INFO]:	Server recieved:- 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:17]:	[INFO]:	socketCAN Client recieved 18FEF1F0 FF0000FFFFFFFFFF
+[2020-04-14 00:05:17]:	[INFO]:	Sent 18FEF1F0 FF0000FFFFFFFFFF to Dashboard
+[2020-04-14 00:05:17]:	[INFO]:	Client is reading  from socketCAN network
+[2020-04-14 00:05:49]:	[WARN]:	CAN Relay recieved SIGINT as a signal to close program
+[2020-04-14 00:05:49]:	[INFO]:	CAN Relay is shutting down...

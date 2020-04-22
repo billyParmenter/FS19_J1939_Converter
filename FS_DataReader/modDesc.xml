@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="44">
     <author>Osiris</author>
-    <version>1.2</version>
+    <version>2.0</version>
     <title>
-		<en>Farming Sim Data Reader</en>
+		<en>Osiris Vehicle Data Reader</en>
     </title>
     <description>
 	<en>
-<![CDATA[This Mod reads vehicle data to a text file]]>
+<![CDATA[This mod reads an array of vehicle data to a text file that gets coverted to J1939 format.]]>
 	</en>
     </description>
-    <iconFilename>store.dds</iconFilename>
+    <iconFilename>icon.dds</iconFilename>
      <extraSourceFiles>
-        <sourceFile filename="DataRead.lua"/>
+        <sourceFile filename="VehicleReader.lua"/>
     </extraSourceFiles>
 </modDesc>
