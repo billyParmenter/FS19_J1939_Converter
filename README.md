@@ -1,4 +1,4 @@
-# Team Osiris - FS19_J1939_Converter
+# Team Osiris - Farm AgriTech Service Tool
 The FAST system uses Farm Simulator 2019 to generate telemetry data. The system will convert the raw values into J1939 messages, broadcast them on the CAN network and then display the messages in a graphical manner. There are 4 parts to the system: 
  - <b>FS_DataReader</b></br>
  This is the mod that will get values from the driven tracktor and save them to a file for the FAST_Converter.
@@ -11,7 +11,6 @@ The FAST_UI will get messages from the CAN Relay, parse them for the PGN, based 
 </br>
 </br>
 There are a few different ways to run the FAST system:</br>
-
 1. Full
 2. Without FS
 3. Without Linux
