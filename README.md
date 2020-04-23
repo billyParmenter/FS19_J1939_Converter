@@ -9,7 +9,7 @@ The CAN Relay is the part of the system that resides on the Linux operating syst
  - <b>FAST_UI</b></br>
 The FAST_UI will get messages from the CAN Relay, parse them for the PGN, based on the PGN it will query the database for information to convert the J1939 messages into raw values. The FAST_UI will then display the values on a graph.
 </br>
-</br>
+
 There are a few different ways to run the FAST system:</br>
 1. Full
 2. Without FS
@@ -18,7 +18,7 @@ There are a few different ways to run the FAST system:</br>
 
 The system can also run with any combination of 2-4.
 
-## prerequisites
+## Prerequisites
 Farming Simulator 2019 </br>
 
 ## Installation
